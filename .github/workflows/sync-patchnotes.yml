@@ -28,11 +28,18 @@ concurrency:
   group: sync-patchnotes
   cancel-in-progress: false
 
+# Opt into Node.js 24 for JavaScript actions. Node 20 is deprecated on
+# GitHub-hosted runners as of 2025-09-19 and will be removed 2026-09-16.
+# Once Node 24 is the runner default (planned for 2026-06-02) this env
+# var is a no-op and can be deleted.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Fetch patchnotes.md from orpg
         env:
