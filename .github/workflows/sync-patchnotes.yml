@@ -1,0 +1,74 @@
+name: Sync patch notes from orpg
+
+# Polls the private game repo (da-rulez/orpg) for changes to patchnotes.md,
+# snapshots any new version into _data/patchnotes/, re-renders news.html
+# from the full archive, and commits the result.
+#
+# Triggers:
+#   - hourly cron
+#   - manual run from the Actions tab (workflow_dispatch)
+#   - repository_dispatch with type=orpg-patchnotes-updated (so the orpg
+#     repo can poke us instead of waiting on the cron)
+#
+# Required repo secret:
+#   ORPG_TOKEN — a fine-grained PAT with read access to the contents of
+#                da-rulez/orpg
+
+on:
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [orpg-patchnotes-updated]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-patchnotes
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch patchnotes.md from orpg
+        env:
+          ORPG_TOKEN: ${{ secrets.ORPG_TOKEN }}
+        run: |
+          if [ -z "$ORPG_TOKEN" ]; then
+            echo "::error::ORPG_TOKEN secret is not set. Add a fine-grained PAT with read access to da-rulez/orpg contents."
+            exit 1
+          fi
+          curl -fsSL \
+            -H "Authorization: Bearer $ORPG_TOKEN" \
+            -H "Accept: application/vnd.github.raw" \
+            -H "User-Agent: dbzeeeu-sync-patchnotes" \
+            "https://api.github.com/repos/da-rulez/orpg/contents/patchnotes.md" \
+            -o /tmp/patchnotes.md
+          echo "fetched $(wc -c < /tmp/patchnotes.md) bytes"
+
+      - name: Snapshot if new
+        id: snap
+        run: python3 tools/snapshot-patchnotes.py /tmp/patchnotes.md _data/patchnotes/
+
+      - name: Re-render news.html
+        if: steps.snap.outputs.added == 'true'
+        run: python3 tools/render-news.py
+
+      - name: Commit and push
+        if: steps.snap.outputs.added == 'true'
+        env:
+          VERSION: ${{ steps.snap.outputs.version }}
+        run: |
+          git config user.name 'dbzee-bot'
+          git config user.email 'bot@dbzee.eu'
+          git add _data/patchnotes/ news.html
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "chore: archive v${VERSION} patch notes from orpg"
+          git push

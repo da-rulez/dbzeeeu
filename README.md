@@ -127,6 +127,60 @@ There is no asset pipeline. Don't add one unless something has actually
 outgrown plain HTML &mdash; the entire point is that this is a static site
 you can edit with a text editor on a phone in an airport.
 
+## Patch notes (automatic sync from `da-rulez/orpg`)
+
+The news page is generated from snapshots stored under
+`_data/patchnotes/v{X.Y.Z}.md`. The game repo only carries the current
+patch in `patchnotes.md`; this repo accumulates the full history.
+
+How it works:
+
+1. `.github/workflows/sync-patchnotes.yml` runs hourly (and on demand).
+2. It downloads `patchnotes.md` from `da-rulez/orpg` using a PAT.
+3. `tools/snapshot-patchnotes.py` parses the `## vX.Y.Z` heading; if
+   that version isn't already archived, it writes
+   `_data/patchnotes/v{X.Y.Z}.md`.
+4. `tools/render-news.py` rebuilds `news.html` from
+   `tools/news-template.html` and every archived `_data/patchnotes/*.md`,
+   sorted newest first.
+5. The workflow commits the new snapshot + regenerated `news.html` and
+   pushes.
+
+### One-time setup
+
+You need a fine-grained PAT so the workflow can read the private game
+repo:
+
+1. https://github.com/settings/personal-access-tokens/new
+2. **Resource owner**: your account / org that owns `da-rulez/orpg`.
+3. **Repository access**: *Only select repositories* &rarr; `da-rulez/orpg`.
+4. **Repository permissions** &rarr; **Contents**: *Read-only*.
+5. Generate, copy the token.
+6. In this repo: **Settings &rarr; Secrets and variables &rarr; Actions &rarr;
+   New repository secret**. Name it `ORPG_TOKEN`, paste the token.
+
+Trigger options after the secret is set:
+
+- Wait up to an hour for the next cron run, or
+- **Actions &rarr; Sync patch notes from orpg &rarr; Run workflow** for an
+  instant manual run, or
+- Have the game repo fire a `repository_dispatch` with type
+  `orpg-patchnotes-updated` from its own CI when `patchnotes.md` changes.
+
+### Manual edits
+
+Editing `_data/patchnotes/*.md` directly is fine; the next workflow run
+will pick them up and re-render. Don't edit `news.html` by hand &mdash; it
+gets overwritten by `tools/render-news.py`.
+
+### Pagination
+
+`news.html` is one long page. When it gets uncomfortable to scroll,
+update `tools/render-news.py` to chunk `entries` into pages
+(`news.html`, `news-2.html`, &hellip;) and link them together; the
+template already has a `<!-- NEWS_ENTRIES -->` placeholder so this is a
+small change.
+
 ## License
 
 Site source is MIT. Game art and trademarks belong to their respective

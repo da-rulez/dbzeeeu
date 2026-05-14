@@ -40,74 +40,66 @@
   <section style="padding-top: 1rem;">
     <div class="container">
       <div class="news-list">
-
         <article class="news-entry">
           <div class="news-meta">
             <span class="news-tag">v0.9.2</span>
-            <span class="news-tag blue">Feature</span>
-            <span class="news-date">2026-05-09</span>
+            <span class="news-tag blue">Patch</span>
           </div>
           <h2>Transformations</h2>
-          <p><strong>Power up.</strong> The transformation system is here. Real shader driven auras that hug your character's silhouette (body, hair, and equipment all included) and cast actual light on the world around you. Cast SSJ at night and watch the gold pour onto the dirt at your feet. Cast MUI in a cave and the silver blue hum lights the rocks. No more stickers slapped on a sprite.</p>
-
+          <h3>Power up.</h3>
+          <p>The transformation system is here. Real shader-driven auras that hug your character's silhouette, body, hair, and equipment all included, and they cast actual light on the world around you. Cast SSJ at night and watch the gold pour onto the dirt at your feet. Cast MUI in a cave and the silver-blue hum lights the rocks. No more stickers slapped on a sprite.</p>
           <h3>Lights, actually</h3>
           <ul>
-            <li><strong>Auras emit real light.</strong> A new dynamic lighting system attaches a Light2D per transformed character whose shape is the aura's shape. Embers cast pools of light, the outline ring casts a corona, the flame body throws a flickering wash. Step into a dark dungeon transformed and you light the room.</li>
-            <li><strong>Toggleable in Video settings.</strong> Two new options under Escape &rarr; Video: Shader Effects and Dynamic Lighting. Drop them independently on lower end machines. Default ON.</li>
-            <li><strong>Cave overlays now play nice with lights.</strong> The per scene tint used to overpaint everything. Now it routes through the same CanvasModulate path as the day / night cycle, so auras, orbs, and torches brighten through the dim.</li>
+            <li><strong>Auras emit real light.</strong> A new dynamic-lighting system attaches a Light2D per transformed character whose shape is the aura's shape. Embers cast pools of light, the outline ring casts a corona, the flame body throws a flickering wash. Step into a dark dungeon transformed and you light the room.</li>
+            <li><strong>Toggleable in Video settings.</strong> Two new options under Escape → Video: Shader Effects and Dynamic Lighting. Drop them independently on lower-end machines. Default ON.</li>
+            <li><strong>Cave overlays now play nice with lights.</strong> The per-scene tint used to overpaint everything. Now it routes through the same CanvasModulate path as the day/night cycle, so auras, orbs, and torches brighten through the dim.</li>
           </ul>
-
           <h3>Silhouette tracking</h3>
           <ul>
-            <li>Effects hug your character, not a circle around them. A hidden render target mirrors your body, paperdoll, and hair into a silhouette texture every frame. Switch hats mid transformation and the gold ring reshapes around the new outline.</li>
+            <li>Effects hug your character, not a circle around them. A hidden render target mirrors your body, paperdoll, and hair into a silhouette texture every frame. Switch hats mid-transformation and the gold ring reshapes around the new outline.</li>
           </ul>
-
           <h3>Idle, finally</h3>
           <ul>
             <li>Idle pose after 30 seconds of standing still. Equipment and hair stay on. Move, cast, take a hit and you snap back to normal.</li>
           </ul>
-
           <h3>Under the hood</h3>
           <ul>
-            <li>Per overlay color editor with live preview in the Content Editor.</li>
-            <li><code>bottom_clip_y</code> knob to keep effects from drifting under the feet.</li>
-            <li>Transform status effects now use proper indefinite duration. No more auto clearing on buff sync.</li>
-            <li>Adding a row in the Content Editor auto rebuilds body and paperdoll caches.</li>
+            <li>Per-overlay color editor with live preview in the Content Editor</li>
+            <li><code>bottom_clip_y</code> knob to keep effects from drifting under the feet</li>
+            <li>Transform status effects now use proper indefinite duration, no more auto-clearing on buff sync</li>
+            <li>Adding a row in the Content Editor auto-rebuilds body and paperdoll caches</li>
           </ul>
         </article>
 
         <article class="news-entry">
           <div class="news-meta">
             <span class="news-tag">v0.9.1</span>
-            <span class="news-tag red">Fixes</span>
-            <span class="news-date">2026-04-22</span>
+            <span class="news-tag">Patch</span>
           </div>
           <h2>Dragon Ball stability pass</h2>
-          <p>Pedestal cast contention is now resolved exclusively server side. No more double place races on guild war scenes. Ball state survives a server restart including the 10 second loot grace timer. Character deletion correctly re rolls any held balls back into the world dormancy pool.</p>
+          <p>Pedestal cast contention is now resolved exclusively server-side. No more double-place races on guild war scenes. Ball state survives a server restart including the 10-second loot grace timer. Character deletion correctly re-rolls any held balls back into the world dormancy pool.</p>
           <ul>
             <li>Pedestal "Someone else is placing there." now fires deterministically for the second contender.</li>
             <li>Logout drop is now silent (no global broadcast), matching spec.</li>
-            <li>Guild kick while holding balls now drops at your current scene local coords and warps you out of the war scene.</li>
-            <li>Admin panel gains a Dragon Balls tab: live state per ball, full activity log, per ball Respawn button.</li>
+            <li>Guild-kick while holding balls now drops at your current scene-local coords and warps you out of the war scene.</li>
+            <li>Admin panel gains a Dragon Balls tab: live state per ball, full activity log, per-ball Respawn button.</li>
           </ul>
         </article>
 
         <article class="news-entry">
           <div class="news-meta">
             <span class="news-tag">v0.9.0</span>
-            <span class="news-tag blue">Feature</span>
-            <span class="news-date">2026-03-30</span>
+            <span class="news-tag">Patch</span>
           </div>
           <h2>The seven balls go live</h2>
           <p>The Dragon Ball system shipped. One of each ball exists across the whole world at any time. Some balls live at fixed world coordinates; others sit dormant on a specific NPC and require persistent grinding to drop. Players carry up to seven; balls can't be banked, traded, mailed, dropped manually, sold, or destroyed.</p>
           <ul>
-            <li>Guild pedestals support 10 second placement and theft casts, interrupted by movement, damage, or any other action.</li>
-            <li>Global cross scene chat broadcast fires on every pickup, re pickup, and successful theft.</li>
-            <li>Above head indicator persists across scene changes and stacks when carrying multiple balls.</li>
-            <li>Wish points trigger when a single guild sustains all seven balls on its pedestals for one continuous second. Balls then scatter via a fresh weighted re roll.</li>
+            <li>Guild pedestals support 10-second placement and theft casts, interrupted by movement, damage, or any other action.</li>
+            <li>Global cross-scene chat broadcast fires on every pickup, re-pickup, and successful theft.</li>
+            <li>Above-head indicator persists across scene changes and stacks when carrying multiple balls.</li>
+            <li>Wish points trigger when a single guild sustains all seven balls on its pedestals for one continuous second. Balls then scatter via a fresh weighted re-roll.</li>
           </ul>
         </article>
-
       </div>
     </div>
   </section>
