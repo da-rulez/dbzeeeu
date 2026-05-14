@@ -280,6 +280,14 @@ p strong, p b { color: var(--text); }
 }
 .btn-ghost:hover { border-color: var(--ki-blue); color: var(--ki-blue-soft); }
 
+.btn-discord {
+  color: #fff;
+  background: #5865f2;
+  box-shadow: 0 8px 24px rgba(88, 101, 242, 0.35), inset 0 1px 0 rgba(255,255,255,0.18);
+}
+.btn-discord:hover { color: #fff; background: #4752c4; transform: translateY(-2px); box-shadow: 0 14px 32px rgba(88, 101, 242, 0.45); }
+.btn-discord svg { width: 22px; height: 17px; }
+
 /* ----- Sections / cards ----- */
 
 section {

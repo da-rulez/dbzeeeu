@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Epic boss fight">
+  <defs>
+    <radialGradient id="b_aura" cx="50%" cy="55%" r="55%">
+      <stop offset="0%"  stop-color="#d9162a" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#7a0a18" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3a0006" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="b_silh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0a0c14"/>
+      <stop offset="100%" stop-color="#1d0a10"/>
+    </linearGradient>
+    <linearGradient id="b_eye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#fff5c4"/>
+      <stop offset="100%" stop-color="#d9162a"/>
+    </linearGradient>
+    <linearGradient id="b_hpbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#d9162a"/>
+      <stop offset="100%" stop-color="#ff5a1f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="#0a0b14"/>
+
+  <!-- floor + arena rim -->
+  <ellipse cx="300" cy="420" rx="280" ry="32" fill="#11121c"/>
+  <ellipse cx="300" cy="420" rx="240" ry="22" fill="#1d0e12"/>
+  <ellipse cx="300" cy="420" rx="160" ry="12" fill="#000" opacity="0.6"/>
+
+  <!-- red aura behind boss -->
+  <ellipse cx="320" cy="260" rx="240" ry="190" fill="url(#b_aura)"/>
+
+  <!-- giant boss silhouette -->
+  <g fill="url(#b_silh)" stroke="#d9162a" stroke-width="2">
+    <!-- horns -->
+    <path d="M270 70 L260 30 L298 70 Z"/>
+    <path d="M370 70 L380 30 L342 70 Z"/>
+    <!-- head -->
+    <path d="M260 70 Q260 40 320 40 Q380 40 380 70 L390 120 Q320 138 250 120 Z"/>
+    <!-- shoulders + body -->
+    <path d="M210 130 Q260 110 320 110 Q380 110 430 130 L450 240 Q380 260 320 260 Q260 260 190 240 Z"/>
+    <!-- arms / charging fists -->
+    <path d="M200 145 L130 220 L100 310 L160 320 L200 230 Z"/>
+    <path d="M440 145 L510 220 L540 310 L480 320 L440 230 Z"/>
+    <!-- belt/sash -->
+    <path d="M210 250 Q320 280 430 250 L430 280 Q320 308 210 280 Z" fill="#5a0511" stroke="#3a0006"/>
+    <!-- legs -->
+    <path d="M240 280 L220 410 L290 410 L300 290 Z"/>
+    <path d="M400 280 L420 410 L350 410 L340 290 Z"/>
+  </g>
+
+  <!-- glowing eyes -->
+  <g>
+    <ellipse cx="297" cy="80" rx="9" ry="5" fill="url(#b_eye)"/>
+    <ellipse cx="343" cy="80" rx="9" ry="5" fill="url(#b_eye)"/>
+    <ellipse cx="297" cy="80" rx="3" ry="2" fill="#fff"/>
+    <ellipse cx="343" cy="80" rx="3" ry="2" fill="#fff"/>
+  </g>
+
+  <!-- charging fists -->
+  <g>
+    <circle cx="130" cy="320" r="22" fill="#ffc72c" opacity="0.8"/>
+    <circle cx="130" cy="320" r="10" fill="#fff5c4"/>
+    <circle cx="510" cy="320" r="22" fill="#ffc72c" opacity="0.8"/>
+    <circle cx="510" cy="320" r="10" fill="#fff5c4"/>
+    <g fill="none" stroke="#fff5c4" stroke-width="1.8" opacity="0.9">
+      <polyline points="130,320 145,310 155,322 168,312"/>
+      <polyline points="510,320 495,310 485,322 472,312"/>
+    </g>
+  </g>
+
+  <!-- three player silhouettes around the boss -->
+  <g stroke="#ffc72c" stroke-width="1.3">
+    <!-- left fighter -->
+    <g fill="#0c0e18">
+      <circle cx="60" cy="370" r="9"/>
+      <path d="M48 380 L72 380 L76 410 L44 410 Z"/>
+      <path d="M48 384 L34 365 L40 360 L54 380 Z"/>
+      <path d="M72 384 L86 360 L92 365 L78 384 Z"/>
+    </g>
+    <circle cx="60" cy="370" r="14" fill="none" stroke="#ffc72c" stroke-opacity="0.5"/>
+    <!-- right fighter (blue aura) -->
+    <g fill="#0c0e18" stroke="#38b6ff">
+      <circle cx="540" cy="370" r="9"/>
+      <path d="M528 380 L552 380 L556 410 L524 410 Z"/>
+      <path d="M528 384 L514 365 L520 360 L534 380 Z"/>
+      <path d="M552 384 L566 360 L572 365 L558 384 Z"/>
+    </g>
+    <circle cx="540" cy="370" r="14" fill="none" stroke="#38b6ff" stroke-opacity="0.5"/>
+    <!-- front-center mid-jump -->
+    <g fill="#0c0e18">
+      <circle cx="300" cy="345" r="9"/>
+      <path d="M288 355 L312 355 L316 385 L284 385 Z"/>
+      <path d="M288 359 L274 340 L268 350 L284 365 Z"/>
+      <path d="M312 359 L332 340 L338 350 L322 365 Z"/>
+    </g>
+    <circle cx="300" cy="345" r="14" fill="none" stroke="#ffc72c" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- ki blasts in flight from players -->
+  <g fill="#ffe27a" opacity="0.95">
+    <circle cx="120" cy="350" r="5"/>
+    <circle cx="160" cy="335" r="3"/>
+    <circle cx="480" cy="350" r="5"/>
+    <circle cx="450" cy="335" r="3"/>
+  </g>
+
+  <!-- big boss HP bar at the top with phase pips -->
+  <g font-family="Russo One, Impact, sans-serif">
+    <g transform="translate(60,28)">
+      <rect width="480" height="22" rx="8" fill="#1a1c2a" stroke="#3b3e58" stroke-width="2"/>
+      <rect x="2" y="2" width="318" height="18" rx="6" fill="url(#b_hpbar)"/>
+      <text x="240" y="16" text-anchor="middle" fill="#fff" font-size="11" letter-spacing="2.5">ZARO, THE ASHEN  &middot;  3 014 200 / 4 500 000</text>
+    </g>
+    <g transform="translate(60,54)">
+      <rect width="14" height="6" rx="2" fill="#ffc72c"/>
+      <rect x="20" width="14" height="6" rx="2" fill="#ffc72c"/>
+      <rect x="40" width="14" height="6" rx="2" fill="#ffc72c" opacity="0.4"/>
+      <rect x="60" width="14" height="6" rx="2" fill="#2a2c3d"/>
+      <text x="84" y="6" fill="#a8a6b8" font-size="9" letter-spacing="1.2">PHASE 2/4</text>
+    </g>
+
+    <!-- mechanic warning -->
+    <g transform="translate(220,400)">
+      <rect width="160" height="22" rx="6" fill="#161826" stroke="#d9162a"/>
+      <text x="80" y="15" text-anchor="middle" fill="#ff6477" font-size="10" letter-spacing="1.8">DODGE: ASH STORM</text>
+    </g>
+
+    <!-- party frames bottom-left -->
+    <g transform="translate(20,360)">
+      <rect width="78" height="14" rx="3" fill="#1a1c2a" stroke="#3b3e58"/>
+      <rect width="60" height="14" rx="3" fill="#d9162a"/>
+      <text x="3" y="11" fill="#fff" font-size="8" letter-spacing="1">KAMI</text>
+    </g>
+    <g transform="translate(20,378)">
+      <rect width="78" height="14" rx="3" fill="#1a1c2a" stroke="#3b3e58"/>
+      <rect width="40" height="14" rx="3" fill="#d9162a"/>
+      <text x="3" y="11" fill="#fff" font-size="8" letter-spacing="1">VEGI</text>
+    </g>
+    <g transform="translate(502,360)">
+      <rect width="78" height="14" rx="3" fill="#1a1c2a" stroke="#3b3e58"/>
+      <rect width="70" height="14" rx="3" fill="#d9162a"/>
+      <text x="3" y="11" fill="#fff" font-size="8" letter-spacing="1">PICO</text>
+    </g>
+  </g>
+</svg>
