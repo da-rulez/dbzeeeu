@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Explore dimensions and overworld">
+  <defs>
+    <radialGradient id="e_portal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffe27a"/>
+      <stop offset="25%"  stop-color="#ffc72c"/>
+      <stop offset="55%"  stop-color="#ff5a1f"/>
+      <stop offset="85%"  stop-color="#38b6ff"/>
+      <stop offset="100%" stop-color="#0a3a5c"/>
+    </radialGradient>
+    <radialGradient id="e_dust" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#ffe27a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffe27a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="e_arch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b3e58"/>
+      <stop offset="100%" stop-color="#11121c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="#0b0d17"/>
+
+  <!-- stars -->
+  <g opacity="0.7">
+    <circle cx="60"  cy="60"  r="1.2" fill="#fff"/>
+    <circle cx="520" cy="80"  r="1.2" fill="#ffe27a"/>
+    <circle cx="100" cy="120" r="1"   fill="#fff"/>
+    <circle cx="500" cy="160" r="1"   fill="#8cd6ff"/>
+    <circle cx="40"  cy="320" r="1"   fill="#fff"/>
+    <circle cx="560" cy="340" r="1.2" fill="#fff"/>
+  </g>
+
+  <!-- distant hills -->
+  <path d="M0 360 Q120 320 220 350 Q330 380 430 340 Q520 310 600 350 L600 450 L0 450 Z" fill="#11121c"/>
+  <path d="M0 390 Q150 360 280 380 Q400 400 520 370 Q580 360 600 380 L600 450 L0 450 Z" fill="#161826"/>
+
+  <!-- portal arch -->
+  <path d="M180 380 L180 220 Q180 130 300 130 Q420 130 420 220 L420 380 Z"
+        fill="none" stroke="url(#e_arch)" stroke-width="14"/>
+
+  <!-- swirl portal -->
+  <g transform="translate(300,250)">
+    <ellipse rx="115" ry="130" fill="url(#e_portal)"/>
+    <g fill="none" stroke="#fff" stroke-opacity="0.45" stroke-width="2">
+      <path d="M-90 0 Q-30 -90 60 -50 Q100 -10 50 50 Q-10 90 -70 30"/>
+      <path d="M-60 -30 Q-10 -60 40 -20 Q70 20 30 60 Q-20 60 -50 20"/>
+    </g>
+    <circle r="22" fill="#fff" opacity="0.9"/>
+  </g>
+
+  <!-- ground glow -->
+  <ellipse cx="300" cy="385" rx="180" ry="22" fill="url(#e_dust)"/>
+
+  <!-- mini-map style world chips on the right side -->
+  <g font-family="Russo One, Impact, sans-serif">
+    <g transform="translate(30,40)">
+      <rect width="150" height="34" rx="6" fill="#161826" stroke="#3b3e58"/>
+      <circle cx="18" cy="17" r="9" fill="#38b6ff"/>
+      <text x="34" y="14" fill="#ffe27a" font-size="10" letter-spacing="1.4">DIMENSION 03</text>
+      <text x="34" y="26" fill="#a8a6b8" font-size="9">Frostbreak Tundra</text>
+    </g>
+    <g transform="translate(30,82)">
+      <rect width="150" height="34" rx="6" fill="#161826" stroke="#3b3e58"/>
+      <circle cx="18" cy="17" r="9" fill="#ffc72c"/>
+      <text x="34" y="14" fill="#ffe27a" font-size="10" letter-spacing="1.4">DIMENSION 07</text>
+      <text x="34" y="26" fill="#a8a6b8" font-size="9">Sun-Drowned Reach</text>
+    </g>
+    <g transform="translate(30,124)">
+      <rect width="150" height="34" rx="6" fill="#161826" stroke="#3b3e58"/>
+      <circle cx="18" cy="17" r="9" fill="#d9162a"/>
+      <text x="34" y="14" fill="#ffe27a" font-size="10" letter-spacing="1.4">DIMENSION 11</text>
+      <text x="34" y="26" fill="#a8a6b8" font-size="9">Ember Vault &mdash; locked</text>
+    </g>
+
+    <!-- secret discovered toast -->
+    <g transform="translate(420,40)">
+      <rect width="155" height="40" rx="6" fill="#161826" stroke="#ffc72c"/>
+      <text x="12" y="17" fill="#ffe27a" font-size="10" letter-spacing="1.4">SECRET UNLOCKED</text>
+      <text x="12" y="32" fill="#a8a6b8" font-size="9">Behind the waterfall...</text>
+    </g>
+  </g>
+</svg>

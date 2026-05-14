@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Character growth and customization">
+  <defs>
+    <radialGradient id="g_aura" cx="50%" cy="55%" r="55%">
+      <stop offset="0%"  stop-color="#ffc72c" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#f47b23" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff5a1f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g_silh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c0e18"/>
+      <stop offset="100%" stop-color="#1b1d2e"/>
+    </linearGradient>
+    <linearGradient id="g_chip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1a1c2a"/>
+      <stop offset="100%" stop-color="#0e1019"/>
+    </linearGradient>
+  </defs>
+
+  <!-- bg -->
+  <rect width="600" height="450" fill="#0b0d17"/>
+  <g opacity="0.6">
+    <circle cx="60"  cy="60"  r="1.2" fill="#ffe27a"/>
+    <circle cx="520" cy="80"  r="1.2" fill="#8cd6ff"/>
+    <circle cx="80"  cy="380" r="1"   fill="#fff"/>
+    <circle cx="500" cy="360" r="1"   fill="#fff"/>
+    <circle cx="300" cy="40"  r="0.9" fill="#ffe27a"/>
+  </g>
+
+  <!-- aura -->
+  <ellipse cx="300" cy="280" rx="220" ry="170" fill="url(#g_aura)"/>
+
+  <!-- ground -->
+  <ellipse cx="300" cy="410" rx="140" ry="14" fill="#000" opacity="0.45"/>
+
+  <!-- fighter silhouette -->
+  <g fill="url(#g_silh)" stroke="#ffc72c" stroke-width="1.5">
+    <!-- hair spikes -->
+    <path d="M268 120 L262 95 L278 115 L282 90 L296 116 L300 86 L312 116 L320 92 L322 116 L334 100 L328 120 Z"/>
+    <!-- head -->
+    <circle cx="300" cy="138" r="22"/>
+    <!-- torso -->
+    <path d="M268 158 Q300 152 332 158 L340 245 Q300 252 260 245 Z"/>
+    <!-- arms -->
+    <path d="M268 165 L240 220 L228 270 L248 270 L260 222 Z"/>
+    <path d="M332 165 L360 220 L372 270 L352 270 L340 222 Z"/>
+    <!-- belt -->
+    <rect x="262" y="244" width="76" height="10" fill="#ff5a1f" stroke="none"/>
+    <!-- legs -->
+    <path d="M268 254 L256 360 L280 360 L296 270 Z"/>
+    <path d="M332 254 L344 360 L320 360 L304 270 Z"/>
+    <!-- boots -->
+    <path d="M252 358 L292 358 L294 370 L250 370 Z" fill="#ff5a1f" stroke="none"/>
+    <path d="M348 358 L308 358 L306 370 L350 370 Z" fill="#ff5a1f" stroke="none"/>
+  </g>
+
+  <!-- outline glow -->
+  <g fill="none" stroke="#ffc72c" stroke-width="2" opacity="0.55">
+    <circle cx="300" cy="138" r="26"/>
+  </g>
+
+  <!-- ability chips orbiting -->
+  <g font-family="Russo One, Impact, sans-serif">
+    <!-- top-left: technique -->
+    <g transform="translate(80,90)">
+      <rect width="120" height="42" rx="8" fill="url(#g_chip)" stroke="#3b3e58"/>
+      <circle cx="22" cy="21" r="11" fill="#ff5a1f"/>
+      <path d="M22 14 L25 21 L22 28 L19 21 Z" fill="#fff5c4"/>
+      <text x="42" y="20" fill="#ffe27a" font-size="11" letter-spacing="1.2">TECHNIQUE</text>
+      <text x="42" y="34" fill="#a8a6b8" font-size="9">Kamehameha</text>
+    </g>
+
+    <!-- top-right: passive -->
+    <g transform="translate(400,80)">
+      <rect width="130" height="42" rx="8" fill="url(#g_chip)" stroke="#3b3e58"/>
+      <circle cx="22" cy="21" r="11" fill="#38b6ff"/>
+      <path d="M22 13 L26 21 L22 30 L18 21 Z" fill="#fff"/>
+      <text x="42" y="20" fill="#8cd6ff" font-size="11" letter-spacing="1.2">PASSIVE</text>
+      <text x="42" y="34" fill="#a8a6b8" font-size="9">Iron Will +12%</text>
+    </g>
+
+    <!-- mid-right: race -->
+    <g transform="translate(440,200)">
+      <rect width="120" height="42" rx="8" fill="url(#g_chip)" stroke="#3b3e58"/>
+      <circle cx="22" cy="21" r="11" fill="#ffc72c"/>
+      <text x="22" y="25" text-anchor="middle" fill="#1a0d00" font-size="11">S</text>
+      <text x="42" y="20" fill="#ffe27a" font-size="11" letter-spacing="1.2">RACE</text>
+      <text x="42" y="34" fill="#a8a6b8" font-size="9">Saiyan</text>
+    </g>
+
+    <!-- bottom-left: paperdoll -->
+    <g transform="translate(50,310)">
+      <rect width="140" height="56" rx="8" fill="url(#g_chip)" stroke="#3b3e58"/>
+      <g transform="translate(10,8)">
+        <rect width="14" height="14" rx="2" fill="#2a2c3d" stroke="#3b3e58"/>
+        <rect y="18" width="14" height="14" rx="2" fill="#2a2c3d" stroke="#3b3e58"/>
+        <rect x="18" width="14" height="14" rx="2" fill="#2a2c3d" stroke="#3b3e58"/>
+        <rect x="18" y="18" width="14" height="14" rx="2" fill="#ff5a1f" stroke="#5a0511"/>
+      </g>
+      <text x="50" y="22" fill="#ffe27a" font-size="11" letter-spacing="1.2">PAPERDOLL</text>
+      <text x="50" y="36" fill="#a8a6b8" font-size="9">Gi swap mid-fight</text>
+      <text x="50" y="48" fill="#a8a6b8" font-size="9">Aura reshapes</text>
+    </g>
+
+    <!-- bottom-right: transformation -->
+    <g transform="translate(400,320)">
+      <rect width="150" height="56" rx="8" fill="url(#g_chip)" stroke="#3b3e58"/>
+      <g transform="translate(12,14)">
+        <circle r="12" cx="12" cy="12" fill="#ffc72c"/>
+        <circle r="12" cx="12" cy="12" fill="none" stroke="#fff5c4" stroke-width="1.5"/>
+      </g>
+      <text x="48" y="22" fill="#ffe27a" font-size="11" letter-spacing="1.2">TRANSFORM</text>
+      <text x="48" y="36" fill="#a8a6b8" font-size="9">SSJ &middot; MUI</text>
+      <text x="48" y="48" fill="#a8a6b8" font-size="9">Light up the room</text>
+    </g>
+  </g>
+</svg>

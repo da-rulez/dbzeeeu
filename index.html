@@ -42,62 +42,150 @@
 
       <div class="btn-row">
         <a class="btn btn-primary" href="play.html">Play Now</a>
-        <a class="btn btn-ghost" href="about.html">What is DBZee?</a>
+        <a class="btn btn-ghost" href="#features">See the game</a>
       </div>
 
       <div class="ball-row" aria-hidden="true">
-        <span class="mini"></span>
-        <span class="mini"></span>
-        <span class="mini"></span>
-        <span class="mini"></span>
-        <span class="mini"></span>
-        <span class="mini"></span>
+        <span class="mini"></span><span class="mini"></span><span class="mini"></span>
+        <span class="mini"></span><span class="mini"></span><span class="mini"></span>
         <span class="mini"></span>
       </div>
 
       <div class="hero-meta">
         <span class="pill">Free to Play</span>
-        <span class="pill">Cross-platform</span>
+        <span class="pill">Windows &amp; Linux</span>
         <span class="pill">v0.9.2 Transformations</span>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="features">
     <div class="container">
       <span class="section-kicker">The world of DBZee</span>
-      <h2 class="section-title">An online action RPG with a heartbeat</h2>
+      <h2 class="section-title">A game with a lot going on</h2>
       <p class="section-sub">
-        Shader-driven transformation auras that light the world. Guild wars
-        over months-long Dragon Ball collection. A living world built in
-        Godot 4 with hand-tuned netcode.
+        Six pillars hold it up. Six ways to spend your time. Pick whichever one you
+        showed up for &mdash; the others will be waiting.
       </p>
 
-      <div class="grid">
-        <article class="card">
-          <h3><span class="glyph"></span>Transformations</h3>
-          <p>SSJ, MUI, and beyond — auras hug your silhouette and cast real Light2D onto the world. Step into a dark cave and the gold pours onto the dirt at your feet.</p>
-        </article>
-        <article class="card">
-          <h3><span class="glyph"></span>The Seven Balls</h3>
-          <p>One of each ball exists in the entire world at any time. Hunt them across overworld coords or grind the right NPC for a 1-in-10,000 drop. Months-long endgame.</p>
-        </article>
-        <article class="card">
-          <h3><span class="glyph"></span>Guild Wars</h3>
-          <p>Place balls on your guild's pedestals. Rival guilds can cast a 10-second steal. Hold all seven for a single second and your guild earns a wish.</p>
-        </article>
-        <article class="card">
-          <h3><span class="glyph"></span>Real-time Combat</h3>
-          <p>Targeted casting, channels, interrupts, and PvP loot grace periods. The same systems that drive raids drive the open world.</p>
-        </article>
-        <article class="card">
-          <h3><span class="glyph"></span>Dynamic Lighting</h3>
-          <p>Auras, embers, and outline coronas all emit light. Day-night cycle and per-scene tint route through one CanvasModulate path so it all composites cleanly.</p>
-        </article>
-        <article class="card">
-          <h3><span class="glyph"></span>Built in Godot</h3>
-          <p>Open engine, native client, no launcher. Available on Windows, Linux, and macOS, with a browser build for trying the demo.</p>
-        </article>
+      <!-- 1. Customization & growth -->
+      <div class="feature-row">
+        <div class="feature-visual">
+          <img src="assets/img/features/growth.svg" alt="Customization and character growth illustration">
+        </div>
+        <div class="feature-text">
+          <span class="feature-kicker">Customization &amp; growth</span>
+          <h3>Make a fighter that's actually yours</h3>
+          <p>From the first character creation screen to the final transformation,
+          DBZee is built around letting you carve out exactly the silhouette,
+          stat line, and feel you want.</p>
+          <ul>
+            <li><strong>Race &amp; character selection.</strong> Pick your race at creation &mdash; each comes with its own stat curves, starting techniques, and transformation paths.</li>
+            <li><strong>Techniques.</strong> Active abilities you bind to your bar. Long channels, instant snaps, point-blank bursts. Each has a feel.</li>
+            <li><strong>Passive skills.</strong> A wide tree of always-on modifiers that change how your kit plays, not just its damage numbers.</li>
+            <li><strong>Paperdolls.</strong> Visible gi, hats, accessories, hair &mdash; swap mid-fight and your transformation aura reshapes around the new silhouette.</li>
+            <li><strong>Transformations.</strong> SSJ, MUI, and more &mdash; shader-driven auras with real Light2D, with their own buffs and drawbacks.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2. Action combat -->
+      <div class="feature-row reverse">
+        <div class="feature-visual">
+          <img src="assets/img/features/combat.svg" alt="Action combat illustration">
+        </div>
+        <div class="feature-text">
+          <span class="feature-kicker">Action combat</span>
+          <h3>Real-time. Cast bars. Interrupts. Buffs you can feel.</h3>
+          <p>Every encounter is the same combat system &mdash; whether you're picking off
+          a wandering NPC, clearing a dimension, or in a guild war.</p>
+          <ul>
+            <li><strong>Spells &amp; techniques.</strong> Channels, snipes, area bursts, melee strings &mdash; each with cast bars you can interrupt and be interrupted on.</li>
+            <li><strong>NPC AI.</strong> Enemies pull threat, kite, peel for each other, retreat when injured, and call for backup. No standing-still target dummies.</li>
+            <li><strong>Passive skills in combat.</strong> Your tree shapes the rotation, not just the post-fight math. Crit lines, regen on hit, cast-speed under threshold.</li>
+            <li><strong>Transformation buffs.</strong> Each form modifies your stats, your cast speeds, your damage profile, and your aura's reach.</li>
+            <li><strong>Honest PvP grace.</strong> 10-second loot grace, kill-credit, no rubber-banding &mdash; the netcode is treated as a first-class feature.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. Clan wars / PvP -->
+      <div class="feature-row">
+        <div class="feature-visual">
+          <img src="assets/img/features/clan-wars.svg" alt="Clan wars and dragon ball pedestal">
+        </div>
+        <div class="feature-text">
+          <span class="feature-kicker">Clan wars &amp; PvP</span>
+          <h3>Build a base. Defend a wish.</h3>
+          <p>Guilds aren't just chat channels. They own real estate in the world,
+          and the Dragon Ball endgame runs through them.</p>
+          <ul>
+            <li><strong>Guild bases.</strong> Your guild owns a physical scene with pedestals, furniture, and aura emitters. Customisable, defensible, lose-able.</li>
+            <li><strong>Guild wars.</strong> Open-PvP scenes where rival guilds raid each other for placement and theft &mdash; 10-second casts, interruptable on movement or damage.</li>
+            <li><strong>The Dragon Ball system.</strong> One of each of the seven, total, in the entire world. Some sit at fixed coords. Others sit dormant on a single NPC for months until they drop.</li>
+            <li><strong>Wishes.</strong> Hold all seven on your guild's pedestals for one continuous second &mdash; your guild banks a wish, and the balls scatter again.</li>
+            <li><strong>Global broadcasts.</strong> Every pickup, every theft fires a cross-scene chat alert. The whole world hears.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4. Exploration -->
+      <div class="feature-row reverse">
+        <div class="feature-visual">
+          <img src="assets/img/features/explore.svg" alt="Portal to a new dimension">
+        </div>
+        <div class="feature-text">
+          <span class="feature-kicker">Exploration</span>
+          <h3>A world built to be poked at</h3>
+          <p>The overworld is where you live between fights. It's also where the
+          game hides the best stuff.</p>
+          <ul>
+            <li><strong>Find &amp; discover dimensions.</strong> Portals lead to self-contained zones with their own tilesets, weather, NPCs, and rules &mdash; some of them you have to <em>find</em> first.</li>
+            <li><strong>Overworld interactions.</strong> Every scene has things to mess with &mdash; readable signs, NPCs that change dialogue if you've done a thing, lootable furniture, breakable walls.</li>
+            <li><strong>Hidden unlocks.</strong> Tucked-away triggers that flip an event flag and open a new path, a new ability, a new vendor, or a new dimension entirely.</li>
+            <li><strong>Secrets.</strong> The kind you tell your friends about. The kind your guild doesn't share with the other guilds.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5. Hone your skills -->
+      <div class="feature-row">
+        <div class="feature-visual">
+          <img src="assets/img/features/dimensions.svg" alt="Dimension challenge door">
+        </div>
+        <div class="feature-text">
+          <span class="feature-kicker">Hone your skills</span>
+          <h3>Dimensions to clear, objectives to chase</h3>
+          <p>Once you've explored a dimension, you can <em>clear</em> it &mdash; on
+          escalating difficulties, with extra objectives layered on top for the
+          really good rewards.</p>
+          <ul>
+            <li><strong>Clearable dimensions.</strong> Each has a primary objective &mdash; usually beat the boss &mdash; with branching difficulties from Normal to Nightmare.</li>
+            <li><strong>Bonus objectives.</strong> No-hit clears, speed clears, full-clears, find the hidden chest. Stackable. Optional. Brutal at the high end.</li>
+            <li><strong>Unique unlocks.</strong> Bonus objectives drop unique furniture, cosmetic auras, paperdoll skins, and keys to <em>other</em> areas that didn't exist on your map.</li>
+            <li><strong>New areas to find.</strong> Some keys aren't on a vendor. They drop from a clear nobody's done yet.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 6. Build a home -->
+      <div class="feature-row reverse">
+        <div class="feature-visual">
+          <img src="assets/img/features/home.svg" alt="Player-owned house at night">
+        </div>
+        <div class="feature-text">
+          <span class="feature-kicker">Build a home</span>
+          <h3>Somewhere to come back to between fights</h3>
+          <p>When the dust settles, you have a place. A house you own, with
+          furniture you earned, in a corner of the world you chose.</p>
+          <ul>
+            <li><strong>Player-owned houses.</strong> Pick a plot, walk inside, decorate. Yours across sessions, yours across patches.</li>
+            <li><strong>Furniture.</strong> Hundreds of pieces. Bought from vendors, drops from regular content, and <strong>unique pieces</strong> from beating bonus objectives, finding secrets, and clearing the hardest dimensions.</li>
+            <li><strong>Place it where you want.</strong> Free placement on the grid &mdash; rotate, snap, layer. Build out an interior that tells your story.</li>
+            <li><strong>Crafting.</strong> Loom, anvil, kitchen. Turn raw drops into furniture, food buffs for the next run, and gear pieces you can't buy anywhere.</li>
+            <li><strong>Show off.</strong> Other players can visit. They will see the Dragon Ball trophy you almost didn't get.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -117,7 +205,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <span>&copy; <span id="year">2026</span> DBZee. A fan-made online ORPG.</span>
+    <span>&copy; 2026 DBZee. A fan-made online ORPG.</span>
     <span><a href="about.html">About</a> &middot; <a href="play.html">Play</a> &middot; <a href="news.html">News</a></span>
   </div>
 </footer>

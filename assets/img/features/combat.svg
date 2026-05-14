@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Action combat">
+  <defs>
+    <radialGradient id="c_blast" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fff" stop-opacity="1"/>
+      <stop offset="20%" stop-color="#ffe27a"/>
+      <stop offset="55%" stop-color="#ffc72c"/>
+      <stop offset="85%" stop-color="#ff5a1f"/>
+      <stop offset="100%" stop-color="#b03000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c_blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fff"/>
+      <stop offset="30%" stop-color="#8cd6ff"/>
+      <stop offset="80%" stop-color="#38b6ff"/>
+      <stop offset="100%" stop-color="#0a3a5c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="c_beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffe27a"/>
+      <stop offset="100%" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="c_beam2" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%"  stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8cd6ff"/>
+      <stop offset="100%" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="#0b0d17"/>
+
+  <!-- speed lines -->
+  <g stroke="#ffc72c" stroke-opacity="0.18" stroke-width="2">
+    <line x1="0" y1="60"  x2="80"  y2="60"/>
+    <line x1="0" y1="120" x2="120" y2="120"/>
+    <line x1="0" y1="380" x2="60"  y2="380"/>
+    <line x1="600" y1="80"  x2="520" y2="80"/>
+    <line x1="600" y1="200" x2="500" y2="200"/>
+    <line x1="600" y1="360" x2="540" y2="360"/>
+  </g>
+
+  <!-- two clashing beams meeting in the middle -->
+  <rect x="60" y="215" width="220" height="20" rx="10" fill="url(#c_beam)"/>
+  <rect x="320" y="215" width="220" height="20" rx="10" fill="url(#c_beam2)"/>
+
+  <!-- clash burst -->
+  <circle cx="300" cy="225" r="70" fill="url(#c_blast)"/>
+  <circle cx="300" cy="225" r="40" fill="url(#c_blue)" opacity="0.7"/>
+  <circle cx="300" cy="225" r="18" fill="#fff"/>
+
+  <!-- jagged shock -->
+  <g fill="none" stroke="#fff" stroke-width="2" opacity="0.85">
+    <polyline points="300,225 320,205 332,225 348,210 360,225"/>
+    <polyline points="300,225 280,205 268,225 252,210 240,225"/>
+    <polyline points="300,225 310,250 322,238 336,256"/>
+    <polyline points="300,225 288,250 276,238 262,256"/>
+  </g>
+
+  <!-- attacker silhouette (left) -->
+  <g fill="#0c0e18" stroke="#ffc72c" stroke-width="1.4">
+    <circle cx="80" cy="225" r="14"/>
+    <path d="M62 240 L98 240 L106 295 L54 295 Z"/>
+    <path d="M62 244 L40 220 L48 215 L70 240 Z"/>
+    <path d="M98 244 L130 215 L138 220 L116 244 Z" />
+    <path d="M58 290 L78 290 L72 330 L52 330 Z"/>
+    <path d="M82 290 L102 290 L108 330 L88 330 Z"/>
+  </g>
+  <circle cx="80" cy="225" r="22" fill="none" stroke="#ffc72c" stroke-opacity="0.45" stroke-width="2"/>
+
+  <!-- defender silhouette (right) -->
+  <g fill="#0c0e18" stroke="#38b6ff" stroke-width="1.4">
+    <circle cx="520" cy="225" r="14"/>
+    <path d="M502 240 L538 240 L546 295 L494 295 Z"/>
+    <path d="M538 244 L560 220 L552 215 L530 240 Z"/>
+    <path d="M502 244 L470 215 L462 220 L484 244 Z"/>
+    <path d="M498 290 L518 290 L512 330 L492 330 Z"/>
+    <path d="M522 290 L542 290 L548 330 L528 330 Z"/>
+  </g>
+  <circle cx="520" cy="225" r="22" fill="none" stroke="#38b6ff" stroke-opacity="0.45" stroke-width="2"/>
+
+  <!-- HUD bars on top -->
+  <g font-family="Russo One, Impact, sans-serif">
+    <!-- left HUD -->
+    <g transform="translate(28,40)">
+      <rect width="180" height="12" rx="6" fill="#1a1c2a" stroke="#3b3e58"/>
+      <rect width="140" height="12" rx="6" fill="#d9162a"/>
+      <text x="0" y="-4" fill="#ffe27a" font-size="10" letter-spacing="1.5">HP 1840/2300</text>
+      <rect y="18" width="180" height="8" rx="4" fill="#1a1c2a" stroke="#3b3e58"/>
+      <rect y="18" width="110" height="8" rx="4" fill="#38b6ff"/>
+    </g>
+    <!-- cast bar -->
+    <g transform="translate(210,395)">
+      <rect width="180" height="14" rx="7" fill="#1a1c2a" stroke="#3b3e58"/>
+      <rect width="125" height="14" rx="7" fill="#ffc72c"/>
+      <text x="90" y="11" text-anchor="middle" fill="#1a0d00" font-size="10" letter-spacing="1">KAMEHAMEHA 1.4s</text>
+    </g>
+    <!-- buff icons -->
+    <g transform="translate(40,75)">
+      <rect width="24" height="24" rx="4" fill="#ffc72c"/>
+      <text x="12" y="17" text-anchor="middle" fill="#1a0d00" font-size="11">SSJ</text>
+      <rect x="28" width="24" height="24" rx="4" fill="#38b6ff"/>
+      <text x="40" y="17" text-anchor="middle" fill="#0a3a5c" font-size="11">SPD</text>
+      <rect x="56" width="24" height="24" rx="4" fill="#d9162a"/>
+      <text x="68" y="17" text-anchor="middle" fill="#fff" font-size="11">RGE</text>
+    </g>
+  </g>
+</svg>

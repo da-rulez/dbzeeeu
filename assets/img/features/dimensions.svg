@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Dimensions challenge runs">
+  <defs>
+    <linearGradient id="d_door" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1c2a"/>
+      <stop offset="100%" stop-color="#0a0c14"/>
+    </linearGradient>
+    <radialGradient id="d_inside" cx="50%" cy="40%" r="55%">
+      <stop offset="0%"  stop-color="#38b6ff" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#0a3a5c"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="#0b0d17"/>
+
+  <!-- floor -->
+  <path d="M0 380 L600 380 L600 450 L0 450 Z" fill="#11121c"/>
+  <g stroke="#2a2c3d" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="395" x2="600" y2="395"/>
+    <line x1="0" y1="410" x2="600" y2="410"/>
+    <line x1="0" y1="425" x2="600" y2="425"/>
+  </g>
+
+  <!-- big doorway -->
+  <path d="M180 380 L180 180 Q180 110 300 110 Q420 110 420 180 L420 380 Z" fill="url(#d_door)" stroke="#3b3e58" stroke-width="3"/>
+  <!-- inside the door: starry void -->
+  <path d="M200 370 L200 185 Q200 130 300 130 Q400 130 400 185 L400 370 Z" fill="url(#d_inside)"/>
+  <g opacity="0.95">
+    <circle cx="240" cy="200" r="1.4" fill="#fff"/>
+    <circle cx="360" cy="210" r="1"   fill="#fff"/>
+    <circle cx="300" cy="170" r="1.5" fill="#ffe27a"/>
+    <circle cx="270" cy="260" r="1"   fill="#fff"/>
+    <circle cx="340" cy="280" r="1.2" fill="#fff"/>
+    <circle cx="220" cy="330" r="1"   fill="#fff"/>
+    <circle cx="380" cy="340" r="1"   fill="#fff"/>
+  </g>
+
+  <!-- floating key -->
+  <g transform="translate(300,260) rotate(-25)">
+    <rect x="-8" y="-32" width="16" height="40" rx="3" fill="#ffc72c" stroke="#5a3a00" stroke-width="1"/>
+    <circle cx="0" cy="-40" r="16" fill="none" stroke="#ffc72c" stroke-width="6"/>
+    <rect x="6"  y="0" width="8" height="6" fill="#ffc72c"/>
+    <rect x="6"  y="8" width="6" height="5" fill="#ffc72c"/>
+    <circle r="22" fill="#ffe27a" opacity="0.25"/>
+  </g>
+
+  <!-- objectives panel -->
+  <g font-family="Russo One, Impact, sans-serif" transform="translate(30,50)">
+    <rect width="180" height="200" rx="10" fill="#161826" stroke="#3b3e58"/>
+    <text x="14" y="22" fill="#ffe27a" font-size="11" letter-spacing="1.6">OBJECTIVES</text>
+    <line x1="14" y1="30" x2="166" y2="30" stroke="#3b3e58"/>
+
+    <g transform="translate(14,46)">
+      <rect width="12" height="12" rx="2" fill="#ffc72c"/>
+      <path d="M3 6 L6 9 L11 3" stroke="#1a0d00" stroke-width="2" fill="none"/>
+      <text x="22" y="11" fill="#fff" font-size="10">Clear all enemies</text>
+    </g>
+    <g transform="translate(14,68)">
+      <rect width="12" height="12" rx="2" fill="#ffc72c"/>
+      <path d="M3 6 L6 9 L11 3" stroke="#1a0d00" stroke-width="2" fill="none"/>
+      <text x="22" y="11" fill="#fff" font-size="10">Reach the gate</text>
+    </g>
+    <g transform="translate(14,90)">
+      <rect width="12" height="12" rx="2" fill="#2a2c3d" stroke="#3b3e58"/>
+      <text x="22" y="11" fill="#a8a6b8" font-size="10">No-hit clear (bonus)</text>
+    </g>
+    <g transform="translate(14,112)">
+      <rect width="12" height="12" rx="2" fill="#2a2c3d" stroke="#3b3e58"/>
+      <text x="22" y="11" fill="#a8a6b8" font-size="10">Beat under 6:00 (bonus)</text>
+    </g>
+    <g transform="translate(14,134)">
+      <rect width="12" height="12" rx="2" fill="#2a2c3d" stroke="#3b3e58"/>
+      <text x="22" y="11" fill="#a8a6b8" font-size="10">Find hidden chest</text>
+    </g>
+
+    <text x="14" y="170" fill="#8cd6ff" font-size="9" letter-spacing="1.2">REWARD</text>
+    <text x="14" y="186" fill="#ffe27a" font-size="10">Unique furniture +</text>
+    <text x="14" y="196" fill="#ffe27a" font-size="10">Locked area key</text>
+  </g>
+
+  <!-- difficulty badge -->
+  <g font-family="Russo One, Impact, sans-serif" transform="translate(420,60)">
+    <rect width="150" height="48" rx="8" fill="#161826" stroke="#d9162a"/>
+    <text x="14" y="20" fill="#a8a6b8" font-size="9" letter-spacing="1.4">DIFFICULTY</text>
+    <text x="14" y="38" fill="#ff6477" font-size="14" letter-spacing="2">NIGHTMARE V</text>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Clan wars and Dragon Balls">
+  <defs>
+    <radialGradient id="w_glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%"  stop-color="#ffe27a" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#f47b23" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff5a1f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="w_ball" cx="35%" cy="32%" r="75%">
+      <stop offset="0%"   stop-color="#fff5c4"/>
+      <stop offset="35%"  stop-color="#ffd866"/>
+      <stop offset="70%"  stop-color="#f47b23"/>
+      <stop offset="100%" stop-color="#7a2b00"/>
+    </radialGradient>
+    <linearGradient id="w_pedestal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2c3d"/>
+      <stop offset="100%" stop-color="#0b0d17"/>
+    </linearGradient>
+    <linearGradient id="w_flag_red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9162a"/>
+      <stop offset="100%" stop-color="#5a0511"/>
+    </linearGradient>
+    <linearGradient id="w_flag_blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38b6ff"/>
+      <stop offset="100%" stop-color="#0a3a5c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="#0b0d17"/>
+
+  <!-- starfield -->
+  <g opacity="0.7">
+    <circle cx="40"  cy="50"  r="1.2" fill="#fff"/>
+    <circle cx="540" cy="60"  r="1.2" fill="#ffe27a"/>
+    <circle cx="120" cy="100" r="1"   fill="#8cd6ff"/>
+    <circle cx="460" cy="120" r="1"   fill="#fff"/>
+    <circle cx="300" cy="40"  r="1.4" fill="#fff5c4"/>
+  </g>
+
+  <!-- back wall arch (guild base) -->
+  <path d="M120 320 L120 200 Q120 120 200 120 L400 120 Q480 120 480 200 L480 320 Z"
+        fill="#11121c" stroke="#3b3e58" stroke-width="2"/>
+  <line x1="300" y1="120" x2="300" y2="320" stroke="#2a2c3d" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- crossed banners -->
+  <g>
+    <path d="M165 145 L235 145 L235 250 L210 240 L200 252 L185 240 L165 250 Z" fill="url(#w_flag_red)" stroke="#3b0006" stroke-width="1"/>
+    <text x="200" y="195" text-anchor="middle" font-family="Russo One" font-size="22" fill="#fff" letter-spacing="2">RED</text>
+    <path d="M365 145 L435 145 L435 250 L415 240 L405 252 L390 240 L365 250 Z" fill="url(#w_flag_blue)" stroke="#062539" stroke-width="1"/>
+    <text x="400" y="195" text-anchor="middle" font-family="Russo One" font-size="22" fill="#fff" letter-spacing="2">BLU</text>
+  </g>
+
+  <!-- glow behind ball -->
+  <ellipse cx="300" cy="260" rx="160" ry="120" fill="url(#w_glow)"/>
+
+  <!-- pedestal -->
+  <g>
+    <ellipse cx="300" cy="390" rx="120" ry="14" fill="#000" opacity="0.5"/>
+    <path d="M220 380 L380 380 L360 320 L240 320 Z" fill="url(#w_pedestal)" stroke="#3b3e58" stroke-width="2"/>
+    <rect x="248" y="300" width="104" height="22" fill="#161826" stroke="#3b3e58" stroke-width="2"/>
+    <rect x="252" y="304" width="96" height="14" fill="#0b0d17"/>
+  </g>
+
+  <!-- dragon ball on pedestal -->
+  <g transform="translate(300,265)">
+    <circle r="56" fill="url(#w_ball)" stroke="#3a1100" stroke-width="2"/>
+    <ellipse cx="-14" cy="-22" rx="20" ry="9" fill="#fff" opacity="0.55"/>
+    <g fill="#d9162a" stroke="#5a0511" stroke-width="1">
+      <polygon points="0,-22 4,-12 14,-12 6,-6 9,4 0,-2 -9,4 -6,-6 -14,-12 -4,-12"/>
+      <polygon points="-22,8 -18,18 -8,18 -16,24 -13,34 -22,28 -31,34 -28,24 -36,18 -26,18"/>
+      <polygon points="22,8 26,18 36,18 28,24 31,34 22,28 13,34 16,24 8,18 18,18"/>
+      <polygon points="0,28 4,38 14,38 6,44 9,54 0,48 -9,54 -6,44 -14,38 -4,38"/>
+    </g>
+  </g>
+
+  <!-- HUD: cast bar (theft) -->
+  <g font-family="Russo One, Impact, sans-serif">
+    <g transform="translate(180,400)">
+      <rect width="240" height="14" rx="7" fill="#1a1c2a" stroke="#3b3e58"/>
+      <rect width="160" height="14" rx="7" fill="#d9162a"/>
+      <text x="120" y="11" text-anchor="middle" fill="#fff" font-size="10" letter-spacing="1.5">STEAL CAST 6.4s / 10s</text>
+    </g>
+  </g>
+</svg>
