@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Play — DBZee</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Download the DBZee client for Windows, macOS, or Linux — or play directly in your browser.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/dragon-ball-mini.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bangers&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="./">
+      <img class="ball" src="assets/img/dragon-ball-mini.svg" alt="">
+      <span class="brand-name">DBZee</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav">
+      <a href="./">Home</a>
+      <a href="about.html">About</a>
+      <a href="play.html" class="active">Play</a>
+      <a href="news.html">News</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <span class="kicker">Download &amp; play</span>
+      <h1>Pick your platform.</h1>
+      <p class="section-sub" style="margin-top:1rem;">
+        The DBZee client is free. Grab the latest build below and sign up in the
+        client &mdash; no separate account portal.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top: 1rem;">
+    <div class="container">
+      <div class="download-grid">
+        <a class="download-card" href="#" rel="external">
+          <div class="icon">W</div>
+          <span class="platform">Windows</span>
+          <span class="size">v0.9.2 &middot; 64-bit &middot; ~140 MB</span>
+        </a>
+        <a class="download-card" href="#" rel="external">
+          <div class="icon">L</div>
+          <span class="platform">Linux</span>
+          <span class="size">v0.9.2 &middot; x86_64 &middot; ~140 MB</span>
+        </a>
+        <a class="download-card" href="#" rel="external">
+          <div class="icon">M</div>
+          <span class="platform">macOS</span>
+          <span class="size">v0.9.2 &middot; Universal &middot; ~150 MB</span>
+        </a>
+        <a class="download-card" href="#" rel="external">
+          <div class="icon">&#9658;</div>
+          <span class="platform">Browser</span>
+          <span class="size">Web build &middot; no install</span>
+        </a>
+      </div>
+
+      <p class="notice">
+        <strong>Heads up:</strong> the web build is for trying the game out and may
+        run noticeably slower than the native client. For long sessions we
+        recommend the native download for your OS.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container prose">
+      <h2>System requirements</h2>
+      <ul>
+        <li><strong>OS:</strong> Windows 10+, macOS 11+, or a recent 64-bit Linux.</li>
+        <li><strong>CPU:</strong> any dual-core from the last decade.</li>
+        <li><strong>GPU:</strong> integrated graphics are fine. Dynamic Lighting and Shader Effects can each be toggled off under Escape &rarr; Video on lower-end machines.</li>
+        <li><strong>RAM:</strong> 2&nbsp;GB free.</li>
+        <li><strong>Disk:</strong> ~250&nbsp;MB after install.</li>
+        <li><strong>Network:</strong> a stable connection &mdash; the game is fully online.</li>
+      </ul>
+
+      <h2>Getting started</h2>
+      <ul>
+        <li>Run the client. Pick a server (you can change later).</li>
+        <li>Create an account from the login screen.</li>
+        <li>Roll a character. Pick a name. We'll do tutorial during the first scene.</li>
+        <li>Find a guild or start one once you've found your footing &mdash; the Dragon Ball pedestals are a guild feature.</li>
+      </ul>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li><strong>Can't connect:</strong> the auth and game servers run separately. If login works but world load hangs, check your firewall against the server port shown in the client's settings panel.</li>
+        <li><strong>Auras look flat:</strong> open Escape &rarr; Video and make sure Shader Effects and Dynamic Lighting are both on.</li>
+        <li><strong>Performance dips in towns:</strong> drop Dynamic Lighting first; it's the heaviest of the two toggles.</li>
+        <li><strong>Web build won't start:</strong> use a Chromium-based browser, allow WebGL2 / WebGPU, and disable any aggressive ad blocking on the page.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; 2026 DBZee. A fan-made online ORPG.</span>
+    <span><a href="./">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="news.html">News</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

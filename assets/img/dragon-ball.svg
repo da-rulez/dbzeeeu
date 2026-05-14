@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Four-star Dragon Ball">
+  <defs>
+    <radialGradient id="ball" cx="35%" cy="32%" r="75%">
+      <stop offset="0%"   stop-color="#fff5c4"/>
+      <stop offset="35%"  stop-color="#ffd866"/>
+      <stop offset="70%"  stop-color="#f47b23"/>
+      <stop offset="100%" stop-color="#7a2b00"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="30%" cy="25%" r="25%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="50%" cy="50%" r="50%">
+      <stop offset="55%" stop-color="#ffc72c" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#ffc72c" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffc72c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="96" fill="url(#aura)"/>
+  <circle cx="100" cy="100" r="78" fill="url(#ball)" stroke="#3a1100" stroke-width="2"/>
+
+  <!-- four red stars -->
+  <g fill="#d9162a" stroke="#5a0511" stroke-width="1.2">
+    <polygon points="78,76 82,86 92,86 84,92 87,102 78,96 69,102 72,92 64,86 74,86"/>
+    <polygon points="122,76 126,86 136,86 128,92 131,102 122,96 113,102 116,92 108,86 118,86"/>
+    <polygon points="78,118 82,128 92,128 84,134 87,144 78,138 69,144 72,134 64,128 74,128"/>
+    <polygon points="122,118 126,128 136,128 128,134 131,144 122,138 113,144 116,134 108,128 118,128"/>
+  </g>
+
+  <ellipse cx="78" cy="72" rx="26" ry="14" fill="url(#shine)"/>
+</svg>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About — DBZee</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="About DBZee — a free online Dragon Ball-inspired action ORPG built in Godot 4.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/dragon-ball-mini.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bangers&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="./">
+      <img class="ball" src="assets/img/dragon-ball-mini.svg" alt="">
+      <span class="brand-name">DBZee</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav">
+      <a href="./">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="play.html">Play</a>
+      <a href="news.html">News</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <span class="kicker">About the game</span>
+      <h1>This is DBZee.</h1>
+    </div>
+  </section>
+
+  <section style="padding-top: 1rem;">
+    <div class="container prose">
+      <p>
+        <strong>DBZee</strong> is a free online action ORPG built by a small
+        team of obsessives. It pulls its silhouette from the source material
+        we all grew up with — the auras, the transformations, the seven
+        balls scattered across a world — and rebuilds the loop as a real
+        persistent multiplayer game.
+      </p>
+
+      <p>
+        You make a character. You train. You take hits. You learn the
+        rotation. You walk into a cave transformed and watch the gold
+        light from your aura pool around your feet. You join a guild. You
+        spend months chasing the last ball you need.
+      </p>
+
+      <h2>What's in the box</h2>
+      <ul>
+        <li><strong>A persistent online world</strong> stitched from many scenes, with cross-scene chat, party, and guild systems.</li>
+        <li><strong>Real-time combat</strong> built around targeted casts, channels, interrupts, and an honest PvP loot grace period.</li>
+        <li><strong>Transformations</strong> driven by shaders that wrap your actual silhouette — switch hats mid-form and the aura ring reshapes.</li>
+        <li><strong>Dynamic 2D lighting</strong> — auras emit Light2D, day/night cycle composites cleanly with per-scene tint, caves get genuinely dark.</li>
+        <li><strong>Seven Dragon Balls</strong>, one of each, single-instance across the whole world. Wish points are awarded when a guild holds all seven on its pedestals for one continuous second.</li>
+        <li><strong>Guild wars</strong> with placement and theft mechanics: 10-second casts, interruptions on movement or damage, and global chat broadcasts on every pickup.</li>
+        <li><strong>An admin layer</strong> for ops with a full activity log, manual respawns, and per-ball lookups.</li>
+      </ul>
+
+      <h2>How we built it</h2>
+      <p>
+        The client is a single Godot 4 binary — no launcher, no installer
+        chrome. The server is a separate Godot headless process talking to
+        a dedicated auth/persistence service. State is durable: every
+        Dragon Ball, every pedestal, every ground-loot grace timer survives
+        a server restart and resumes where it left off.
+      </p>
+      <p>
+        Networking is hand-tuned, not bolted on. We treat netcode as a
+        first-class feature — interest sets, late-join sync, deterministic
+        spawn ordering, the works. If you've felt other indie ORPGs go
+        rubber-band on you, that's the thing we set out to not be.
+      </p>
+
+      <h2>Who this is for</h2>
+      <p>
+        If you grew up on Saturday morning episodes and you've ever wanted
+        to actually <em>live</em> in that world with other people for a
+        while — and not just watch a fight scene — that's the audience.
+        DBZee is a love letter wearing a netcode hat.
+      </p>
+
+      <h2>Status</h2>
+      <p>
+        We're in open development. The latest milestone added the
+        transformation system with dynamic lighting (see the
+        <a href="news.html">news page</a>). You can grab a build today and
+        play; expect rough edges, expect us to ship fixes weekly.
+      </p>
+
+      <div class="ball-row" aria-hidden="true">
+        <span class="mini"></span><span class="mini"></span><span class="mini"></span>
+        <span class="mini"></span><span class="mini"></span><span class="mini"></span>
+        <span class="mini"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; 2026 DBZee. A fan-made online ORPG.</span>
+    <span><a href="./">Home</a> &middot; <a href="play.html">Play</a> &middot; <a href="news.html">News</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

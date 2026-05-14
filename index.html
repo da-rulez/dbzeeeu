@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DBZee — Online Dragon Ball ORPG</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="DBZee is a free online action ORPG inspired by Dragon Ball Z. Train, transform, fight, and chase the seven Dragon Balls with players around the world.">
+  <meta property="og:title" content="DBZee — Online Dragon Ball ORPG">
+  <meta property="og:description" content="Train. Transform. Fight. Chase the seven Dragon Balls.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dbzee.eu/">
+  <link rel="icon" type="image/svg+xml" href="assets/img/dragon-ball-mini.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bangers&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="./">
+      <img class="ball" src="assets/img/dragon-ball-mini.svg" alt="">
+      <span class="brand-name">DBZee</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav">
+      <a href="./" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="play.html">Play</a>
+      <a href="news.html">News</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <img class="hero-ball" src="assets/img/dragon-ball.svg" alt="">
+    <div class="container">
+      <h1>DBZee</h1>
+      <p class="tagline">Train. Transform. Fight. Chase the seven Dragon Balls.</p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="play.html">Play Now</a>
+        <a class="btn btn-ghost" href="about.html">What is DBZee?</a>
+      </div>
+
+      <div class="ball-row" aria-hidden="true">
+        <span class="mini"></span>
+        <span class="mini"></span>
+        <span class="mini"></span>
+        <span class="mini"></span>
+        <span class="mini"></span>
+        <span class="mini"></span>
+        <span class="mini"></span>
+      </div>
+
+      <div class="hero-meta">
+        <span class="pill">Free to Play</span>
+        <span class="pill">Cross-platform</span>
+        <span class="pill">v0.9.2 Transformations</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="section-kicker">The world of DBZee</span>
+      <h2 class="section-title">An online action RPG with a heartbeat</h2>
+      <p class="section-sub">
+        Shader-driven transformation auras that light the world. Guild wars
+        over months-long Dragon Ball collection. A living world built in
+        Godot 4 with hand-tuned netcode.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3><span class="glyph"></span>Transformations</h3>
+          <p>SSJ, MUI, and beyond — auras hug your silhouette and cast real Light2D onto the world. Step into a dark cave and the gold pours onto the dirt at your feet.</p>
+        </article>
+        <article class="card">
+          <h3><span class="glyph"></span>The Seven Balls</h3>
+          <p>One of each ball exists in the entire world at any time. Hunt them across overworld coords or grind the right NPC for a 1-in-10,000 drop. Months-long endgame.</p>
+        </article>
+        <article class="card">
+          <h3><span class="glyph"></span>Guild Wars</h3>
+          <p>Place balls on your guild's pedestals. Rival guilds can cast a 10-second steal. Hold all seven for a single second and your guild earns a wish.</p>
+        </article>
+        <article class="card">
+          <h3><span class="glyph"></span>Real-time Combat</h3>
+          <p>Targeted casting, channels, interrupts, and PvP loot grace periods. The same systems that drive raids drive the open world.</p>
+        </article>
+        <article class="card">
+          <h3><span class="glyph"></span>Dynamic Lighting</h3>
+          <p>Auras, embers, and outline coronas all emit light. Day-night cycle and per-scene tint route through one CanvasModulate path so it all composites cleanly.</p>
+        </article>
+        <article class="card">
+          <h3><span class="glyph"></span>Built in Godot</h3>
+          <p>Open engine, native client, no launcher. Available on Windows, Linux, and macOS, with a browser build for trying the demo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="text-align:center;">
+    <div class="container">
+      <span class="section-kicker">Get started</span>
+      <h2 class="section-title">Ready to power up?</h2>
+      <p class="section-sub">The client is free. Pick your platform and we'll see you in the world.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="play.html">Download &amp; Play</a>
+        <a class="btn btn-ghost" href="news.html">Read the patch notes</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; <span id="year">2026</span> DBZee. A fan-made online ORPG.</span>
+    <span><a href="about.html">About</a> &middot; <a href="play.html">Play</a> &middot; <a href="news.html">News</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
