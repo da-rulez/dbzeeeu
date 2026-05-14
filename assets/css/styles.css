@@ -44,7 +44,10 @@ html, body {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+img, svg { max-width: 100%; height: auto; }
 
 /* Starfield + horizon glow shared by every page */
 body {
@@ -140,18 +143,39 @@ p strong, p b { color: var(--text); }
 
 .nav-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: 1px solid var(--border-bright);
   color: var(--text);
-  padding: 0.4rem 0.7rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 0.6rem;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  line-height: 1;
   cursor: pointer;
 }
 
-@media (max-width: 720px) {
-  .nav { display: none; flex-direction: column; align-items: flex-start; position: absolute; top: 64px; right: 0; left: 0; background: var(--bg-elevated); border-bottom: 1px solid var(--border); padding: 1rem 1.5rem; gap: 1rem; }
+@media (max-width: 760px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 0;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 1.5rem 1rem;
+    gap: 0.25rem;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+  }
   .nav.open { display: flex; }
+  .nav a { padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+  .nav a:last-child { border-bottom: none; }
+  .nav a.active { border-bottom-color: var(--gold); }
   .nav-toggle { display: inline-flex; }
 }
 
@@ -483,4 +507,53 @@ section {
   filter: drop-shadow(0 0 1px #fff);
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* ---------------------------------------------------------
+   Mobile tightening
+--------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .container { padding: 0 1.1rem; }
+
+  .hero { padding: 3.2rem 0 2.6rem; }
+  .hero-ball { width: 110px; margin-bottom: 1rem; }
+  .hero h1 { font-size: 2.8rem; }
+  .tagline { font-size: 1.1rem; margin-bottom: 1.6rem; }
+
+  .btn-row { flex-direction: column; align-items: stretch; }
+  .btn { justify-content: center; width: 100%; padding: 0.9rem 1.2rem; }
+
+  .hero-meta { gap: 0.5rem; font-size: 0.75rem; margin-top: 1.8rem; }
+  .hero-meta .pill { padding: 0.35rem 0.7rem; }
+
+  section { padding: 2.6rem 0; }
+  .section-sub { margin-bottom: 2rem; }
+
+  .card { padding: 1.3rem 1.1rem; }
+
+  .page-head { padding: 3rem 0 1rem; }
+
+  .news-entry { padding: 1.2rem 1.2rem 1rem; }
+  .news-entry h2 { font-size: 1.3rem; }
+  .news-meta { flex-wrap: wrap; gap: 0.4rem 0.6rem; }
+  .news-meta .news-date { width: 100%; }
+
+  .download-card { padding: 1.3rem 1rem; }
+
+  .site-footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .ball-row { gap: 0.4rem; }
+  .ball-row .mini { width: 18px; height: 18px; }
+  .ball-row .mini::after { width: 5px; height: 5px; }
+}
+
+@media (max-width: 380px) {
+  .hero h1 { font-size: 2.3rem; }
+  .brand { font-size: 1.15rem; }
+  .brand .ball { width: 26px; height: 26px; }
 }
