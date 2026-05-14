@@ -117,6 +117,16 @@ p strong, p b { color: var(--text); }
   letter-spacing: 0.04em;
 }
 
+.brand .brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  filter: drop-shadow(0 0 10px rgba(255, 199, 44, 0.35));
+}
+
+/* legacy brand pieces (kept for backwards compat if a page still uses them) */
 .brand .ball { width: 30px; height: 30px; filter: drop-shadow(0 0 8px rgba(255,199,44,0.45)); }
 .brand .brand-name { background: linear-gradient(90deg, var(--gold), var(--orange-hot)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 

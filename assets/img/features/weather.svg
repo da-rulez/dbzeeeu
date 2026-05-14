@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Dynamic weather and time of day">
+  <defs>
+    <linearGradient id="w_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0a1226"/>
+      <stop offset="60%"  stop-color="#11243d"/>
+      <stop offset="100%" stop-color="#0d1a2a"/>
+    </linearGradient>
+    <linearGradient id="w_daysky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffb070"/>
+      <stop offset="55%"  stop-color="#ff7c2a"/>
+      <stop offset="100%" stop-color="#7a2b00"/>
+    </linearGradient>
+    <radialGradient id="w_sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fff5c4"/>
+      <stop offset="60%"  stop-color="#ffc72c"/>
+      <stop offset="100%" stop-color="#ff5a1f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="w_bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#fff"/>
+      <stop offset="100%" stop-color="#8cd6ff"/>
+    </linearGradient>
+    <radialGradient id="w_glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- left half: stormy night -->
+  <rect x="0" y="0" width="300" height="450" fill="url(#w_sky)"/>
+
+  <!-- right half: sunset day -->
+  <rect x="300" y="0" width="300" height="450" fill="url(#w_daysky)"/>
+
+  <!-- subtle divider seam -->
+  <rect x="298" y="0" width="4" height="450" fill="#000" opacity="0.25"/>
+
+  <!-- stars (left side, night) -->
+  <g opacity="0.85">
+    <circle cx="40"  cy="60"  r="1.2" fill="#fff"/>
+    <circle cx="120" cy="40"  r="1"   fill="#fff"/>
+    <circle cx="200" cy="80"  r="1.2" fill="#ffe27a"/>
+    <circle cx="80"  cy="140" r="1"   fill="#fff"/>
+    <circle cx="240" cy="160" r="1"   fill="#fff"/>
+    <circle cx="160" cy="200" r="1.4" fill="#fff5c4"/>
+  </g>
+
+  <!-- moon -->
+  <circle cx="60" cy="80" r="22" fill="#ffe27a" opacity="0.9"/>
+  <circle cx="52" cy="74" r="4"  fill="#0a1226" opacity="0.3"/>
+  <circle cx="66" cy="86" r="3"  fill="#0a1226" opacity="0.25"/>
+
+  <!-- storm cloud (left) -->
+  <g fill="#1a2a44" stroke="#0a1226" stroke-width="1.4">
+    <ellipse cx="170" cy="120" rx="60" ry="22"/>
+    <ellipse cx="120" cy="135" rx="50" ry="20"/>
+    <ellipse cx="220" cy="135" rx="40" ry="18"/>
+    <ellipse cx="170" cy="145" rx="78" ry="20"/>
+  </g>
+
+  <!-- lightning bolt -->
+  <path d="M170 158 L155 220 L175 220 L150 290 L185 220 L168 220 L188 158 Z"
+        fill="url(#w_bolt)" stroke="#0a1226" stroke-width="1"/>
+  <circle cx="170" cy="220" r="40" fill="url(#w_glow)" opacity="0.5"/>
+
+  <!-- rain streaks (left) -->
+  <g stroke="#8cd6ff" stroke-width="1.4" stroke-linecap="round" opacity="0.7">
+    <line x1="40"  y1="200" x2="32"  y2="240"/>
+    <line x1="68"  y1="220" x2="60"  y2="262"/>
+    <line x1="96"  y1="240" x2="88"  y2="282"/>
+    <line x1="60"  y1="280" x2="52"  y2="322"/>
+    <line x1="100" y1="300" x2="92"  y2="342"/>
+    <line x1="40"  y1="340" x2="32"  y2="380"/>
+    <line x1="220" y1="200" x2="212" y2="240"/>
+    <line x1="250" y1="230" x2="242" y2="272"/>
+    <line x1="200" y1="260" x2="192" y2="302"/>
+    <line x1="240" y1="290" x2="232" y2="332"/>
+    <line x1="190" y1="320" x2="182" y2="362"/>
+    <line x1="260" y1="340" x2="252" y2="382"/>
+  </g>
+
+  <!-- sun (right) -->
+  <circle cx="500" cy="120" r="60" fill="url(#w_sun)"/>
+  <circle cx="500" cy="120" r="34" fill="#fff5c4" opacity="0.9"/>
+
+  <!-- thin clouds drifting (right) -->
+  <g fill="#fff5c4" opacity="0.55">
+    <ellipse cx="380" cy="100" rx="34" ry="6"/>
+    <ellipse cx="420" cy="160" rx="40" ry="6"/>
+    <ellipse cx="530" cy="200" rx="30" ry="5"/>
+  </g>
+
+  <!-- snowfall over both sides (subtle) -->
+  <g fill="#fff" opacity="0.85">
+    <circle cx="350" cy="40"  r="1.6"/>
+    <circle cx="370" cy="120" r="1.4"/>
+    <circle cx="410" cy="220" r="1.6"/>
+    <circle cx="460" cy="80"  r="1.2"/>
+    <circle cx="540" cy="160" r="1.4"/>
+    <circle cx="500" cy="280" r="1.6"/>
+    <circle cx="440" cy="320" r="1.2"/>
+    <circle cx="380" cy="290" r="1.4"/>
+  </g>
+
+  <!-- horizon hills + ground -->
+  <path d="M0 360 Q150 330 300 350 Q450 370 600 340 L600 380 L0 380 Z"
+        fill="#1a1c2a" stroke="#0a0c14" stroke-width="1"/>
+  <rect x="0" y="380" width="600" height="70" fill="#0a0c14"/>
+
+  <!-- ground reflections (rain side) -->
+  <g stroke="#8cd6ff" stroke-width="1" opacity="0.4">
+    <line x1="20"  y1="395" x2="40"  y2="395"/>
+    <line x1="80"  y1="410" x2="120" y2="410"/>
+    <line x1="180" y1="395" x2="220" y2="395"/>
+    <line x1="240" y1="420" x2="280" y2="420"/>
+  </g>
+
+  <!-- ground reflections (warm side) -->
+  <g stroke="#ffc72c" stroke-width="1" opacity="0.5">
+    <line x1="340" y1="400" x2="370" y2="400"/>
+    <line x1="420" y1="415" x2="460" y2="415"/>
+    <line x1="500" y1="395" x2="540" y2="395"/>
+  </g>
+
+  <!-- chips: weather state badges -->
+  <g font-family="Russo One, Impact, sans-serif">
+    <g transform="translate(20,30)">
+      <rect width="120" height="22" rx="6" fill="#0b0d17" stroke="#3b3e58"/>
+      <circle cx="14" cy="11" r="5" fill="#8cd6ff"/>
+      <text x="26" y="15" fill="#8cd6ff" font-size="10" letter-spacing="1.4">STORM 02:14</text>
+    </g>
+    <g transform="translate(460,30)">
+      <rect width="120" height="22" rx="6" fill="#1a0d00" stroke="#5a3a00"/>
+      <circle cx="14" cy="11" r="5" fill="#ffc72c"/>
+      <text x="26" y="15" fill="#ffe27a" font-size="10" letter-spacing="1.4">DUSK 18:42</text>
+    </g>
+  </g>
+</svg>

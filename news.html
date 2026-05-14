@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>News &amp; Patch Notes — DBZee</title>
+  <title>News &amp; Patch Notes | DBZee</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="DBZee patch notes, dev updates, and announcements.">
-  <link rel="icon" type="image/svg+xml" href="assets/img/dragon-ball-mini.svg">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bangers&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,12 +16,12 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="./">
-      <img class="ball" src="assets/img/dragon-ball-mini.svg" alt="">
-      <span class="brand-name">DBZee</span>
+      <img class="brand-logo" src="assets/img/logo.png" alt="DBZee">
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
     <nav class="nav">
       <a href="./">Home</a>
+      <a href="features.html">Features</a>
       <a href="about.html">About</a>
       <a href="play.html">Play</a>
       <a href="news.html" class="active">News</a>
@@ -48,18 +48,18 @@
             <span class="news-date">2026-05-09</span>
           </div>
           <h2>Transformations</h2>
-          <p><strong>Power up.</strong> The transformation system is here. Real shader-driven auras that hug your character's silhouette &mdash; body, hair, and equipment all included &mdash; and they cast actual light on the world around you. Cast SSJ at night and watch the gold pour onto the dirt at your feet. Cast MUI in a cave and the silver-blue hum lights the rocks. No more stickers slapped on a sprite.</p>
+          <p><strong>Power up.</strong> The transformation system is here. Real shader driven auras that hug your character's silhouette (body, hair, and equipment all included) and cast actual light on the world around you. Cast SSJ at night and watch the gold pour onto the dirt at your feet. Cast MUI in a cave and the silver blue hum lights the rocks. No more stickers slapped on a sprite.</p>
 
           <h3>Lights, actually</h3>
           <ul>
-            <li><strong>Auras emit real light.</strong> A new dynamic-lighting system attaches a Light2D per transformed character whose shape is the aura's shape. Embers cast pools of light, the outline ring casts a corona, the flame body throws a flickering wash. Step into a dark dungeon transformed and you light the room.</li>
-            <li><strong>Toggleable in Video settings.</strong> Two new options under Escape &rarr; Video: Shader Effects and Dynamic Lighting. Drop them independently on lower-end machines. Default ON.</li>
-            <li><strong>Cave overlays now play nice with lights.</strong> The per-scene tint used to overpaint everything. Now it routes through the same CanvasModulate path as the day/night cycle, so auras, orbs, and torches brighten through the dim.</li>
+            <li><strong>Auras emit real light.</strong> A new dynamic lighting system attaches a Light2D per transformed character whose shape is the aura's shape. Embers cast pools of light, the outline ring casts a corona, the flame body throws a flickering wash. Step into a dark dungeon transformed and you light the room.</li>
+            <li><strong>Toggleable in Video settings.</strong> Two new options under Escape &rarr; Video: Shader Effects and Dynamic Lighting. Drop them independently on lower end machines. Default ON.</li>
+            <li><strong>Cave overlays now play nice with lights.</strong> The per scene tint used to overpaint everything. Now it routes through the same CanvasModulate path as the day / night cycle, so auras, orbs, and torches brighten through the dim.</li>
           </ul>
 
           <h3>Silhouette tracking</h3>
           <ul>
-            <li>Effects hug your character, not a circle around them. A hidden render target mirrors your body, paperdoll, and hair into a silhouette texture every frame. Switch hats mid-transformation and the gold ring reshapes around the new outline.</li>
+            <li>Effects hug your character, not a circle around them. A hidden render target mirrors your body, paperdoll, and hair into a silhouette texture every frame. Switch hats mid transformation and the gold ring reshapes around the new outline.</li>
           </ul>
 
           <h3>Idle, finally</h3>
@@ -69,10 +69,10 @@
 
           <h3>Under the hood</h3>
           <ul>
-            <li>Per-overlay color editor with live preview in the Content Editor.</li>
+            <li>Per overlay color editor with live preview in the Content Editor.</li>
             <li><code>bottom_clip_y</code> knob to keep effects from drifting under the feet.</li>
-            <li>Transform status effects now use proper indefinite duration &mdash; no more auto-clearing on buff sync.</li>
-            <li>Adding a row in the Content Editor auto-rebuilds body and paperdoll caches.</li>
+            <li>Transform status effects now use proper indefinite duration. No more auto clearing on buff sync.</li>
+            <li>Adding a row in the Content Editor auto rebuilds body and paperdoll caches.</li>
           </ul>
         </article>
 
@@ -83,12 +83,12 @@
             <span class="news-date">2026-04-22</span>
           </div>
           <h2>Dragon Ball stability pass</h2>
-          <p>Pedestal cast contention is now resolved exclusively server-side &mdash; no more double-place races on guild war scenes. Ball state survives a server restart including the 10-second loot grace timer. Character deletion correctly re-rolls any held balls back into the world dormancy pool.</p>
+          <p>Pedestal cast contention is now resolved exclusively server side. No more double place races on guild war scenes. Ball state survives a server restart including the 10 second loot grace timer. Character deletion correctly re rolls any held balls back into the world dormancy pool.</p>
           <ul>
             <li>Pedestal "Someone else is placing there." now fires deterministically for the second contender.</li>
-            <li>Logout-drop is now silent (no global broadcast), matching spec.</li>
-            <li>Guild-kick while holding balls now drops at your current scene-local coords and warps you out of the war scene.</li>
-            <li>Admin panel gains a Dragon Balls tab: live state per ball, full activity log, per-ball Respawn button.</li>
+            <li>Logout drop is now silent (no global broadcast), matching spec.</li>
+            <li>Guild kick while holding balls now drops at your current scene local coords and warps you out of the war scene.</li>
+            <li>Admin panel gains a Dragon Balls tab: live state per ball, full activity log, per ball Respawn button.</li>
           </ul>
         </article>
 
@@ -101,19 +101,13 @@
           <h2>The seven balls go live</h2>
           <p>The Dragon Ball system shipped. One of each ball exists across the whole world at any time. Some balls live at fixed world coordinates; others sit dormant on a specific NPC and require persistent grinding to drop. Players carry up to seven; balls can't be banked, traded, mailed, dropped manually, sold, or destroyed.</p>
           <ul>
-            <li>Guild pedestals support 10-second placement and theft casts, interrupted by movement, damage, or any other action.</li>
-            <li>Global cross-scene chat broadcast fires on every pickup, re-pickup, and successful theft.</li>
-            <li>Above-head indicator persists across scene changes and stacks when carrying multiple balls.</li>
-            <li>Wish points trigger when a single guild sustains all seven balls on its pedestals for one continuous second. Balls then scatter via a fresh weighted re-roll.</li>
+            <li>Guild pedestals support 10 second placement and theft casts, interrupted by movement, damage, or any other action.</li>
+            <li>Global cross scene chat broadcast fires on every pickup, re pickup, and successful theft.</li>
+            <li>Above head indicator persists across scene changes and stacks when carrying multiple balls.</li>
+            <li>Wish points trigger when a single guild sustains all seven balls on its pedestals for one continuous second. Balls then scatter via a fresh weighted re roll.</li>
           </ul>
         </article>
 
-      </div>
-
-      <div class="ball-row" aria-hidden="true">
-        <span class="mini"></span><span class="mini"></span><span class="mini"></span>
-        <span class="mini"></span><span class="mini"></span><span class="mini"></span>
-        <span class="mini"></span>
       </div>
     </div>
   </section>
@@ -121,8 +115,8 @@
 
 <footer class="site-footer">
   <div class="container">
-    <span>&copy; 2026 DBZee. A fan-made online ORPG.</span>
-    <span><a href="./">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="play.html">Play</a> &middot; <a href="https://discord.gg/RCZk2zBAXm" target="_blank" rel="noopener">Discord</a></span>
+    <span>&copy; 2026 DBZee. A fan made online ORPG.</span>
+    <span><a href="./">Home</a> &middot; <a href="features.html">Features</a> &middot; <a href="about.html">About</a> &middot; <a href="play.html">Play</a> &middot; <a href="https://discord.gg/RCZk2zBAXm" target="_blank" rel="noopener">Discord</a></span>
   </div>
 </footer>
 
