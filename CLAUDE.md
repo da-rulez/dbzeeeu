@@ -1,0 +1,50 @@
+# CLAUDE.md
+
+## Repository visibility: PUBLIC
+
+`da-rulez/dbzeeeu` is a **public** GitHub repository. Anything committed
+here is world-readable, indexed by search engines, and cached in places
+that cannot be retroactively scrubbed.
+
+Treat every file pushed here as if it were posted to the open internet.
+
+### Never commit to this repo
+
+- API keys, tokens, OAuth client secrets, signing keys
+- `.env` files, `secrets.cfg`, `config.local.*`, anything matching
+  `*secret*`, `*credential*`, `*.pem`, `*.key`, `id_rsa*`
+- Database connection strings, internal hostnames, internal IPs
+- Server admin keys (the game's `AdminServer` uses one &mdash; never paste it)
+- Personal email addresses, real names, or contact info for anyone
+  who hasn't agreed to be public
+- Unredacted user data, account dumps, internal logs
+- Internal documentation that references private infrastructure or
+  unannounced plans
+- Game-server endpoint URLs that aren't already public-facing
+- Anything copied verbatim from the private `da-rulez/orpg` repo
+  without first confirming it's safe to publish
+
+### What this repo IS for
+
+- The static marketing site served at <https://dbzee.eu/>
+- HTML, CSS, JS, SVG / image assets, fonts
+- The `CNAME` file pinning the custom domain
+- Public README explaining how to deploy and configure DNS
+
+### If something private slips in
+
+1. Don't just delete the file in a new commit &mdash; git history still has it.
+2. Rotate the leaked credential immediately (assume it's compromised).
+3. Use `git filter-repo` or BFG to scrub history, then force-push.
+4. Notify anyone whose data was exposed.
+
+### Before pushing
+
+When making changes here, do a quick self-check:
+
+- [ ] No keys, tokens, or credentials anywhere in the diff
+- [ ] No internal hostnames or IPs
+- [ ] No copy-pasted blocks from the private game repo without review
+- [ ] No personal data that wasn't already public
+
+When in doubt: assume it's public the moment it's committed.
