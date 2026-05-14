@@ -42,6 +42,28 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.9.4</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Switch, log out, log back in.</h2>
+          <p>Logout finally lets go of your session, Switch Character drops you on the roster like it's supposed to, and crashing mid-login no longer locks you out for fifteen minutes.</p>
+          <h3>Switch Character actually switches</h3>
+          <ul>
+            <li><strong>Lands on the character-select screen reliably.</strong> The "couldn't switch right now. try again in a moment" message no longer fires on every press. Pick Switch Character, pick your next character, play.</li>
+          </ul>
+          <h3>Logout, then log back in</h3>
+          <ul>
+            <li><strong>No more "already logged in" wall.</strong> Clicking Logout now waits for the server to release your session before kicking you to the login screen, so the very next login attempt goes through cleanly.</li>
+            <li><strong>Crashed clients release their session.</strong> If your client closes during login or while you're on character select. alt-F4, hard crash, power blip. the session unsticks after five minutes of being idle instead of sitting blocked until your token naturally expires.</li>
+          </ul>
+          <h3>Behind the scenes</h3>
+          <ul>
+            <li>Character saves recover automatically when the server is under heavy write load instead of being quietly dropped, so your latest position and inventory stay intact during busy moments.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.9.2</span>
             <span class="news-tag blue">Patch</span>
           </div>
