@@ -36,8 +36,21 @@ DASH_REPLACEMENTS = [
 ]
 
 VERSION_HEADING = re.compile(
-    r"^##\s+v(?P<ver>[\d]+(?:\.[\d]+)+)(?:\s*[—\-|:]\s*(?P<title>.+))?\s*$"
+    r"^##\s+v(?P<ver>[\d]+(?:\.[\d]+)+)"
+    r"(?:\s*[—\-|:]\s*(?P<title>.+?))?"
+    r"(?:\s*\[(?P<tag>Release|Patch|Hotfix)\])?\s*$",
+    re.IGNORECASE,
 )
+
+# Maps an authoring tag to the CSS class for its badge. Default badge
+# style is gold (Release); blue and red are reserved for Patch and
+# Hotfix so the three are visually distinct at a glance.
+TAG_BADGE = {
+    "Release": "news-tag",
+    "Patch":   "news-tag blue",
+    "Hotfix":  "news-tag red",
+}
+DEFAULT_TAG = "Patch"
 
 
 def version_tuple(s: str):
@@ -61,12 +74,16 @@ def parse(md: str) -> Optional[Dict]:
 
     version: Optional[str] = None
     title: str = ""
+    tag: str = DEFAULT_TAG
     body_start = 0
     for i, line in enumerate(lines):
         m = VERSION_HEADING.match(line)
         if m:
             version = m.group("ver")
             title = (m.group("title") or "").strip() or f"v{version}"
+            raw_tag = m.group("tag")
+            if raw_tag:
+                tag = raw_tag.capitalize()
             body_start = i + 1
             break
     if not version:
@@ -74,7 +91,7 @@ def parse(md: str) -> Optional[Dict]:
 
     body_md = "\n".join(lines[body_start:]).strip()
     body_html = md_to_html(body_md)
-    return {"version": version, "title": title, "body_html": body_html}
+    return {"version": version, "title": title, "tag": tag, "body_html": body_html}
 
 
 def md_to_html(md: str) -> str:
@@ -121,13 +138,14 @@ def md_to_html(md: str) -> str:
     return "\n          ".join(out)
 
 
-def render_entry(entry: Dict, *, is_latest: bool) -> str:
-    tag_class = "news-tag blue" if is_latest else "news-tag"
+def render_entry(entry: Dict) -> str:
+    tag = entry.get("tag", DEFAULT_TAG)
+    badge_class = TAG_BADGE.get(tag, TAG_BADGE[DEFAULT_TAG])
     return (
         '        <article class="news-entry">\n'
         '          <div class="news-meta">\n'
         f'            <span class="news-tag">v{entry["version"]}</span>\n'
-        f'            <span class="{tag_class}">Patch</span>\n'
+        f'            <span class="{badge_class}">{tag}</span>\n'
         '          </div>\n'
         f'          <h2>{inline(entry["title"])}</h2>\n'
         f"          {entry['body_html']}\n"
@@ -141,7 +159,7 @@ def main() -> int:
     if not entries:
         print("::warning::no patch-note entries found, news.html will be empty")
 
-    rendered = [render_entry(e, is_latest=(i == 0)) for i, e in enumerate(entries)]
+    rendered = [render_entry(e) for e in entries]
     block = "\n\n".join(rendered)
 
     template = TEMPLATE.read_text(encoding="utf-8")

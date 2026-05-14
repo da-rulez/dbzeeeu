@@ -167,6 +167,28 @@ Trigger options after the secret is set:
 - Have the game repo fire a `repository_dispatch` with type
   `orpg-patchnotes-updated` from its own CI when `patchnotes.md` changes.
 
+### Authoring rules (enforced)
+
+These constraints apply to the upstream `patchnotes.md` in the orpg
+repo. The full rationale lives in `PATCHNOTES_GUIDE.md` over there.
+
+- **Heading**: `## vX.Y.Z &mdash; Short title [Tag]`
+- **Tag**: one of `[Release]`, `[Patch]`, `[Hotfix]`. If omitted, the
+  renderer treats it as `[Patch]`.
+- **Hard cap**: 2,000 characters total. The snapshot script refuses
+  anything longer (Discord's per-message limit). The workflow run
+  fails, no archive happens, fix it in orpg and re-run.
+- **Voice**: player-centric. What the player will feel, not what the
+  server is doing under the hood.
+
+Badge colors on the site:
+
+| Tag      | Badge color |
+|----------|-------------|
+| Release  | gold        |
+| Patch    | blue        |
+| Hotfix   | red         |
+
 ### Manual edits
 
 Editing `_data/patchnotes/*.md` directly is fine; the next workflow run

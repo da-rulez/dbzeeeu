@@ -18,6 +18,12 @@ import pathlib
 
 VERSION_RE = re.compile(r"^##\s+v([\d]+(?:\.[\d]+)+)", re.MULTILINE)
 
+# Hard cap. The same text needs to fit in a single Discord message
+# (Discord's per-message limit is 2000 chars), so we refuse to archive
+# anything longer. Author shortens it in orpg, the next workflow run
+# picks it up.
+MAX_CHARS = 2000
+
 
 def gh_output(**kv: str) -> None:
     """Append key=value lines to $GITHUB_OUTPUT if running in Actions."""
@@ -46,11 +52,20 @@ def main() -> int:
         return 0
 
     content = src.read_text(encoding="utf-8-sig").strip()
+
+    if len(content) > MAX_CHARS:
+        print(
+            f"::error::patchnotes.md is {len(content)} chars, hard cap is {MAX_CHARS} "
+            f"(Discord per-message limit). Shorten the note in the orpg repo and re-run."
+        )
+        gh_output(added="false")
+        return 1
+
     m = VERSION_RE.search(content)
     if not m:
-        print("::warning::no '## vX.Y.Z' heading found in patchnotes.md, skipping")
+        print("::error::no '## vX.Y.Z' heading found in patchnotes.md")
         gh_output(added="false")
-        return 0
+        return 1
 
     version = m.group(1)
     target = dst_dir / f"v{version}.md"
