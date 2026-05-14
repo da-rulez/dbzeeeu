@@ -447,6 +447,8 @@ section {
 .download-card:hover { border-color: var(--gold); transform: translateY(-3px); }
 .download-card .platform { font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 0.06em; color: var(--text); }
 .download-card .size { font-size: 0.85rem; color: var(--text-faint); letter-spacing: 0.04em; }
+/* Generic icon slot: a gold-aura puck used when the icon is a single
+   letter or short label. */
 .download-card .icon {
   width: 56px;
   height: 56px;
@@ -458,6 +460,20 @@ section {
   font-family: var(--font-display);
   font-size: 1.6rem;
   box-shadow: 0 0 22px rgba(255, 199, 44, 0.35);
+}
+
+/* When the icon slot is the logo image, drop the gold puck (the logo
+   has its own art) and render it crisply at pixel-art scale with a
+   matching aura glow. */
+.download-card img.icon {
+  width: 72px;
+  height: 72px;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  filter: drop-shadow(0 0 14px rgba(255, 199, 44, 0.45));
 }
 
 .notice {
