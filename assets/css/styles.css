@@ -464,13 +464,16 @@ section {
 
 /* When the icon slot is the logo image, drop the gold puck (the logo
    has its own art) and render it crisply at pixel-art scale with a
-   matching aura glow. */
+   matching aura glow. Constrain by height so the logo keeps whatever
+   aspect ratio the source PNG was authored at. */
 .download-card img.icon {
-  width: 72px;
-  height: 72px;
+  height: 88px;
+  width: auto;
+  max-width: 100%;
   background: none;
   box-shadow: none;
   border-radius: 0;
+  object-fit: contain;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   filter: drop-shadow(0 0 14px rgba(255, 199, 44, 0.45));
