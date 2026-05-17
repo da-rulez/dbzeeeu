@@ -42,6 +42,37 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.10.7</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Cleaner HUD, cleaner state</h2>
+          <p>A pile of comfort-and-clarity fixes. Status effects read at a glance, story flags survive a server reset, and a few longstanding visual glitches finally die.</p>
+          <h3>HUD & combat readability</h3>
+          <ul>
+            <li><strong>Status effects, redesigned.</strong> Out: text pills above the chatbox. In: a 20×20 icon grid right of your HP bars, three columns wide, with a live countdown on each. Hover to read named stats ("Strength +2", not "stat_flat +2") and full descriptions that wrap into a tidy tooltip.</li>
+            <li><strong>Damage and heal numbers</strong> match the rest of the HUD font and size. no more giant popups dwarfing your vitals.</li>
+            <li><strong>Character panel</strong> now splits Active Effects into Equipment / Passives / Spells / Consumables, so you can see where each buff comes from. Conditioning and friends are properly tagged Passive.</li>
+          </ul>
+          <h3>Bug fixes</h3>
+          <ul>
+            <li><strong>Crimson and Amber Vials</strong> heal and restore Ki instantly, with no lingering "active" badge.</li>
+            <li><strong>Logging in</strong> no longer fires phantom +50 HP heals when your equipment carries vitals bonuses. Vitals load full and quiet.</li>
+            <li><strong>Stacked inventory items</strong> keep the highlight on the stack you actually clicked, not the top one.</li>
+          </ul>
+          <h3>Story persistence</h3>
+          <ul>
+            <li><strong>One-shot events remember they fired</strong> across server resets. One shot is one shot.</li>
+            <li><strong>Lost a progression flag?</strong> The system checks your bag and learned techniques on login and restores flags you've clearly already earned. Wearing the uniform means the uniform step is done.</li>
+            <li><strong>Re-running a story event</strong> no longer hands you a duplicate starter kit.</li>
+          </ul>
+          <h3>Quality of life</h3>
+          <ul>
+            <li><strong>+1K orb-spend button</strong> joins +10 / +50 / +100 in the Character panel.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.10.0</span>
             <span class="news-tag">Release</span>
           </div>
