@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Play | DBZee</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Download the DBZee launcher for Windows or Linux.">
+  <meta name="description" content="Download the DBZee launcher for Windows, Linux, or macOS.">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,17 +43,23 @@
 
   <section style="padding-top: 1rem;">
     <div class="container">
-      <div class="download-grid two-up">
-        <a class="download-card" href="http://46.225.172.222:8000/client-dist/dbzee_launcher.exe">
+      <div class="download-grid three-up">
+        <a class="download-card" href="https://github.com/da-rulez/orpg/releases/latest/download/dbzee_launcher.exe">
           <img class="icon" src="assets/img/logo_header.png" alt="">
           <span class="platform">Windows</span>
           <span class="size">dbzee_launcher.exe</span>
           <span class="btn btn-primary download-btn">Download</span>
         </a>
-        <a class="download-card" href="http://46.225.172.222:8000/client-dist/dbzee_launcher">
+        <a class="download-card" href="https://github.com/da-rulez/orpg/releases/latest/download/dbzee_launcher">
           <img class="icon" src="assets/img/logo_header.png" alt="">
           <span class="platform">Linux</span>
           <span class="size">dbzee_launcher (binary)</span>
+          <span class="btn btn-primary download-btn">Download</span>
+        </a>
+        <a class="download-card" href="https://github.com/da-rulez/orpg/releases/latest/download/dbzee_launcher.app.zip">
+          <img class="icon" src="assets/img/logo_header.png" alt="">
+          <span class="platform">macOS</span>
+          <span class="size">dbzee_launcher.app.zip</span>
           <span class="btn btn-primary download-btn">Download</span>
         </a>
       </div>
@@ -62,6 +68,15 @@
         <strong>Linux:</strong> after downloading, mark the file executable
         with <code>chmod +x dbzee_launcher</code> before running it.
       </p>
+
+      <p class="notice">
+        <strong>macOS:</strong> the launcher isn't notarized by Apple, so on
+        first launch macOS will say <em>"dbzee_launcher" cannot be opened</em>.
+        Unzip the download, then right click the <code>.app</code> &rarr;
+        <strong>Open</strong>, and click <strong>Open</strong> in the prompt.
+        macOS remembers your choice for next time. Or from Terminal:
+        <code>xattr -d com.apple.quarantine dbzee_launcher.app</code>.
+      </p>
     </div>
   </section>
 
@@ -69,7 +84,7 @@
     <div class="container prose">
       <h2>System requirements</h2>
       <ul>
-        <li><strong>OS:</strong> Windows 10+ (64 bit) or a recent 64 bit Linux distro.</li>
+        <li><strong>OS:</strong> Windows 10+ (64 bit), a recent 64 bit Linux distro, or macOS 10.13+ (Intel or Apple Silicon).</li>
         <li><strong>CPU:</strong> any dual core from the last decade.</li>
         <li><strong>GPU:</strong> integrated graphics are fine. Dynamic Lighting and Shader Effects can each be toggled off under Escape &rarr; Video on lower end machines.</li>
         <li><strong>RAM:</strong> 2&nbsp;GB free.</li>
@@ -87,15 +102,12 @@
 
       <h2>Troubleshooting</h2>
       <ul>
-        <li><strong>Browser blocks the download:</strong> the launcher is currently served over plain HTTP, so some browsers warn or block from an HTTPS page. Click "Keep" or "Download anyway" in the browser's download bar.</li>
         <li><strong>Can't connect:</strong> the auth and game servers run separately. If login works but world load hangs, check your firewall against the server port shown in the launcher.</li>
         <li><strong>Auras look flat:</strong> open Escape &rarr; Video and make sure Shader Effects and Dynamic Lighting are both on.</li>
         <li><strong>Performance dips in towns:</strong> drop Dynamic Lighting first. It's the heavier of the two toggles.</li>
         <li><strong>Linux launcher won't run:</strong> make sure it's executable (<code>chmod +x dbzee_launcher</code>) and your distro has up to date Vulkan or OpenGL drivers.</li>
+        <li><strong>macOS won't open the launcher:</strong> see the macOS note above. Right-click the <code>.app</code> &rarr; Open is enough to bypass Gatekeeper for an unnotarized build.</li>
       </ul>
-
-      <h2>macOS?</h2>
-      <p>Not right now. DBZee currently ships for Windows and Linux only.</p>
     </div>
   </section>
 </main>

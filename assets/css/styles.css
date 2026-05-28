@@ -427,8 +427,17 @@ section {
   max-width: 720px;
   margin: 0 auto;
 }
+.download-grid.three-up {
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .download-grid.three-up { grid-template-columns: 1fr 1fr; }
+}
 @media (max-width: 640px) {
-  .download-grid.two-up { grid-template-columns: 1fr; }
+  .download-grid.two-up,
+  .download-grid.three-up { grid-template-columns: 1fr; }
 }
 .download-btn { margin-top: 0.6rem; padding: 0.6rem 1.4rem; font-size: 0.95rem; }
 
