@@ -15,7 +15,7 @@
   // so a missing/private release doesn't leave a placeholder visible.
   var pill = document.getElementById('version-pill');
   if (!pill) return;
-  fetch('https://api.github.com/repos/da-rulez/orpg/releases/latest', {
+  fetch('https://api.github.com/repos/da-rulez/dbzeeeu/releases/latest', {
     headers: { 'Accept': 'application/vnd.github+json' }
   })
     .then(function (r) { return r.ok ? r.json() : null; })
