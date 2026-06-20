@@ -42,6 +42,18 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.5</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Sprint Smoothing</h2>
+          <p>Sprinting on a high-ping connection is smooth now. The snap-back is gone.</p>
+          <p><strong>Why it's so much better:</strong> when you move, your game predicts where you're going *instantly* while the server confirms it a moment later. The two stay in sync by remembering your recent moves and comparing notes. The bug: that memory was too short for laggy connections, and worse, it was throwing away the exact moves it needed to compare against, so the game kept guessing wrong and yanking you back by hundreds of pixels. We made that memory longer, stopped it from discarding what it still needs, and pointed it at the right moment to compare. Now your game and the server agree on where you are to within a few pixels instead of a few hundred, and the tiny leftover difference blends in invisibly instead of snapping.</p>
+          <p>Tested at half a second of lag: a 166-pixel rubberband is now about 10 pixels.</p>
+          <p>See you out there.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.4</span>
             <span class="news-tag red">Hotfix</span>
           </div>
