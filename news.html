@@ -42,6 +42,33 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.34</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Smoother & Sturdier</h2>
+          <p>A big under-the-hood pass to make DBZEE run smoother, fairer, and more stable.</p>
+          <p>Performance & lag</p>
+          <ul>
+            <li>Fixed network packets that could overflow during busy moments (crowds, big enemy packs, heavy combat, loot bursts) and get dropped, which made enemies and players stutter or freeze for a beat.</li>
+            <li>Trimmed wasted per-frame work on the HUD and inventory for a steadier framerate.</li>
+          </ul>
+          <p>High-ping feel</p>
+          <ul>
+            <li>Retuned the anti-cheat position check so fast movement around corners no longer causes the occasional snap-back.</li>
+          </ul>
+          <p>Fixes</p>
+          <ul>
+            <li>Shops: if a dyed or recolored purchase gets blocked (for example, picking colors too quickly), it no longer takes your Zeni without giving the item.</li>
+            <li>Dragon Balls no longer silently vanish in certain edge cases.</li>
+            <li>Stacking buffs now boost your stats on every stack, not just the first.</li>
+            <li>Closed reward edge cases that could grant a dimension reward or objective points twice.</li>
+            <li>Several server stability fixes to prevent slowdowns over long uptime.</li>
+          </ul>
+          <p>Thanks for playing, and see you in the arena!</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.33</span>
             <span class="news-tag">Release</span>
           </div>
