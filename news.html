@@ -42,6 +42,28 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.36</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Quest Progress Persistence Fix</h2>
+          <p>Fixes a serious bug where event and quest flags could be lost after server restarts and updates.</p>
+          <p>What was wrong</p>
+          <ul>
+            <li>The server did not reliably save your event progress before a restart, so flags set recently could vanish, and some one-time quests could become repeatable.</li>
+            <li>A reconnect edge case (rejoining right after a mid-combat disconnect) could reset your event vars.</li>
+          </ul>
+          <p>What is fixed</p>
+          <ul>
+            <li>The server now saves every online player before it shuts down or restarts, so progress set right before an update is kept.</li>
+            <li>Reconnecting no longer resets your quest flags.</li>
+            <li>As a hard safety net, the server will never overwrite your existing quest progress with an empty save. Your flags stay protected even if something else goes wrong.</li>
+          </ul>
+          <p>If you lost progress in the last day, let a mod know. We keep database backups and can restore affected characters.</p>
+          <p>Thanks for the reports, they pinned this down.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.35</span>
             <span class="news-tag blue">Patch</span>
           </div>
