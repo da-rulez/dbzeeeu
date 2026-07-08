@@ -42,6 +42,29 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.44</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Locus Warp Netcode Fix</h2>
+          <p>Big netcode fix for everyone who has been fighting rubberbanding after stepping through a warp. Walking between loci (dimensions), houses and other scenes should now feel exactly as smooth as the overworld, even on a rough connection.</p>
+          <p>What was broken:</p>
+          <ul>
+            <li>After any warp your freshly loaded character predicted movement with default stats and a full stamina bar, while the server kept your real, often drained, stamina. Your client sprinted while the server walked: the gap grew by roughly 200 pixels every second, then snapped back. That was the violent post-warp rubberband.</li>
+            <li>If you then stood still on an exit warp, the server stopped sending position updates entirely, freezing the desync in place. Your character looked like it was standing on the exit, but server-side you were up to a screen away, so the exit never triggered. This was the dreaded "I cannot leave the locus" bug.</li>
+            <li>On high ping, the server could also drop or even kick players mid-warp when a burst of queued inputs arrived all at once after a scene load.</li>
+          </ul>
+          <p>What changed:</p>
+          <ul>
+            <li>Your vitals, stats and sprint state now carry over seamlessly across every warp on both client and server, so prediction stays in lockstep from the very first step.</li>
+            <li>The server now sends a periodic position anchor even when you stand still, so any leftover desync always heals within a second instead of freezing forever.</li>
+            <li>Warp triggers and the input rate guard now tolerate scene-load stalls, removing the mid-warp kicks and dropped inputs on slow machines and high-latency connections.</li>
+          </ul>
+          <p>Under the hood we built a warp stress-test harness that hammers cross-scene warps at 250 ms simulated ping with multi-second load freezes. Before the fix it deadlocked within three warps; now it runs clean with corrections under a tenth of the old values.</p>
+          <p>Safe travels between the loci!</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.43</span>
             <span class="news-tag blue">Patch</span>
           </div>
