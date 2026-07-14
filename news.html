@@ -42,6 +42,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.51</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Prediction Fix for Small Obstacles</h2>
+          <p>Fixes the remaining high-ping rubberbanding around small collision shapes (trees, half walls).</p>
+          <ul>
+            <li>Root cause found and measured: the server simulated movement in coarser steps than your client predicts, so sliding around a small obstacle could deflect each of them to a DIFFERENT side, and your position ran away until the server dragged you back. The server now integrates player movement in matched substeps.</li>
+            <li>Measured at 150ms simulated ping grinding a tree: worst correction dropped from 74px to 16px, and runaway corrections (over 24px) from 24 occurrences to zero.</li>
+            <li>This also smooths corner sliding everywhere, on all maps.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.50</span>
             <span class="news-tag red">Hotfix</span>
           </div>
