@@ -42,6 +42,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.59</span>
+            <span class="news-tag">Release</span>
+          </div>
+          <h2>The New Map Engine Goes Live</h2>
+          <p>The overworld and Muscle Tower now run on the new native map system, completing the map toolkit project.</p>
+          <ul>
+            <li>Collision equivalence with the old maps is machine-verified (every legacy collision shape covered, zero phantom walls), so everything should feel exactly the same, just faster.</li>
+            <li>Server memory per map is down 56 percent, draw calls halved, render load roughly halved.</li>
+            <li>Tiled and the YATI importer are fully removed; all maps are now authored with the in-editor MapKit tools.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.58</span>
             <span class="news-tag red">Hotfix</span>
           </div>
