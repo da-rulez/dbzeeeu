@@ -42,6 +42,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.57</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Legacy Map Migration</h2>
+          <p>Phase 6 of the map toolkit: the old Tiled maps now convert into the new system.</p>
+          <ul>
+            <li>All three legacy maps (the overworld, Muscle Tower, and the calibration zone) convert automatically with PROVEN collision equivalence: every one of the old pipeline's collision rects is covered, with zero phantom collision, verified by an automated suite.</li>
+            <li>The calibration zone now runs on the new system live (pilot). The converted overworld is warpable as "MK Solum Bloom HQ" for side-by-side comparison; the live overworld is unchanged until it passes eyes-on review.</li>
+            <li>Measured against the original baseline, the converted overworld beats the old pipeline everywhere: server map memory down 56 percent, draw calls 18 to 8, render CPU halved, movement collision three times cheaper.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.56</span>
             <span class="news-tag blue">Patch</span>
           </div>
