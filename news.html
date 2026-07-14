@@ -42,6 +42,21 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.49</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Test Zone Fixes</h2>
+          <p>Round two of playtest fixes for the new map system's test zone.</p>
+          <ul>
+            <li>Your character (equipment, aura and all) now depth-sorts correctly against walls and trees; previously only the shadow sorted right while the body drew on top of everything.</li>
+            <li>Name and health bars now depth-sort with their owner instead of floating above walls and trees.</li>
+            <li>Fixed heavy rubberbanding at high ping around the triangle rock: sloped movement colliders are now baked as prediction-safe axis-aligned strips.</li>
+            <li>Shots are now blocked per shape instead of per tile: the half wall only stops bullets on its solid half, and it has its own label so it is not mistaken for the low wall.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.48</span>
             <span class="news-tag blue">Patch</span>
           </div>
