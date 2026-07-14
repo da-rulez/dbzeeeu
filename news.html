@@ -42,6 +42,22 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.56</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Objects, Parallax and Zones</h2>
+          <p>Phase 5 of the map toolkit.</p>
+          <ul>
+            <li>Map objects can now live on upper levels (a tree on a plateau ignores ground-level shots) and carry render buckets.</li>
+            <li>Parallax background layers are authorable per map and baked in; the test zone shows one behind the map edge.</li>
+            <li>Animated tiles verified end to end from tileset definitions.</li>
+            <li>Zone metadata is queryable by game systems (spawn areas, ambient regions, triggers).</li>
+            <li>Off-screen world objects are now skipped by the render sorter, removing the last map-size-dependent render cost measured in Phase 2.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.55</span>
             <span class="news-tag blue">Patch</span>
           </div>
