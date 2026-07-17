@@ -42,6 +42,21 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.16.64</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Wall & Corner Prediction Fix</h2>
+          <p>Fixes the rubberband when sprinting into walls and sliding off corners at higher ping: the surge forward followed by getting pulled back is gone.</p>
+          <ul>
+            <li>Server corrections no longer re-apply distance the client already caught up (the cause of the forward surge and the pull-back after it).</li>
+            <li>Corrections from server dead-reckoning gaps no longer yank the player.</li>
+            <li>Sliding off a wall end no longer briefly freezes your movement at high ping.</li>
+            <li>Measured on the tight-corner course at 250 ms ping: worst correction dropped from 273px to 25px, rubberband events from 26 to 2, hard snaps from 4 to 0.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.16.60</span>
             <span class="news-tag blue">Patch</span>
           </div>
