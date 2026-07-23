@@ -42,6 +42,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.33</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Movement Prediction Fixes</h2>
+          <p>A small follow-up patch.</p>
+          <ul>
+            <li><strong>Smoother movement near multi-floor areas</strong>. fixed a client-prediction bug where your character could snag on collision from a *different* floor (furniture, walls, or props above or below you) that the server actually passes straight through, causing a rubber-band. Client and server now stay in lock-step across floors.</li>
+            <li><strong>Behind the scenes:</strong> the furniture map-placement tooling now aligns each baked piece's collision exactly to its sprite.</li>
+          </ul>
+          <p>See you in the arena!</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.30</span>
             <span class="news-tag blue">Patch</span>
           </div>
