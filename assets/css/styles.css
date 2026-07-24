@@ -626,12 +626,15 @@ section {
   border-radius: 4px;
 }
 .feature-visual img,
-.feature-visual svg {
+.feature-visual svg,
+.feature-visual video {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
 }
+/* Video captures fill the card rather than letterbox. */
+.feature-visual video { object-fit: cover; }
 /* A feature-visual holding real media (not the placeholder art): hide the
    PLACEHOLDER badge and keep pixel art crisp when scaled. */
 .feature-visual.is-live::after { content: none; }
