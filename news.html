@@ -42,6 +42,35 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.36</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Cures, Fixes & Stability</h2>
+          <p>A big under-the-hood cleanup pass, plus a few things that were quietly broken now actually work. Smoother fights, safer trades, and consumables that do what the tooltip says.</p>
+          <h3>Now working as intended</h3>
+          <ul>
+            <li><strong>Cure & immunity consumables.</strong> Items that grant immunity (antidotes and the like) now actually protect you. and drinking one clears the matching effect you already have. Poisoned? Down a cure and it's gone.</li>
+            <li><strong>Ki-cost gear.</strong> Equipment and effects that reduce a spell's Ki cost now truly discount your casts instead of doing nothing.</li>
+          </ul>
+          <h3>Combat & world</h3>
+          <ul>
+            <li><strong>Enemy health bars update correctly.</strong> Monsters regenerating out of combat no longer look stuck at low HP. their bars now reflect real health.</li>
+            <li><strong>Recolored items behave everywhere.</strong> Custom-colored gear works properly in trades, the bank, and the guild vault. No more odd disappearing or mismatched stacks.</li>
+            <li><strong>Smoother fights on disconnect.</strong> Players dropping mid-battle no longer cause network hiccups for everyone nearby.</li>
+          </ul>
+          <h3>Economy safety</h3>
+          <ul>
+            <li><strong>House purchases are refund-safe.</strong> A failed house buy always returns your currency to the right character. no more edge cases where a refund could land on the wrong player.</li>
+          </ul>
+          <h3>Chat</h3>
+          <ul>
+            <li><strong>Tighter filter.</strong> The bad-word filter no longer falls for spaced-out or punctuation-padded evasions, while still leaving innocent words alone.</li>
+          </ul>
+          <p>Lots more invisible hardening under the hood to keep things stable. See you in the arena.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.35</span>
             <span class="news-tag blue">Patch</span>
           </div>
