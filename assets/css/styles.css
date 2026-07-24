@@ -632,6 +632,10 @@ section {
   object-fit: contain;
   display: block;
 }
+/* A feature-visual holding real media (not the placeholder art): hide the
+   PLACEHOLDER badge and keep pixel art crisp when scaled. */
+.feature-visual.is-live::after { content: none; }
+.feature-visual.is-live img { image-rendering: pixelated; }
 
 .feature-text .feature-kicker {
   display: inline-block;
