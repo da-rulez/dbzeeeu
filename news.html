@@ -42,6 +42,29 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.44</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Sorted</h2>
+          <p>A real fix for the movement stutter, and for things drawing in front of you when they shouldn't.</p>
+          <h3>Movement</h3>
+          <ul>
+            <li><strong>The micro-stutter while moving is gone.</strong> Your position correction used a fixed tolerance that was *smaller* than the normal frame-to-frame variation at sprint speed. so it nudged your character a pixel or two, many times a second, for no reason at all. The tolerance now scales with how fast you are actually going. Measured on the test course: the share of frames that get corrected at all dropped by more than half, and the correction motion halved with it.</li>
+            <li>Rubber-banding in tight corners and around furniture improved too, with fewer hard snaps.</li>
+            <li>Yesterday's notes credited a different change for this. That change turned out to make no measurable difference and has been reverted. this is the one that actually does it.</li>
+          </ul>
+          <h3>World</h3>
+          <ul>
+            <li><strong>Map furniture now sorts against you by position.</strong> Tables, chairs, tanks and everything else placed in a map were drawn at one fixed depth, so whether you appeared in front of or behind them barely depended on where you stood. Whoever is further down the screen is drawn in front, everywhere.</li>
+            <li><strong>Rugs and carpets stay on the floor.</strong> A rug you placed yourself drew on top of players and tables instead of underneath them.</li>
+            <li><strong>Furniture you place matches furniture the map author placed.</strong> The same item sorted by a different edge depending on who put it down.</li>
+            <li><strong>NPCs and trees no longer draw over the whole scene.</strong> A failed startup check could leave one stamped at a depth that outranked everything else on the map.</li>
+          </ul>
+          <p>See you in the arena.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.41</span>
             <span class="news-tag blue">Patch</span>
           </div>
