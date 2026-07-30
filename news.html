@@ -42,6 +42,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.62</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Size Boxes</h2>
+          <h3>Under the hood</h3>
+          <ul>
+            <li><strong>The map editor's size boxes now follow whatever map is open.</strong> They only refreshed when a map was opened or the Resize button was pressed, so deleting a map left the dead map's numbers sitting there, and undoing a resize left them showing the size the undo had just thrown away. Since Resize applies whatever they say, a stale reading was one click away from cropping the wrong map. They now track the open map through undo, generate and delete, and read nothing at all when no map is open.</li>
+          </ul>
+          <p>Nothing changes in-game with this one.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.61</span>
             <span class="news-tag blue">Patch</span>
           </div>
