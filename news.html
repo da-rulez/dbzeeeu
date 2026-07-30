@@ -42,6 +42,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.60</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Layered Ground, For Real</h2>
+          <h3>Under the hood</h3>
+          <ul>
+            <li><strong>Painting one ground material over another stacks it now.</strong> Last patch made the map editor's ground able to hold layers, but you had to ask for a new one by hand first, so the ordinary act of switching material and painting still wiped out what was underneath. The layer is chosen for you: a stroke moves up only when it would have to overwrite a different material, extends a patch on the layer that patch already lives on, and erasing takes the top material off to uncover the one below.</li>
+            <li><strong>Shrinking a map really removes what falls outside it.</strong> The tiles went, but the record the autotiler rebuilds from stayed, so a cropped patch of ground reappeared the next time anything nearby was painted.</li>
+          </ul>
+          <p>Nothing changes in-game with this one. It is groundwork for the maps coming next.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.59</span>
             <span class="news-tag blue">Patch</span>
           </div>
