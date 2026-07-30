@@ -42,6 +42,21 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.59</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Layered Ground</h2>
+          <h3>Under the hood</h3>
+          <ul>
+            <li><strong>Ground materials stack now.</strong> The map editor's ground autotiler kept one material per cell for the whole map, so painting grass where beach already was wiped the beach out. Ground lives on layers now: a second material autotiles on a layer above the first, each meeting the other with its own edges, so shorelines and paths can be built up instead of traded off.</li>
+            <li><strong>Hand-painted edges survive.</strong> Retiling used to rebuild the whole ground layer from scratch, which threw away any tile placed there by hand. It now only touches the cells the autotiler actually owns, so anything filled in by hand stays put, per-cell collision rides through a retile, and erasing a material off a wall leaves the wall blocking.</li>
+            <li>Cliffs still draw over the painted ground, whichever way the layers are stacked.</li>
+          </ul>
+          <p>Nothing changes in-game with this one. It is groundwork for the maps coming next.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.58</span>
             <span class="news-tag red">Hotfix</span>
           </div>
