@@ -42,6 +42,23 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.63</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Above Water</h2>
+          <h3>Fixes</h3>
+          <ul>
+            <li><strong>The sea no longer draws over you.</strong> Making water solid so nobody swims off the edge of a map had a side effect: the engine treats anything you can't walk through as something you can walk *behind*, like a cliff face. So the water joined the same depth layer as fighters and painted over anyone standing north of it. Water is flat ground now, and stays under everything.</li>
+          </ul>
+          <h3>Under the hood</h3>
+          <ul>
+            <li>The map editor's collision overlay draws on top of trees and furniture instead of under them, so blocked cells in a wood are actually visible, and there is a new option to hide it entirely while the collision tool is up when you want to see the art underneath.</li>
+          </ul>
+          <p>Head above water.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.62</span>
             <span class="news-tag blue">Patch</span>
           </div>
