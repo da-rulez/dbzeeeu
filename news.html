@@ -42,6 +42,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.65</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Depth Rules</h2>
+          <h3>Under the hood</h3>
+          <ul>
+            <li><strong>Closed the bug behind the last two patches instead of patching another tile.</strong> The engine used to assume anything you cannot walk through is also something with height that you can walk behind, which is why making the water solid sent an entire sea in front of the players. Lava floors, pits and ice sheets were all one step from doing the same thing.</li>
+            <li>Tiles now say for themselves whether they layer with players or stay flat underneath them, and the map editor has a switch for it next to the collision shape. Every existing tile was pinned to exactly what it did before, so nothing on any map moved: all 18 maps rebuild byte for byte identical.</li>
+          </ul>
+          <p>Nothing changes in-game with this one.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.64</span>
             <span class="news-tag red">Hotfix</span>
           </div>
