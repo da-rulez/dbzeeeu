@@ -42,6 +42,24 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.69</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>No More Ledges</h2>
+          <h3>Changes</h3>
+          <ul>
+            <li><strong>You leave a floor by a ramp or a doorway, and by nothing else.</strong> Stepping off the rim of a cliff used to quietly drop you to the ground below. That was left over from an old experiment and it is gone. Cliff rims already block you, so the edge behaves like the wall it looks like. Ramps, stairs and floor transitions all work exactly as before.</li>
+            <li><strong>The Bloom HQ overhangs layer around you properly now.</strong> They were set up the old way and were actually drawing behind players instead of over them, so walking under one looked wrong. They sort per tile now like every other overhang: they cover what is behind them and you cover them when you step in front.</li>
+          </ul>
+          <h3>Under the hood</h3>
+          <ul>
+            <li>Cleared out the rest of the old depth handling: the pass that forced overhangs above every character no matter where they stood, a dead branch that could stamp a single tree above every player on the map, and some leftovers that no longer did anything.</li>
+          </ul>
+          <p>Watch your step.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.68</span>
             <span class="news-tag blue">Patch</span>
           </div>
