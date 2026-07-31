@@ -42,6 +42,25 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.70</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Pixel Perfect</h2>
+          <h3>Fixes</h3>
+          <ul>
+            <li><strong>Scenery now stands exactly where it was placed.</strong> The map editor was drawing objects six pixels lower than the game put them, so anything lined up carefully against other art ended up slightly too high. Most visible on the Lookout pillars, which were meant to meet the awning and were overlapping it instead.</li>
+            <li><strong>Overhangs cover you again, everywhere under them.</strong> Awnings, canopies and roofs go back to drawing over you whenever you are beneath them, rather than only while you stand on the far side.</li>
+            <li><strong>The Kami Spire had faint vertical stripes down both sides of its shadow.</strong> Its silhouette was being smudged out into the neighbouring artwork on the same sheet and picking up whatever sat next to it. Cut loose, clean shadow.</li>
+          </ul>
+          <h3>Under the hood</h3>
+          <ul>
+            <li>The object editor now draws the shadow in its preview, flattened and leaning exactly as it will in game, so the shadow offset can be set by eye instead of by saving and checking.</li>
+          </ul>
+          <p>Straight edges.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.69</span>
             <span class="news-tag blue">Patch</span>
           </div>
