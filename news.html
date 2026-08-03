@@ -42,6 +42,36 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.18.92</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Ground and Air</h2>
+          <h3>New Techniques</h3>
+          <ul>
+            <li><strong>Mighty Impact.</strong> Drive both fists into the ground and let the shock do the rest. Dust erupts outward in a flat ring, throwing everything nearby off its feet, and the churned earth catches a leg and holds it there for a few seconds.</li>
+            <li><strong>Force Push.</strong> A short-range wall of compressed air shoved forward off the palm. It does little more than bruise, but whatever it lands on leaves the ground.</li>
+            <li>Both scale with Strength. Technique scrolls for them are stocked in the admin shop.</li>
+          </ul>
+          <h3>New Status Effect</h3>
+          <ul>
+            <li><strong>Snared.</strong> Pinned to the spot, unable to move until the grip slackens.</li>
+          </ul>
+          <h3>Fixes</h3>
+          <ul>
+            <li><strong>Status effects now show their visuals on enemies.</strong> Any effect with an overlay (Snared and everything added later) was drawing correctly on players but was silently invisible on NPCs.</li>
+            <li><strong>Taking a hit always reads as taking a hit.</strong> Damage now flashes the target red even in the cases where the flinch animation is deliberately suppressed, such as during a technique that cannot be interrupted. Chip damage used to land with no feedback at all.</li>
+          </ul>
+          <h3>Under the Hood</h3>
+          <ul>
+            <li><strong>Techniques can scale off any combat stat.</strong> The damage school (spirit or physical) still decides which of your defences answers it, but which of the caster's stats it grows from is now set separately, opening the door to abilities built around Endurance or Spirit Defence. Every existing technique scales exactly as before.</li>
+            <li>Area techniques can now be oval and offset rather than always a circle centred on the caster, so a hit area can match a flat, ground-hugging effect instead of over-reaching above and below it.</li>
+            <li>The technique tooltip names the stat a spell scales with.</li>
+            <li>Effect spritesheets can be laid out as a grid instead of one long strip.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.18.91</span>
             <span class="news-tag blue">Patch</span>
           </div>
