@@ -42,6 +42,25 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.19.7</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Standing Where They Stand</h2>
+          <h3>Fixes</h3>
+          <ul>
+            <li><strong>Rock Golems no longer walk over the scenery.</strong> Every NPC was sorting from a line 14px south of its own feet, so it drew in front of rocks it was standing behind. Crowded ground made it obvious.</li>
+            <li><strong>Cast auras hug the caster again.</strong> The silhouette an NPC's aura traces sat a sprite's-height too low, so a golem winding up looked like it was gathering the ground below itself.</li>
+            <li><strong>Knockback on NPCs is predicted client-side.</strong> A hard shove used to arrive as four position corrections eased into each other, which read as a slow drift instead of a hit.</li>
+            <li><strong>Force Push no longer glows.</strong> A projectile that declined a light was given a default one anyway.</li>
+          </ul>
+          <h3>Balance</h3>
+          <ul>
+            <li><strong>Rock Golems have three times the health.</strong> They were folding faster than anything that heavy should.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.19.6</span>
             <span class="news-tag blue">Patch</span>
           </div>
