@@ -42,6 +42,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.19.17</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Inside The Lines</h2>
+          <h3>Fixes</h3>
+          <ul>
+            <li><strong>Hit-area animations stay inside the strip they damage.</strong> They were laid out one frame at a time and rounded up, so on most lengths the last one hung off the end. A 320px lane of 60px spikes drew forty pixels of art past anything that could be hit. Frames now sit flush with the start and the end, at their native size, with the slack shared between them.</li>
+            <li><strong>An NPC's line telegraph starts where its technique does.</strong> It was drawn from the caster's own position while the lane it fired started at the muzzle, so the warning rectangle and the damage covered different ground. Player casts already did this correctly.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.19.16</span>
             <span class="news-tag blue">Patch</span>
           </div>
