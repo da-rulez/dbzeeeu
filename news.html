@@ -42,6 +42,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.19.13</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Preview, Properly</h2>
+          <h3>Tools</h3>
+          <ul>
+            <li><strong>The preview's caster now acts.</strong> It plays the spell's own cast and fire animations, facing the previewed direction, instead of standing in one frozen pose.</li>
+            <li><strong>Every spell type renders, not just lines.</strong> Projectiles show their muzzle, flight line and impact radius; bombs show the landing circle at range; the caster and both overlays play for all of them.</li>
+            <li><strong>The lane was drawn in the wrong place.</strong> Muzzle drop is positive-DOWN in the game, and the preview was lifting it instead, so a lane sat twice its drop above where it really lands. The preview's caster is now anchored on the node origin the effects actually measure from, with the feet collider and origin both marked.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.19.12</span>
             <span class="news-tag blue">Patch</span>
           </div>
