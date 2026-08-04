@@ -42,6 +42,21 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.19.8</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Hold The Note</h2>
+          <h3>Fixes</h3>
+          <ul>
+            <li><strong>Knocked-back NPCs stop drifting off where the server never put them.</strong> The shove was being re-simulated locally, and a golem shoved into a rock could settle on the wrong side of it. It now follows the server's own path with the lag taken out, so the hit still lands hard but nothing invents a position.</li>
+            <li><strong>Sustained cast auras hold instead of twitching.</strong> A spell that keeps firing sends its overlay again on every tick, and each arrival tore the aura down and swelled it from nothing again. Human Extinction shows it best: the electricity now sits at full strength for the whole stream instead of flickering back and forth.</li>
+            <li><strong>Overlay animations no longer rewind mid-play.</strong> The same repeat that reset the aura also restarted the spritesheet, so long effects only ever showed their opening frames.</li>
+            <li><strong>NPCs on raised ground keep their place in the scenery.</strong> A state packet could stamp a depth value that outranked the world's sorting, with nothing to take it back off.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.19.7</span>
             <span class="news-tag blue">Patch</span>
           </div>
