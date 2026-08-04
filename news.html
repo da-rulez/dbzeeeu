@@ -42,6 +42,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.19.12</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>The Preview Actually Previews</h2>
+          <h3>Tools</h3>
+          <ul>
+            <li><strong>The spell cast preview now shows the cast.</strong> The first version drew almost nothing: it only knew how to draw spritesheets, and most cast auras are shader effects with no sheet at all. It now runs the real aura shader over a real silhouette, the real animation builder for every sheet, and the caster sprite it was pointed at a path that did not exist.</li>
+            <li><strong>The preview has a self-test.</strong> A headless check asserts the caster, the aura and the hazard tiles are actually live, so "it builds without errors" can never again be mistaken for "it works".</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.19.11</span>
             <span class="news-tag blue">Patch</span>
           </div>
