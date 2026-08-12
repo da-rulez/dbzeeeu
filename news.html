@@ -42,6 +42,16 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.20.35</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Shots Know Which Floor They Are On</h2>
+          <p><strong>A projectile's floor never reached your game client.</strong> Every shot you saw was treated as being on the ground floor, whichever level it was actually fired on. On a client that meant a seeking shot fired upstairs ignored the enemies upstairs when working out where to curve, and shots were depth-sorted against the wrong floor's layer.</p>
+          <p>The shot now carries the floor it was fired on, so what your client sees agrees with what the server is simulating.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.20.34</span>
             <span class="news-tag blue">Patch</span>
           </div>
