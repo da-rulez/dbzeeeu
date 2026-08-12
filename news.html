@@ -42,6 +42,18 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.20.36</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Shots Sort Against The World</h2>
+          <p><strong>A fired shot now passes behind and in front of things the way it should.</strong> Projectiles were never part of the world's drawing order at all: whatever the sorting said, a shot was drawn after everything else on screen, so it slid over trees, over rooftops, over the person you were fighting, no matter where it actually was.</p>
+          <p>They now sit in the same order as everyone else. Fire upward and the blast leaves from behind your shoulder; fire downward and it crosses in front of you; and it passes behind the scenery it is genuinely behind.</p>
+          <p>A ball held over your head is unchanged, that really is above the scenery.</p>
+          <p>Also fixes something that never made it into a patch note because it only bit inside dimensions: a projectile fired in a dimension was being spawned a million pixels outside the map. Nothing was ever hit by it.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.20.35</span>
             <span class="news-tag red">Hotfix</span>
           </div>
