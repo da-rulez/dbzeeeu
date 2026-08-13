@@ -54,7 +54,9 @@
     projectile: 'Projectile', line: 'Line', aoe: 'Area', bomb: 'Lobbed',
     charge: 'Charge', self: 'Self', passive: 'Passive', taunt: 'Taunt',
     transform: 'Transformation', revert: 'Revert', teleport_to_target: 'Teleport',
-    instant: 'Instant', buff: 'Buff'
+    instant: 'Instant', buff: 'Buff',
+    heal_self: 'Heal (self)', heal_ally: 'Heal (ally)', heal_area: 'Heal (area)',
+    support: 'Support'
   };
 
   function secs(n) {
