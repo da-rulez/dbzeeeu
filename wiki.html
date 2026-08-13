@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Guide | DBZee</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The DBZee player guide: how loci and objectives work, crafting, item infusion, weather, minigames and hosting your own match, plus a showcase of every technique the Collection Log names.">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Bangers&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/wiki.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="./">
+      <img class="brand-logo" src="assets/img/logo_header.png" alt="DBZee">
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav">
+      <a href="./">Home</a>
+      <a href="features.html">Features</a>
+      <a href="wiki.html" class="active">Guide</a>
+      <a href="about.html">About</a>
+      <a href="play.html">Play</a>
+      <a href="news.html">News</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <span class="kicker">Guide</span>
+      <h1>How everything works.</h1>
+      <p class="section-sub" style="margin-top:1rem;">
+        The systems explained, and a showcase of what you'll be collecting. What
+        you unlock by playing stays where it belongs: in the game.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0.5rem;">
+    <div class="container wiki-shell">
+
+      <!-- ── Drawer ─────────────────────────────────────────── -->
+      <aside class="wiki-drawer" aria-label="Guide sections">
+        <div class="wiki-drawer-group">
+          <div class="wiki-drawer-label">Basics</div>
+          <button class="wiki-tab" data-section="start">Getting started</button>
+          <button class="wiki-tab" data-section="fighter">Your fighter</button>
+          <button class="wiki-tab" data-section="fighting">Fighting</button>
+        </div>
+        <div class="wiki-drawer-group">
+          <div class="wiki-drawer-label">Systems</div>
+          <button class="wiki-tab" data-section="loci">Loci &amp; objectives</button>
+          <button class="wiki-tab" data-section="crafting">Crafting</button>
+          <button class="wiki-tab" data-section="infusion">Infusion</button>
+          <button class="wiki-tab" data-section="weather">Weather</button>
+          <button class="wiki-tab" data-section="homes">Homes &amp; guilds</button>
+        </div>
+        <div class="wiki-drawer-group">
+          <div class="wiki-drawer-label">Compete</div>
+          <button class="wiki-tab" data-section="minigames">Minigames</button>
+          <button class="wiki-tab" data-section="hosting">Hosting a match</button>
+        </div>
+        <div class="wiki-drawer-group">
+          <div class="wiki-drawer-label">Reference</div>
+          <button class="wiki-tab" data-section="techniques">Techniques</button>
+          <button class="wiki-tab" data-section="bestiary">Bestiary</button>
+          <button class="wiki-tab" data-section="collection">Collection Log</button>
+        </div>
+      </aside>
+
+      <!-- ── Body ───────────────────────────────────────────── -->
+      <div class="wiki-body">
+
+        <!-- Getting started -->
+        <article class="wiki-section" id="sec-start">
+          <h2>Getting started</h2>
+          <p class="wiki-lede">Make an account, make a fighter, and walk out into Solum. Nothing here is missable.</p>
+
+          <h3>Your first ten minutes</h3>
+          <ul>
+            <li>Pick a race and build a face. You get three character slots per account.</li>
+            <li>Spend your starting orbs on the stat screen. Nothing is permanent in the sense of being wasted &mdash; every stat is worth having, and you keep earning orbs forever.</li>
+            <li>Walk into anything hostile and hit it with the technique on your bar. Orbs and drops come off it.</li>
+            <li>Press <strong>C</strong> whenever you have orbs to spend. That is your entire levelling loop.</li>
+          </ul>
+
+          <h3>Keys worth knowing</h3>
+          <div class="wiki-table-wrap">
+            <table class="wiki-table">
+              <thead><tr><th>Key</th><th>Opens</th></tr></thead>
+              <tbody>
+                <tr><td>1 &ndash; 7</td><td>Your technique bar</td></tr>
+                <tr><td>C</td><td>Character: stats, inventory, equipment, active effects</td></tr>
+                <tr><td>B</td><td>Technique book, and your passive slots</td></tr>
+                <tr><td>O</td><td>Loci and objectives</td></tr>
+                <tr><td>N</td><td>Bestiary</td></tr>
+                <tr><td>M</td><td>Minigames and tournaments</td></tr>
+                <tr><td>P / G / H</td><td>Party, guild, house</td></tr>
+                <tr><td>Ctrl + direction</td><td>Aim without walking</td></tr>
+                <tr><td>Shift</td><td>Sprint (burns stamina)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="wiki-note">
+            <strong>There is no basic attack.</strong> Everything you do in a fight comes off the
+            seven-slot technique bar, so keep something offensive slotted.
+          </div>
+        </article>
+
+        <!-- Your fighter -->
+        <article class="wiki-section" id="sec-fighter">
+          <h2>Your fighter</h2>
+          <p class="wiki-lede">No global level. Seven stats, bought one at a time with the orbs you pick up.</p>
+
+          <h3>Experience orbs</h3>
+          <p>Everything you kill drops orbs, and they lie on the ground in denominations until
+          you walk over them. Orbs are not a bar that fills: they are currency you spend on the
+          stat you want, on the character screen. Each level of a stat costs more than the last,
+          and you can part-fill a level &mdash; ten orbs into a stat that needs two hundred is ten
+          orbs of progress, not ten orbs wasted.</p>
+          <p><strong>Power Level</strong> is just the total you have spent, shown as one number so
+          other players can size you up.</p>
+
+          <h3>The seven stats</h3>
+          <div id="stat-list"></div>
+
+          <h3>Two schools of damage</h3>
+          <p>Every technique is either <strong>spirit</strong> or <strong>physical</strong>. That
+          decides which of the target's defences applies: Spirit Defense against spirit,
+          Endurance against physical. So there are exactly two things to defend against, and you
+          always know which stat to raise.</p>
+
+          <h3>Races</h3>
+          <div id="race-list"></div>
+
+          <h3>Transformations</h3>
+          <p>Transformations are techniques like any other: slot one, cast it, and you swap to
+          your transformed sprite with an aura while it drains Ki. Run out of Ki and you revert
+          automatically. Only one can be active at a time.</p>
+        </article>
+
+        <!-- Fighting -->
+        <article class="wiki-section" id="sec-fighting">
+          <h2>Fighting</h2>
+          <p class="wiki-lede">Seven active slots, five passive ones, and a lot of aiming.</p>
+
+          <h3>The bar</h3>
+          <p>Seven slots on keys 1 to 7, filled from your technique book (B). Five separate
+          passive slots sit alongside them: passives have a trigger rather than a cast, and they
+          apply themselves whenever their condition is met &mdash; below a health threshold, on a
+          kill, after going untouched for a while.</p>
+
+          <h3>Aiming</h3>
+          <ul>
+            <li>Most techniques fire where you are pointing. <strong>Ctrl + a direction</strong> turns you on the spot without walking.</li>
+            <li>Anything with a wind-up can be <strong>steered while it casts</strong>. The lane or cone drawn on the ground turns with you, and what you are pointing at when it goes off is where it goes.</li>
+            <li>Charged techniques keep tracking your aim for as long as you hold them. Let go and it leaves along your last direction.</li>
+            <li>Lobbed techniques land where the target is, and re-aim between volleys.</li>
+          </ul>
+
+          <h3>Status effects</h3>
+          <p>Buffs and debuffs stack as components: speed, shields, damage over time, roots,
+          silences, deflect chances, and more. Your active ones show beside your health bars and
+          in full on the character screen &mdash; hover any of them for exactly what it is doing, how
+          long is left and where it came from.</p>
+
+          <div class="wiki-note">
+            <strong>PvP is off unless both of you want it.</strong> Players can only damage each
+            other when both are standing inside a PvP zone.
+          </div>
+        </article>
+
+        <!-- Loci -->
+        <article class="wiki-section" id="sec-loci">
+          <h2>Loci &amp; objectives</h2>
+          <p class="wiki-lede">Instanced challenges you walk into. Everything you earn inside is paid out when you leave.</p>
+
+          <h3>Going in</h3>
+          <p>A locus is entered through its warp. Some are shared, some spin up a private copy
+          just for you, some take your party in together. Press <strong>O</strong> to see the list,
+          what each one asks of you, and what it pays.</p>
+
+          <h3>Objectives</h3>
+          <p>Each locus carries its own objectives &mdash; kill this many of that, survive this long,
+          reach that room, beat the thing at the end. Up to three of them ride along in the corner
+          of your screen and tick over live as you play. Some are marked <strong>required</strong>
+          (the locus is not cleared without them) and some are marked as the <strong>boss</strong>
+          of the run; both carry a badge next to the objective so you can see at a glance which is
+          which.</p>
+
+          <h3>Getting paid</h3>
+          <ul>
+            <li><strong>What you pick up inside</strong> &mdash; loot, Zeni, orbs &mdash; is held in a pool and handed to you when you leave.</li>
+            <li><strong>Objective rewards</strong> are claimed from the summary screen on the way out. Some are straight grants; some offer a choice, and you take one.</li>
+            <li>If your bag is full, nothing is lost. Unclaimed rewards stay pending and you can claim them later.</li>
+          </ul>
+
+          <p>Leaving through the exit warp, dying, or logging out all end the run. Clearing one
+          marks it cleared on your account, and the summary tells you what you did: kills, damage
+          dealt and taken, time, and everything you are walking out with.</p>
+        </article>
+
+        <!-- Crafting -->
+        <article class="wiki-section" id="sec-crafting">
+          <h2>Crafting</h2>
+          <p class="wiki-lede">Find a crafting table, spend the ingredients, take the chance.</p>
+
+          <p>Crafting happens at a table you interact with in the world. The window lists the
+          recipes <em>you</em> know: up to four ingredients each, an output, and a success chance
+          printed on the recipe. Ingredients you are short of are marked in red.</p>
+
+          <h3>Discovery</h3>
+          <p>Recipes have three states. Some you know from the start. Some show as
+          <strong>???</strong> &mdash; you can see that something exists at that table but not what it
+          is, until you find the recipe. And some are not listed at all until you learn them.</p>
+
+          <h3>When a craft fails</h3>
+          <p>A failed craft does not eat everything. Each recipe names which of its ingredients
+          are consumed on failure &mdash; the rest are handed straight back. Buffs that raise your
+          craft chance apply on top of the recipe's own number.</p>
+
+          <div class="wiki-note">
+            <strong>Keep a slot free.</strong> A craft needs somewhere to put the result, and
+            pickups are paused while the window is open so nothing can fill your last slot
+            mid-craft.
+          </div>
+        </article>
+
+        <!-- Infusion -->
+        <article class="wiki-section" id="sec-infusion">
+          <h2>Infusion</h2>
+          <p class="wiki-lede">Upgrade a specific piece of gear, tier by tier, at an Infusion Bench.</p>
+
+          <p>Infusion works on <strong>the copy in your hands</strong>, not on the item type. Two
+          identical swords can end up completely different: the tier and every choice made along
+          the way live on that one copy and travel with it if you trade it.</p>
+
+          <h3>How a tier works</h3>
+          <ul>
+            <li>Bring the item to a bench and open it. Browsing costs nothing and rolls nothing.</li>
+            <li>The bench shows the item's current tier, the materials the next tier costs, and the options that tier offers.</li>
+            <li>Pick an option and pay. The exact value inside that option's range is rolled for you.</li>
+            <li>Each tier is one more permanent line on that copy. Higher tiers wear a brighter frame so you can see at a glance what a piece has been through.</li>
+          </ul>
+
+          <div class="wiki-note">
+            <strong>Nothing is taken before everything is checked.</strong> The bench validates
+            ownership, the tier and the materials before it consumes anything, so there is no way
+            to pay and get nothing.
+          </div>
+        </article>
+
+        <!-- Weather -->
+        <article class="wiki-section" id="sec-weather">
+          <h2>Weather</h2>
+          <p class="wiki-lede">Rolled by the server per area, seen by everyone in it at the same time.</p>
+
+          <p>Weather is not decoration on your client &mdash; it is part of the world state. Each area
+          rolls its own from the kinds that suit it, runs it for a while, then rolls again. Walk
+          into an area and you get whatever is happening there, exactly as everyone else in it
+          sees it. Indoors, nothing.</p>
+
+          <p>Heavier weather can do more than look good: some of it puts a status effect on
+          everybody standing in it. Your active effects list tells you when that is happening
+          and what it is doing, under its own <strong>Weather</strong> heading.</p>
+
+          <div id="weather-list"></div>
+
+          <div class="wiki-note">
+            <strong>It scales to your machine.</strong> Particle density follows the weather
+            quality setting, and it can be switched off entirely in the options.
+          </div>
+        </article>
+
+        <!-- Homes & guilds -->
+        <article class="wiki-section" id="sec-homes">
+          <h2>Homes &amp; guilds</h2>
+          <p class="wiki-lede">Somewhere to put your things, and people to put them with.</p>
+
+          <h3>Houses</h3>
+          <p>Houses are bought, owned and locked. You decide who gets in, you can kick anyone
+          inside, and you can sell up. Furniture is placed piece by piece &mdash; some of it takes a
+          moment to build, some of it can only go in certain spots, and some of it emits an aura
+          that buffs whoever is standing near it.</p>
+
+          <h3>Guilds</h3>
+          <p>Guilds have ranks, a message of the day, a guild chat channel and a shared vault of
+          twenty slots that members can deposit into and withdraw from by rank. A guild house
+          gets pedestals &mdash; which is where the Dragon Balls come in.</p>
+
+          <h3>The Dragon Balls</h3>
+          <p>Exactly seven exist in the world at any time, and they move: dormant on a pedestal
+          somewhere, dropped by something you killed, sitting in someone's bag, or placed on a
+          guild's pedestal. Pickups, drops and placements are announced to everyone. Gather all
+          seven on one guild's pedestals and hold them there, and the wish fires.</p>
+        </article>
+
+        <!-- Minigames -->
+        <article class="wiki-section" id="sec-minigames">
+          <h2>Minigames</h2>
+          <p class="wiki-lede">Queue from the M menu. Your character walks in; the match decides what carries.</p>
+
+          <h3>The modes</h3>
+          <div class="wiki-table-wrap">
+            <table class="wiki-table">
+              <thead><tr><th>Mode</th><th>What it is</th></tr></thead>
+              <tbody>
+                <tr><td>Free-for-all</td><td>Everyone against everyone, in an arena built for it.</td></tr>
+                <tr><td>Tournament</td><td>Bracket, one on one, no respawns. The server-wide one is the Budokai Tenkaichi.</td></tr>
+                <tr><td>King of the Hill</td><td>Teams holding ground for points.</td></tr>
+                <tr><td>Dragon Ball Hunt</td><td>Find and hold the balls while everyone else wants them.</td></tr>
+                <tr><td>MOBA</td><td>Start even, earn orbs in the match, build a fighter inside the game.</td></tr>
+                <tr><td>Race</td><td>A course, and everyone else in your way.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Rules that change the fight</h3>
+          <p>Each match is configured by a set of rule checkboxes, shown before you commit:</p>
+          <ul>
+            <li><strong>Equalised stats.</strong> Everyone on the same block, so gear and grind do not decide it.</li>
+            <li><strong>Equal start.</strong> Everyone begins level, and what you buy <em>inside</em> the match counts &mdash; the MOBA rule.</li>
+            <li><strong>Ten percent health.</strong> Faster and far more lethal.</li>
+            <li><strong>Respawns on or off.</strong> Off means a death puts you out. Tournaments never respawn.</li>
+            <li><strong>Gear disabled.</strong> Your equipment still shows, but contributes nothing.</li>
+          </ul>
+
+          <p>Everything a match does to your fighter is undone on the way out. Nothing you buy,
+          equip or lose inside a match follows you back into the world.</p>
+
+          <h3>Rating</h3>
+          <p>Each mode keeps its own rating, so being frightening in the tournament bracket says
+          nothing about your racing. Leaderboards show the fighter, not just the name.</p>
+        </article>
+
+        <!-- Hosting -->
+        <article class="wiki-section" id="sec-hosting">
+          <h2>Hosting a match</h2>
+          <p class="wiki-lede">Put up a prize, set the rules, and let people sign up.</p>
+
+          <p>Anyone can host. Open the minigames menu, pick the mode and map, tick the rules you
+          want, and put up a <strong>Zeni prize</strong> from your own pocket. The lobby is then
+          open to whoever wants in.</p>
+
+          <h3>Entry and prizes</h3>
+          <ul>
+            <li>Entry into a hosted match costs a small percentage of the prize you put up, paid by each fighter who signs up.</li>
+            <li>Leave before it starts, or if the lobby is cancelled, and your entry is refunded exactly.</li>
+            <li>The prize goes to the winner when the match resolves.</li>
+          </ul>
+
+          <p>Scheduled server-wide events work the same way from the player's side, with a fixed
+          signup cost instead of a host's prize pool.</p>
+
+          <div class="wiki-note">
+            <strong>Host honestly.</strong> The rules you tick are shown to everyone signing up,
+            and the match runs on them.
+          </div>
+        </article>
+
+        <!-- Techniques -->
+        <article class="wiki-section" id="sec-techniques">
+          <h2>Techniques</h2>
+          <p class="wiki-lede">Every technique the Collection Log names. The rest is yours to find.</p>
+          <div class="wiki-filters" id="tech-filters"></div>
+          <div class="wiki-grid" id="tech-grid"></div>
+          <div class="wiki-locked" id="tech-locked"></div>
+        </article>
+
+        <!-- Bestiary -->
+        <article class="wiki-section" id="sec-bestiary">
+          <h2>Bestiary</h2>
+          <p class="wiki-lede">Who you'll be fighting. What they carry is between you and them.</p>
+          <p>The in-game bestiary (N) tracks every kind you have killed, counts them, and opens
+          up more about each one the further you go &mdash; including what they drop. None of that is
+          reproduced here: this is the part you can see by looking at them.</p>
+          <div id="bestiary-list"></div>
+        </article>
+
+        <!-- Collection log -->
+        <article class="wiki-section" id="sec-collection">
+          <h2>Collection Log</h2>
+          <p class="wiki-lede">The completionist's list, and the reason this guide stops where it does.</p>
+          <p>The log tracks the things worth having: treasures, techniques, and the rest of the
+          long tail. Entries you have found are shown in full. Entries you have not can appear in
+          two ways &mdash; as a named slot you have not filled yet, or as <strong>???</strong>, where
+          even the name is part of the find.</p>
+          <p>This guide lists what the log would name for you anyway. It does not list the
+          question marks, it does not print drop tables, and it does not tell you which thing
+          carries which reward. That is the game.</p>
+          <p class="wiki-meta-line" id="wiki-version"></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; 2026 DBZee. A fan made online ORPG.</span>
+    <span><a href="./">Home</a> &middot; <a href="wiki.html">Guide</a> &middot; <a href="about.html">About</a> &middot; <a href="play.html">Play</a> &middot; <a href="news.html">News</a> &middot; <a href="https://discord.gg/RCZk2zBAXm" target="_blank" rel="noopener">Discord</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/wiki.js"></script>
+</body>
+</html>

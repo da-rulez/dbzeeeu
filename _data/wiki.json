@@ -1,0 +1,677 @@
+{
+	"generated_for_version": "0.20.48",
+	"hidden_spell_count": 7,
+	"npcs": [
+		{
+			"boss": false,
+			"category": "Calibration Drones",
+			"id": "calibration_bot_a",
+			"lore": "Recycled training units fitted with a calibration tap. Their swing is soft; their persistence is not.",
+			"name": "Calibration Bot Mk-I"
+		},
+		{
+			"boss": false,
+			"category": "Calibration Drones",
+			"id": "calibration_bot_b",
+			"lore": "Heavier sibling of the Mk-I. The Bloom claims the upgrade is for 'realistic baseline pressure.' The chip logs the bruises either way.",
+			"name": "Calibration Bot Mk-II"
+		},
+		{
+			"boss": true,
+			"category": "Calibration Drones",
+			"id": "calibration_boss",
+			"lore": "The Overseer ends every baseline. Outlasted, it signs the chip's first real entry. Outclassed, it grinds the chip back down for re-calibration.",
+			"name": "Calibration Overseer"
+		},
+		{
+			"boss": false,
+			"category": "Rock Golems",
+			"id": "rock_golem_green",
+			"lore": "Emerald growth binds the slabs. The seams glow faintly before it tears one open.",
+			"name": "Emerald Crystal Golem"
+		},
+		{
+			"boss": true,
+			"category": "Red Ribbon Army",
+			"id": "general_white",
+			"lore": "General White holds the Icy Plateau in the high north. Commands the ground he's standing on with rifle support from the ridges. Three escalations, no surrender. Drop him and the chain of command breaks.",
+			"name": "General White"
+		},
+		{
+			"boss": false,
+			"category": "Rock Golems",
+			"id": "rock_golem",
+			"lore": "Slabs of rock still wet from the ground. Hitting one with anything blunt is a waste of a swing.",
+			"name": "Rock Golem"
+		},
+		{
+			"boss": false,
+			"category": "Rock Golems",
+			"id": "rock_golem_pink",
+			"lore": "More crystal than rock, and it shows: lighter, faster, and far more willing to open the ground under you.",
+			"name": "Rose Crystal Golem"
+		},
+		{
+			"boss": false,
+			"category": "Rock Golems",
+			"id": "rock_golem_blue",
+			"lore": "The blue seams are not decoration; they are what it throws.",
+			"name": "Sapphire Crystal Golem"
+		}
+	],
+	"races": [
+		{
+			"description": "A wise and resilient race from Planet Namek. Known for their regenerative abilities, spiritual connection, and mastery of Ki-based techniques.",
+			"id": "namek",
+			"name": "Namekian"
+		},
+		{
+			"description": "A fierce Saiyan warrior with unmatched agility and fighting spirit. Capable of achieving the legendary Super Saiyan transformation.",
+			"id": "saiyan_female",
+			"name": "Saiyan Female"
+		},
+		{
+			"description": "A proud warrior race with immense combat potential. Saiyans grow stronger after every battle.",
+			"id": "saiyan_male",
+			"name": "Saiyan Male"
+		}
+	],
+	"spells": [
+		{
+			"cast_time": 0.0,
+			"cooldown": 16.0,
+			"description": "Palm out, elbow locked. Force is compressed into a single blue-white sphere and released in one punch of pressure.",
+			"icon": "assets/img/wiki/bigbangattack.png",
+			"id": "big_bang_attack",
+			"ki_cost": 34.0,
+			"name": "Big Bang Attack",
+			"passive": false,
+			"range": 720.0,
+			"rarity": "rare",
+			"tags": [
+				"charge"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 14.0,
+			"description": "A shout that dares everything nearby to come at you. Enemies in range drop whoever they were chasing and turn on you, and stay angry at you for a while after.",
+			"icon": "assets/img/wiki/challengingroar.png",
+			"id": "challenging_roar",
+			"ki_cost": 18.0,
+			"name": "Challenging Roar",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "uncommon",
+			"tags": [
+				"taunt",
+				"utility"
+			],
+			"type": "taunt"
+		},
+		{
+			"cast_time": 0.1,
+			"cooldown": 1.0,
+			"description": "Draw in ambient ki to replenish your reserves. Leaves you stationary and vulnerable while channeling.",
+			"icon": "assets/img/wiki/powerup.png",
+			"id": "charge",
+			"ki_cost": 0.0,
+			"name": "Charge",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"channel"
+			],
+			"type": "charge"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.6,
+			"description": "Gather ki in your palm and let it build. Release early for a quick pellet, or hold to full for a blast that detonates on impact.",
+			"icon": "assets/img/wiki/charged_ki_blast.png",
+			"id": "charged_ki_blast",
+			"ki_cost": 6.0,
+			"name": "Charged Ki Blast",
+			"passive": false,
+			"range": 700.0,
+			"rarity": "uncommon",
+			"tags": [
+				"starter",
+				"charge"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Every fight you have been in leaves something behind. A flat, permanent edge in all four combat stats, no conditions attached.",
+			"icon": "assets/img/wiki/combatinstinct.png",
+			"id": "combat_instinct",
+			"ki_cost": 0.0,
+			"name": "Combat Instinct",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"passive"
+			],
+			"type": "passive"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Years of basic training pay off. Small permanent boost to attack, defense, and max HP, plus steady out-of-combat HP and Ki regen.",
+			"icon": "assets/img/wiki/buff.png",
+			"id": "conditioning",
+			"ki_cost": 0.0,
+			"name": "Conditioning",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"passive"
+			],
+			"type": "passive"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 24.0,
+			"description": "Pull every scrap of ki inward until it has nowhere left to go, then let go. The wave flattens everything standing near you and leaves you wide open in the crater.",
+			"icon": "assets/img/wiki/explosion_wave.png",
+			"id": "explosive_wave",
+			"ki_cost": 85.0,
+			"name": "Explosive Wave",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"aoe",
+				"ki",
+				"self_sacrifice"
+			],
+			"type": "aoe"
+		},
+		{
+			"cast_time": 1.2,
+			"cooldown": 8.0,
+			"description": "Split the ground and let it run. A seam tears away from your feet and erupts along its length, each burst throwing up the one ahead of it until the line spends itself.",
+			"icon": "assets/img/wiki/fissurewave.png",
+			"id": "fissure_wave",
+			"ki_cost": 34.0,
+			"name": "Fissure Wave",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "uncommon",
+			"tags": [
+				"line",
+				"explosion",
+				"ground"
+			],
+			"type": "line"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 6.0,
+			"description": "A single compressed wall of air shoved forward off the palm. It does little more than bruise, but whatever it lands on leaves the ground.",
+			"icon": "assets/img/wiki/forcepush3.png",
+			"id": "force_push",
+			"ki_cost": 18.0,
+			"name": "Force Push",
+			"passive": false,
+			"range": 240.0,
+			"rarity": "common",
+			"tags": [
+				"projectile",
+				"physical",
+				"knockback"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 2.5,
+			"description": "More arms than you have, and all of them swinging. The punches leave wide and wrong-footed, then turn in and land together. Any one of them is nothing much. They do not arrive one at a time.",
+			"icon": "assets/img/wiki/fourarmavalanche.png",
+			"id": "four_arm_avalanche",
+			"ki_cost": 10.0,
+			"name": "Four Arm Avalanche",
+			"passive": false,
+			"range": 460.0,
+			"rarity": "uncommon",
+			"tags": [
+				"projectile",
+				"melee",
+				"homing"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.6,
+			"cooldown": 12.0,
+			"description": "Calm the mind and harden the body. Raises ki and physical defense for a short time.",
+			"icon": "assets/img/wiki/meditate2.png",
+			"id": "inner_focus",
+			"ki_cost": 6.0,
+			"name": "Inner Focus",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"buff"
+			],
+			"type": "self"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 3.0,
+			"description": "Warp instantly behind a targeted enemy, even up or down a cliff, arriving on their level.",
+			"icon": "assets/img/wiki/instanttransmission.png",
+			"id": "instant_transmission",
+			"ki_cost": 15.0,
+			"name": "Instant Transmission",
+			"passive": false,
+			"range": 700.0,
+			"rarity": "rare",
+			"tags": [
+				"utility",
+				"teleport"
+			],
+			"type": "teleport_to_target"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Take four hits inside five seconds and you stop giving ground. Damage lands softer and knockback barely moves you, for as long as they keep coming.",
+			"icon": "assets/img/wiki/ironwill.png",
+			"id": "iron_will",
+			"ki_cost": 0.0,
+			"name": "Iron Will",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "rare",
+			"tags": [
+				"passive"
+			],
+			"type": "passive"
+		},
+		{
+			"cast_time": 1.2,
+			"cooldown": 5.0,
+			"description": "Multiply your ki past what the body can hold. Strength and speed spike behind a crimson aura, but the strain burns Ki and slowly bleeds stamina — hold it too long and the technique drops on its own.",
+			"icon": "assets/img/wiki/kaioken.png",
+			"id": "kaioken",
+			"ki_cost": 0.0,
+			"name": "Kaioken",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "rare",
+			"tags": [
+				"transform",
+				"technique"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "You learn from every fight. Small permanent boost to XP gained from all sources.",
+			"icon": "assets/img/wiki/focus.png",
+			"id": "keen_mind",
+			"ki_cost": 0.0,
+			"name": "Keen Mind",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"passive"
+			],
+			"type": "passive"
+		},
+		{
+			"cast_time": 0.6,
+			"cooldown": 3.0,
+			"description": "A sustained lance of raw ki. No homing, just heavier impact than scattered bolts.",
+			"icon": "assets/img/wiki/ki_beam.png",
+			"id": "ki_beam",
+			"ki_cost": 8.0,
+			"name": "Ki Beam",
+			"passive": false,
+			"range": 700.0,
+			"rarity": "uncommon",
+			"tags": [
+				"starter",
+				"beam"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 0.2,
+			"description": "A quick burst of focused ki hurled in a straight line. Cheap, fast, and reliable.",
+			"icon": "assets/img/wiki/kiblast1.png",
+			"id": "ki_bolt",
+			"ki_cost": 4.0,
+			"name": "Ki Bolt",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"projectile"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Hold at a quarter health for three full seconds and something in you digs in. Heavy damage reduction and real regeneration, for as long as you stay there.",
+			"icon": "assets/img/wiki/laststand.png",
+			"id": "last_stand",
+			"ki_cost": 0.0,
+			"name": "Last Stand",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "uncommon",
+			"tags": [
+				"passive"
+			],
+			"type": "passive"
+		},
+		{
+			"cast_time": 0.6,
+			"cooldown": 9.0,
+			"description": "Drive both fists into the ground and let the shock do the rest. Dust erupts outward in a flat ring, throwing everything nearby off its feet, and the churned earth often catches a leg on the way past.",
+			"icon": "assets/img/wiki/might_impact.png",
+			"id": "mighty_impact",
+			"ki_cost": 28.0,
+			"name": "Mighty Impact",
+			"passive": false,
+			"range": 0.0,
+			"rarity": "uncommon",
+			"tags": [
+				"aoe",
+				"physical",
+				"knockback",
+				"control"
+			],
+			"type": "aoe"
+		},
+		{
+			"cast_time": 0.6,
+			"cooldown": 9.0,
+			"description": "Ki gathers around you and takes the shape of the beast. The heads launch skyward and come down in waves, each one hitting like something with weight behind it rather than light.",
+			"icon": "assets/img/wiki/primalbarrage.png",
+			"id": "meteor_barrage",
+			"ki_cost": 22.0,
+			"name": "Primal Barrage",
+			"passive": false,
+			"range": 620.0,
+			"rarity": "epic",
+			"tags": [
+				"lob",
+				"barrage"
+			],
+			"type": "bomb"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 5.0,
+			"description": "Throw up a shell of ki. For the first instant it is wound tight enough to throw projectiles straight back off it, and it holds as a softer guard for a moment after. Read the shot and it costs you nothing. Read it late and it still takes half.",
+			"icon": "assets/img/wiki/barrier.png",
+			"id": "barrier",
+			"ki_cost": 10.0,
+			"name": "Reflection Barrier",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"buff",
+				"defensive"
+			],
+			"type": "self"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Three down inside ten seconds and you stop slowing between them. Keep the streak alive and it keeps paying.",
+			"icon": "assets/img/wiki/relentless.png",
+			"id": "relentless",
+			"ki_cost": 0.0,
+			"name": "Relentless",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "uncommon",
+			"tags": [
+				"passive"
+			],
+			"type": "passive"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Drop any active transformation cleanly without burning what's left in your reserves.",
+			"icon": "assets/img/wiki/recoversenses.png",
+			"id": "revert",
+			"ki_cost": 0.0,
+			"name": "Revert",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"utility"
+			],
+			"type": "revert"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 2.5,
+			"description": "Five bolts thrown wide in one motion. They leave your hand scattered across the arc, then bend back in and converge on whoever you were aiming at. Each one lands lighter than a clean shot, but five of them add up.",
+			"icon": "assets/img/wiki/scatteringbullet.png",
+			"id": "scattering_bullet",
+			"ki_cost": 12.0,
+			"name": "Scattering Bullet",
+			"passive": false,
+			"range": 600.0,
+			"rarity": "uncommon",
+			"tags": [
+				"starter",
+				"projectile",
+				"homing"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.5,
+			"description": "A denser sphere of compressed ki that subtly bends toward its target. Costs more, but rarely misses.",
+			"icon": "assets/img/wiki/ki_blast_2.png",
+			"id": "seeking_bolt",
+			"ki_cost": 8.0,
+			"name": "Seeking Bolt",
+			"passive": false,
+			"range": 600.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"projectile",
+				"homing"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.6,
+			"cooldown": 14.0,
+			"description": "A finger raised, and the ki broken into a dozen small suns. They arc out wide and come down over everything you pointed at. Nowhere near the storm the technique it was copied from puts out, which is the point.",
+			"icon": "assets/img/wiki/fingerbarrage.png",
+			"id": "finger_barrage",
+			"ki_cost": 26.0,
+			"name": "Sunburst Volley",
+			"passive": false,
+			"range": 620.0,
+			"rarity": "rare",
+			"tags": [
+				"lob",
+				"spread"
+			],
+			"type": "bomb"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 0.35,
+			"description": "Wind up and throw the punch anyway, from wherever you are standing. The blow leaves the fist and keeps going, and whatever it reaches gets moved. It runs out of road well short of a ki blast, so the trick is being close enough to mean it.",
+			"icon": "assets/img/wiki/superchargingfist.png",
+			"id": "super_charging_fist",
+			"ki_cost": 3.0,
+			"name": "Super Charging Fist",
+			"passive": false,
+			"range": 190.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"projectile",
+				"melee"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 0.0,
+			"description": "Ignite the legendary transformation. Golden ki erupts around you, raising every combat stat.",
+			"icon": "assets/img/wiki/supersaiyan.png",
+			"id": "super_saiyan",
+			"ki_cost": 0.0,
+			"name": "Super Saiyan",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"saiyan"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 1.2,
+			"cooldown": 0.0,
+			"description": "A simple white aura ignites around you. All stats rise modestly for a short window.",
+			"icon": "assets/img/wiki/surge.png",
+			"id": "surge",
+			"ki_cost": 0.0,
+			"name": "Surge",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"starter",
+				"buff"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 0.6,
+			"cooldown": 6.0,
+			"description": "A short, brutal sweep of the arm with the current still on it. Everything standing in the arc in front of you catches it at once, and whatever it does to bone it also leaves behind a charge that will not sit still.",
+			"icon": "assets/img/wiki/electricfist.png",
+			"id": "thunder_break",
+			"ki_cost": 16.0,
+			"name": "Thunder Break",
+			"passive": false,
+			"range": 140.0,
+			"rarity": "rare",
+			"tags": [
+				"line",
+				"cone",
+				"melee",
+				"lightning"
+			],
+			"type": "line"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Go six seconds without being touched and it shows. Faster on your feet and sharper with ki, right up until something lands.",
+			"icon": "assets/img/wiki/untouchable.png",
+			"id": "untouchable",
+			"ki_cost": 0.0,
+			"name": "Untouchable",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "rare",
+			"tags": [
+				"passive"
+			],
+			"type": "passive"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Saiyan recovery, running while the wound is fresh. Drop below a third of your health and your attack climbs hard until you are out of danger.",
+			"icon": "assets/img/wiki/zenkaiboost.png",
+			"id": "zenkai_boost",
+			"ki_cost": 0.0,
+			"name": "Zenkai Boost",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "rare",
+			"tags": [
+				"passive"
+			],
+			"type": "passive"
+		}
+	],
+	"stats": [
+		{
+			"name": "Max HP",
+			"text": "Your life pool. At zero you are down."
+		},
+		{
+			"name": "Max Ki",
+			"text": "Fuel for every technique."
+		},
+		{
+			"name": "Max Stamina",
+			"text": "Burns while sprinting, refills when you stop."
+		},
+		{
+			"name": "Spirit Attack",
+			"text": "Raises the damage of spirit techniques."
+		},
+		{
+			"name": "Spirit Defense",
+			"text": "Reduces the damage spirit attacks do to you."
+		},
+		{
+			"name": "Strength",
+			"text": "Raises the damage of physical techniques."
+		},
+		{
+			"name": "Endurance",
+			"text": "Reduces the damage physical attacks do to you."
+		}
+	],
+	"weathers": [
+		{
+			"description": "",
+			"id": "snow_storm_heavy",
+			"name": "Heavy Snow Storm"
+		},
+		{
+			"description": "",
+			"id": "tropical_downpour",
+			"name": "Tropical Downpour"
+		},
+		{
+			"description": "",
+			"id": "tropical_clear",
+			"name": "Tropical Sun"
+		}
+	]
+}

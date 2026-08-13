@@ -1,0 +1,287 @@
+/* ----------------------------------------------------------
+   DBZee — guide layout
+   A drawer of buttons on the left, one panel of body on the
+   right: the same shape the in-game menus use, wearing the
+   site's palette.
+----------------------------------------------------------- */
+
+.wiki-shell {
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+  padding-bottom: 4rem;
+}
+
+/* ── Drawer ───────────────────────────────────────────────── */
+
+.wiki-drawer {
+  position: sticky;
+  top: 84px;
+  background: linear-gradient(180deg, var(--bg-card), var(--bg-elevated));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0.7rem 0.6rem;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+
+.wiki-drawer-group + .wiki-drawer-group { margin-top: 0.9rem; }
+
+.wiki-drawer-label {
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  padding: 0 0.5rem 0.35rem;
+}
+
+/* One drawer button. Flat until you touch it, gold bar down the
+   left when it is the section you are reading — the in-game tab. */
+.wiki-tab {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.15rem;
+  cursor: pointer;
+  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+}
+
+.wiki-tab:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.wiki-tab.active {
+  color: var(--text);
+  background: linear-gradient(90deg, rgba(244, 123, 35, 0.20), rgba(244, 123, 35, 0.04));
+  border-color: rgba(244, 123, 35, 0.45);
+  box-shadow: inset 3px 0 0 var(--orange);
+}
+
+/* ── Body ─────────────────────────────────────────────────── */
+
+.wiki-body {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.8rem 2rem;
+  min-height: 60vh;
+}
+
+.wiki-section { display: none; }
+.wiki-section.active { display: block; }
+
+.wiki-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin: 0 0 0.2rem;
+}
+
+.wiki-section h3 {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  margin: 1.7rem 0 0.5rem;
+  color: var(--gold-soft);
+}
+
+.wiki-lede {
+  color: var(--text-dim);
+  margin: 0 0 1.2rem;
+  font-size: 1.02rem;
+}
+
+.wiki-section p { margin: 0.6rem 0; }
+.wiki-section ul { margin: 0.5rem 0 0.9rem; padding-left: 1.1rem; }
+.wiki-section li { margin: 0.3rem 0; }
+.wiki-section strong { color: var(--text); }
+
+/* A pulled-aside note: the bits players ask about twice. */
+.wiki-note {
+  border-left: 3px solid var(--ki-blue);
+  background: rgba(56, 182, 255, 0.07);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 0.7rem 0.9rem;
+  margin: 1rem 0;
+  color: var(--text-dim);
+  font-size: 0.94rem;
+}
+
+.wiki-note strong { color: var(--ki-blue-soft); }
+
+/* ── Reference tables ─────────────────────────────────────── */
+
+.wiki-table-wrap { overflow-x: auto; margin: 0.8rem 0 1.2rem; }
+
+.wiki-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 420px;
+}
+
+.wiki-table th {
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  white-space: nowrap;
+}
+
+.wiki-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 0.6rem;
+  vertical-align: top;
+}
+
+.wiki-table tr:last-child td { border-bottom: none; }
+
+/* ── Technique cards ──────────────────────────────────────── */
+
+.wiki-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 1.1rem;
+}
+
+.wiki-chip {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  cursor: pointer;
+}
+
+.wiki-chip:hover { color: var(--text); border-color: var(--border-bright); }
+
+.wiki-chip.active {
+  color: #10111a;
+  background: var(--gold);
+  border-color: var(--gold);
+  font-weight: 600;
+}
+
+.wiki-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: 0.7rem;
+}
+
+.wiki-card {
+  display: flex;
+  gap: 0.7rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.7rem;
+}
+
+.wiki-card:hover { border-color: var(--border-bright); }
+
+.wiki-card-icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  image-rendering: pixelated;
+  border-radius: 6px;
+}
+
+.wiki-card-name {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  line-height: 1.25;
+  margin: 0 0 0.15rem;
+}
+
+.wiki-card-meta {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  margin: 0 0 0.35rem;
+}
+
+.wiki-card-text {
+  font-size: 0.83rem;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.wiki-card-stats {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.wiki-card-stats span { white-space: nowrap; }
+
+/* Rarity reads off the icon's frame, same colours the game uses. */
+.r-common   { box-shadow: inset 0 0 0 1px #6b6c82; }
+.r-uncommon { box-shadow: inset 0 0 0 1px #57c96b; }
+.r-rare     { box-shadow: inset 0 0 0 1px #3f8fe0; }
+.r-epic     { box-shadow: inset 0 0 0 1px #a45cf0; }
+.r-legendary{ box-shadow: inset 0 0 0 1px var(--gold); }
+
+/* The locked half of the collection log: shape without answers. */
+.wiki-locked {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  border: 1px dashed var(--border-bright);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  margin-top: 1rem;
+  color: var(--text-dim);
+}
+
+.wiki-locked-mark {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+}
+
+.wiki-meta-line {
+  margin-top: 2rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+/* ── Narrow screens: the drawer becomes a row of chips ────── */
+
+@media (max-width: 860px) {
+  .wiki-shell { grid-template-columns: 1fr; }
+  .wiki-drawer {
+    position: static;
+    max-height: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  .wiki-drawer-group { display: contents; }
+  .wiki-drawer-label { width: 100%; padding-top: 0.4rem; }
+  .wiki-tab { width: auto; margin-bottom: 0; }
+  .wiki-tab.active { box-shadow: inset 0 -2px 0 var(--orange); }
+  .wiki-body { padding: 1.2rem 1.1rem 1.6rem; }
+}
