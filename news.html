@@ -42,6 +42,23 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.20.42</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Taps, Trails And The Character Sheet</h2>
+          <p><strong>A tapped direction now counts.</strong> Your input is sampled thirty times a second, so a key pressed and released between two samples never left your machine: you turned on screen and the server never heard about it, and the shot went the old way. It felt like lag and it was not. A tap is now held until the next sample, so short taps turn you for real.</p>
+          <p><strong>Charged attacks steer again.</strong> Re-aiming during a charge was reading the movement input, which a cast switches off, so the server got nothing at all and the shot left in whatever direction the charge opened with. Charges follow your aim to the moment of release now, which is what made this feel worst on them.</p>
+          <p><strong>Sprint after-images pick their side by where they are</strong>, not by which way you happen to be facing. Running east while facing north put every echo on top of you; that is the flicker. They also no longer spend their first frame arriving from somewhere else.</p>
+          <p><strong>Character sheet:</strong></p>
+          <ul>
+            <li>The scrollbar no longer sits on top of the stat XP bars.</li>
+            <li>Speed and the three regen rates read as two columns in the same type as the stats above them, instead of four near-empty lines.</li>
+            <li>Active effects are icons in a grid, grouped by where they came from. Hover one for the full breakdown: what it does, how long is left, and where it came from.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.20.41</span>
             <span class="news-tag blue">Patch</span>
           </div>
