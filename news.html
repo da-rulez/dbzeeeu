@@ -42,6 +42,25 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.20.44</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>You Lead, The Server Follows</h2>
+          <p><strong>Your character faces where you point, full stop.</strong> Facing is now yours: you turn the instant you press, and the server takes your word for it instead of working out its own answer from movement samples and overwriting you a round trip later. Quick direction changes stick without holding the key down.</p>
+          <p><strong>A tap that starts and ends between two frames still turns you.</strong> That is the fastest press a keyboard can report, and it used to register as nothing at all.</p>
+          <p><strong>Being slowed no longer drags you backwards.</strong> The client was asking for your own effects under the wrong name and always got an empty list, so while slowed, rooted or confused it kept predicting you at full speed and the server kept pulling you back. It reads them now, so a slow feels like a slow instead of a bad connection.</p>
+          <p><strong>Sprint after-images are dropped behind you</strong> rather than on top of you, and are a touch lighter, so the trail reads as a trail instead of a second body smeared over your sprite.</p>
+          <p><strong>Character sheet effects:</strong></p>
+          <ul>
+            <li>Hovering an icon no longer loses the tooltip after a second. The grid only rebuilds when the effects themselves change.</li>
+            <li>Icons are the same 40x40 art the spell bar uses, four to a row, never rescaled. The HUD badges beside your bars halve that art cleanly instead of using a second set of 20x20 icons.</li>
+            <li>Every status effect now has an icon, matched to the technique or gear it comes from.</li>
+            <li>Weather effects are listed as Weather instead of being lumped in with your techniques.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.20.43</span>
             <span class="news-tag blue">Patch</span>
           </div>
