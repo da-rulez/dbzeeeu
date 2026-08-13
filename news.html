@@ -42,6 +42,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.20.40</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Zeni Payouts And Depth</h2>
+          <p><strong>Claiming a big Zeni payout no longer takes the game down with it.</strong> The reward grant handed currency over one single Zeni at a time, checking your bag for room on every one of them. A few million Zeni out of a locus meant nearly a minute of the server doing nothing else, which everyone felt as a freeze and a dropped connection instead of a payout. It is one bag check now, whatever the amount, and the receive animation plays like it should.</p>
+          <p><strong>Large numbers read with separators.</strong> 8,883,483 Zeni, not 8883483, on the locus summary and the reward claim.</p>
+          <p><strong>Coins picked up in a locus collect into one line</strong> instead of one entry per coin.</p>
+          <p><strong>You sort against the world again outside loci.</strong> On the overworld map two different pieces of code were both deciding your depth every frame, so you juddered against NPCs and drew underneath them and underneath beams. One of them now owns it.</p>
+          <p><strong>Sprint after-images stay behind you</strong> when you run down or sideways. They were being stamped back onto your own layer right after being placed behind you.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.20.39</span>
             <span class="news-tag blue">Patch</span>
           </div>
