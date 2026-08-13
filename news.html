@@ -42,6 +42,45 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.20.48</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Everything Since The Last Post</h2>
+          <p><strong>Combat feel</strong></p>
+          <ul>
+            <li>Aim while you cast: line spells and projectiles steer through the whole wind-up, sprite and telegraph following. Charges aim where you point at release instead of inheriting the last charge's direction.</li>
+            <li>A tapped direction registers even if you press and release between two frames, and you face where you pressed instead of being turned back a moment later.</li>
+            <li>Slows, roots and confusion are predicted properly, so a slow feels like a slow and not like a bad connection.</li>
+            <li>Walking into someone no longer buzzes: reversals while pressed against an NPC went from ~21 a run to ~3.</li>
+            <li>Bigger hit areas on the melee fists, Scattering Shard and Wind Blast.</li>
+          </ul>
+          <p><strong>Zeni</strong></p>
+          <ul>
+            <li>Money drops as coins the way XP orbs do, six denominations from copper to gold, scattered and vacuumed up.</li>
+            <li>Drops come from loot tables, Zeni can be dropped and traded, and locus runs pay out what you picked up. Large payouts no longer stall the server, and big numbers read as 8,883,483.</li>
+          </ul>
+          <p><strong>Techniques and effects</strong></p>
+          <ul>
+            <li>A full sound pass: charges, beams, volleys, melee, impacts and overlays have their own voice, played from where they happen.</li>
+            <li>Shots sort against the world and around you, on the right floor, and their light stays off characters.</li>
+            <li>Sprint after-images sit behind you, washed out and stretched along your run.</li>
+          </ul>
+          <p><strong>Screens</strong></p>
+          <ul>
+            <li>Active effects are icons on a grid with full hover detail, grouped by source, and every status effect has art now.</li>
+            <li>Character sheet: no scrollbar over the XP bars, speed and regen in two columns.</li>
+            <li>Objective badges line up beside their objective, and on the locus summary.</li>
+            <li>Tournament tab tidy-up, and the transformed Ki bar follows the bar.</li>
+          </ul>
+          <p><strong>Fixes</strong></p>
+          <ul>
+            <li>Solum and Muscle Tower ran with depth sorting off entirely: you drew under every NPC and beam there. Fixed, and every map is checked for it before release now.</li>
+            <li>Receiving a large Zeni reward no longer drops the client.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.20.46</span>
             <span class="news-tag blue">Patch</span>
           </div>
