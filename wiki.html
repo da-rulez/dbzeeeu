@@ -60,12 +60,14 @@
           <button class="wiki-tab" data-section="crafting">Crafting</button>
           <button class="wiki-tab" data-section="infusion">Infusion</button>
           <button class="wiki-tab" data-section="weather">Weather</button>
-          <button class="wiki-tab" data-section="homes">Homes &amp; guilds</button>
+          <button class="wiki-tab" data-section="homes">Your home</button>
         </div>
         <div class="wiki-drawer-group">
           <div class="wiki-drawer-label">Compete</div>
           <button class="wiki-tab" data-section="minigames">Minigames</button>
           <button class="wiki-tab" data-section="hosting">Hosting a match</button>
+          <button class="wiki-tab" data-section="guilds">Guilds</button>
+          <button class="wiki-tab" data-section="guildwar">Guild war</button>
         </div>
         <div class="wiki-drawer-group">
           <div class="wiki-drawer-label">Reference</div>
@@ -280,27 +282,41 @@
           </div>
         </article>
 
-        <!-- Homes & guilds -->
+        <!-- Your home -->
         <article class="wiki-section" id="sec-homes">
-          <h2>Homes &amp; guilds</h2>
-          <p class="wiki-lede">Somewhere to put your things, and people to put them with.</p>
+          <h2>Your home</h2>
+          <p class="wiki-lede">Buy the place, lock the door, and fill it with things you went and found.</p>
 
-          <h3>Houses</h3>
-          <p>Houses are bought, owned and locked. You decide who gets in, you can kick anyone
-          inside, and you can sell up. Furniture is placed piece by piece &mdash; some of it takes a
-          moment to build, some of it can only go in certain spots, and some of it emits an aura
-          that buffs whoever is standing near it.</p>
+          <h3>Getting one</h3>
+          <p>Houses are bought outright and owned by your character. Press <strong>H</strong>
+          inside yours to manage it: who is allowed in, who gets thrown out, and selling up if
+          you want to move. Visitors need to be on your access list; everyone else bounces off
+          the door.</p>
 
-          <h3>Guilds</h3>
-          <p>Guilds have ranks, a message of the day, a guild chat channel and a shared vault of
-          twenty slots that members can deposit into and withdraw from by rank. A guild house
-          gets pedestals &mdash; which is where the Dragon Balls come in.</p>
+          <h3>Decorating</h3>
+          <p>Furniture is placed piece by piece, and where it goes is up to you. Pick it up out
+          of your bag, drop it into position, rotate it, move it later, or take it back. Some
+          pieces raise in an instant; heavier ones take a moment to build and hold you in place
+          while they do, so you can see the progress bar fill.</p>
+          <ul>
+            <li><strong>Placement zones.</strong> Some rooms mark out where certain kinds of furniture belong &mdash; a banner goes on a banner wall, not in the middle of the floor.</li>
+            <li><strong>Aura pieces.</strong> A few pieces do more than sit there: they emit a buff to anyone standing in range. You can see the radius while you are placing it.</li>
+            <li><strong>Nothing is spent.</strong> Picking a piece back up returns the item. Only deliberately destroying it throws it away, and that asks first.</li>
+          </ul>
 
-          <h3>The Dragon Balls</h3>
-          <p>Exactly seven exist in the world at any time, and they move: dormant on a pedestal
-          somewhere, dropped by something you killed, sitting in someone's bag, or placed on a
-          guild's pedestal. Pickups, drops and placements are announced to everyone. Gather all
-          seven on one guild's pedestals and hold them there, and the wish fires.</p>
+          <h3>Where furniture comes from</h3>
+          <ul>
+            <li><strong>Found in the world.</strong> Furniture drops like anything else &mdash; off things you kill, out of the places you clear.</li>
+            <li><strong>Bought.</strong> Shops stock furniture, and other players sell what they do not want.</li>
+            <li><strong>Made.</strong> Some pieces come off a crafting table once you know the recipe.</li>
+            <li><strong>Earned.</strong> Some are rewards: the kind you can only get by doing the thing that gives them.</li>
+          </ul>
+
+          <div class="wiki-note">
+            <strong>Furniture is an item until it is placed.</strong> That means it stacks in your
+            bag, it can be traded, and it can sit in a guild vault waiting for someone with a
+            house to put it up.
+          </div>
         </article>
 
         <!-- Minigames -->
@@ -363,6 +379,80 @@
           <div class="wiki-note">
             <strong>Host honestly.</strong> The rules you tick are shown to everyone signing up,
             and the match runs on them.
+          </div>
+        </article>
+
+        <!-- Guilds -->
+        <article class="wiki-section" id="sec-guilds">
+          <h2>Guilds</h2>
+          <p class="wiki-lede">A roster, a rank ladder, a shared vault and a house with pedestals in it.</p>
+
+          <h3>Joining and running one</h3>
+          <p>Press <strong>G</strong>. Guilds have a name, a tag that hangs off your name in the
+          world, and a colour for it. Anyone with the right rank can invite; the browser tab lists
+          every guild on the server if you are looking for a home.</p>
+
+          <h3>Ranks</h3>
+          <p>Four ranks by default &mdash; <strong>Guild Master</strong>, <strong>Officer</strong>,
+          <strong>Member</strong>, <strong>Recruit</strong> &mdash; and the Guild Master can rename
+          them and decide what each one is allowed to do. Permissions cover inviting, kicking,
+          promoting and reaching into the vault. Nobody can kick or promote at or above their own
+          rank, so an officer cannot quietly remove the person above them.</p>
+
+          <h3>What a guild has</h3>
+          <div class="wiki-table-wrap">
+            <table class="wiki-table">
+              <thead><tr><th>Tab</th><th>What it holds</th></tr></thead>
+              <tbody>
+                <tr><td>Members</td><td>The roster: who is online, what rank they are, promote / demote / kick.</td></tr>
+                <tr><td>Treasury</td><td>The guild's Zeni, and what it has been spent on.</td></tr>
+                <tr><td>House</td><td>The guild hall, and the pedestals that make the Dragon Ball game possible.</td></tr>
+                <tr><td>Vault</td><td>Twenty shared slots. Deposit and withdraw by rank; guild-bound items land here on their own.</td></tr>
+                <tr><td>Wishes</td><td>What the guild has wished for, and what it is working toward.</td></tr>
+                <tr><td>Browser</td><td>Every guild on the server.</td></tr>
+                <tr><td>Admin</td><td>Rank names, permissions and the message of the day.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Guild chat</h3>
+          <p>Its own channel in the chat box, reaching every member wherever they are &mdash; other
+          maps, inside a locus, in the middle of a match.</p>
+
+          <div class="wiki-note">
+            <strong>The vault is shared, not pooled.</strong> Items in it belong to the guild, and
+            withdrawing is a permission like any other. Placing guild furniture in the guild
+            house spends it out of the vault rather than out of your bag.
+          </div>
+        </article>
+
+        <!-- Guild war -->
+        <article class="wiki-section" id="sec-guildwar">
+          <h2>Guild war</h2>
+          <p class="wiki-lede">Seven Dragon Balls exist. One guild can hold all seven, and only one at a time.</p>
+
+          <h3>The balls</h3>
+          <p>There are exactly seven in the world, ever. Each one is somewhere: dormant on a
+          pedestal out in the world waiting to be shaken loose, dropped on the ground by
+          something that was carrying it, sitting in a player's bag, or standing on a guild's
+          pedestal. Every pickup, every drop and every placement is announced to the whole
+          server, so nothing moves quietly.</p>
+
+          <h3>Taking them off each other</h3>
+          <ul>
+            <li>Carrying one makes you a target. Anyone who beats you where PvP is live takes what you were holding.</li>
+            <li>Leaving your guild, being kicked, or logging out while carrying one in a war zone drops it where you stand.</li>
+            <li>A guild house full of pedestals is a statement, and a map everyone else can read.</li>
+          </ul>
+
+          <h3>The wish</h3>
+          <p>Get all seven onto a single guild's pedestals and <strong>hold them there</strong>.
+          The wish does not fire the instant the last ball lands &mdash; the guild has to keep them,
+          which is the window everyone else has to take one back. Hold it, and the wish is yours.</p>
+
+          <div class="wiki-note">
+            <strong>Ownership is live.</strong> Sell the guild house or disband the guild and any
+            ball on its pedestals goes back to the world. There is no parking them somewhere safe.
           </div>
         </article>
 

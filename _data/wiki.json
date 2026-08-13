@@ -62,18 +62,11 @@
 	"races": [
 		{
 			"description": "A wise and resilient race from Planet Namek. Known for their regenerative abilities, spiritual connection, and mastery of Ki-based techniques.",
-			"id": "namek",
 			"name": "Namekian"
 		},
 		{
 			"description": "A fierce Saiyan warrior with unmatched agility and fighting spirit. Capable of achieving the legendary Super Saiyan transformation.",
-			"id": "saiyan_female",
-			"name": "Saiyan Female"
-		},
-		{
-			"description": "A proud warrior race with immense combat potential. Saiyans grow stronger after every battle.",
-			"id": "saiyan_male",
-			"name": "Saiyan Male"
+			"name": "Saiyan"
 		}
 	],
 	"spells": [
