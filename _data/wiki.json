@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.20.49",
+	"generated_for_version": "0.20.52",
 	"hidden_spell_count": 7,
 	"npcs": [
 		{
@@ -174,13 +174,13 @@
 			"cast_time": 0.0,
 			"cooldown": 1.0,
 			"description": "The old Namekian discipline: mend rather than break. Everything good you put on yourself or on an ally lands harder and holds far longer, and your own body knits quietly on its own.",
-			"icon": "assets/img/wiki/namekian_might.png",
+			"icon": "assets/img/wiki/dragonclanrites.png",
 			"id": "namekian_grace",
 			"ki_cost": 0.0,
 			"name": "Dragon Clan Rites",
 			"passive": true,
 			"range": 500.0,
-			"rarity": "rare",
+			"rarity": "epic",
 			"tags": [
 				"passive",
 				"support",
@@ -502,12 +502,12 @@
 			"cast_time": 1.6,
 			"cooldown": 30.0,
 			"description": "Water drawn up out of nothing, hanging around you in droplets before it breaks over the ground in rings. Everyone standing with you is mended where they stand, and keeps mending after. Nothing hostile takes a drop of it.",
-			"icon": "assets/img/wiki/healaoe2.png",
+			"icon": "assets/img/wiki/sacredwater.png",
 			"id": "sanctuary_bloom",
 			"ki_cost": 52.0,
 			"name": "Sacred Water",
 			"passive": false,
-			"range": 300.0,
+			"range": 150.0,
 			"rarity": "epic",
 			"tags": [
 				"support",
