@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.20.56",
+	"generated_for_version": "0.20.57",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -104,7 +104,7 @@
 			"type": "taunt"
 		},
 		{
-			"cast_time": 0.1,
+			"cast_time": 0.0,
 			"cooldown": 1.0,
 			"description": "Draw in ambient ki to replenish your reserves. Leaves you stationary and vulnerable while channeling.",
 			"icon": "assets/img/wiki/powerup.png",
@@ -345,7 +345,7 @@
 			"type": "transform"
 		},
 		{
-			"cast_time": 1.3,
+			"cast_time": 1.2,
 			"cooldown": 9.0,
 			"description": "Cupped hands, a long breath, and every scrap of ki you can gather goes down one line. Hits far harder than a plain beam and empties you at twice the rate holding it.",
 			"icon": "assets/img/wiki/kamehameha.png",
@@ -516,7 +516,7 @@
 			"type": "revert"
 		},
 		{
-			"cast_time": 1.6,
+			"cast_time": 1.8,
 			"cooldown": 30.0,
 			"description": "Water drawn up out of nothing, hanging around you in droplets before it breaks over the ground in rings. Everyone standing with you is mended where they stand, and keeps mending after. Nothing hostile takes a drop of it.",
 			"icon": "assets/img/wiki/sacredwater.png",
@@ -552,7 +552,7 @@
 			"type": "projectile"
 		},
 		{
-			"cast_time": 1.1,
+			"cast_time": 1.2,
 			"cooldown": 18.0,
 			"description": "Hands to the sky, and the ki you were saving for a fight goes into closing your own wounds instead. Mends a wound at once and keeps knitting for a while after.",
 			"icon": "assets/img/wiki/heal.png",
@@ -587,7 +587,7 @@
 			"type": "projectile"
 		},
 		{
-			"cast_time": 0.7,
+			"cast_time": 0.6,
 			"cooldown": 45.0,
 			"description": "Set your skin like rock. Both defences rise and everything that lands hurts a little less, for half a minute.",
 			"icon": "assets/img/wiki/stoneskin.png",
