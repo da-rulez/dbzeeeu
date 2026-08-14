@@ -1,6 +1,6 @@
 {
-	"generated_for_version": "0.20.52",
-	"hidden_spell_count": 7,
+	"generated_for_version": "0.20.54",
+	"hidden_spell_count": 6,
 	"npcs": [
 		{
 			"boss": false,
@@ -157,7 +157,7 @@
 			"cast_time": 0.0,
 			"cooldown": 1.0,
 			"description": "Years of basic training pay off. Small permanent boost to attack, defense, and max HP, plus steady out-of-combat HP and Ki regen.",
-			"icon": "assets/img/wiki/buff.png",
+			"icon": "assets/img/wiki/conditioning.png",
 			"id": "conditioning",
 			"ki_cost": 0.0,
 			"name": "Conditioning",
@@ -570,6 +570,23 @@
 			"type": "projectile"
 		},
 		{
+			"cast_time": 0.7,
+			"cooldown": 45.0,
+			"description": "Set your skin like rock. Both defences rise and everything that lands hurts a little less, for half a minute.",
+			"icon": "assets/img/wiki/stoneskin.png",
+			"id": "stone_skin",
+			"ki_cost": 22.0,
+			"name": "Stone Skin",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "uncommon",
+			"tags": [
+				"buff",
+				"defensive"
+			],
+			"type": "self"
+		},
+		{
 			"cast_time": 0.6,
 			"cooldown": 14.0,
 			"description": "A finger raised, and the ki broken into a dozen small suns. They arc out wide and come down over everything you pointed at. Nowhere near the storm the technique it was copied from puts out, which is the point.",
@@ -603,6 +620,108 @@
 				"melee"
 			],
 			"type": "projectile"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 0.0,
+			"description": "The Dragon of Dreams' blessing turned inward. Namekian ki spent on standing your ground: far harder to put down, and slower to put anything else down.",
+			"icon": "assets/img/wiki/superporunga.png",
+			"id": "super_porunga",
+			"ki_cost": 0.0,
+			"name": "Super Namek (Porunga Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 0.0,
+			"description": "The Eternal Dragon's power worn outright. Namekian ki turned outward: everything you throw lands harder, at the cost of the guard the other form keeps.",
+			"icon": "assets/img/wiki/supershenron.png",
+			"id": "super_shenron",
+			"ki_cost": 0.0,
+			"name": "Super Namek (Shenron Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 0.0,
+			"description": "The dragon's guard closes. Blows that should stagger you barely move you.",
+			"icon": "assets/img/wiki/superporunga2.png",
+			"id": "super_porunga_2",
+			"ki_cost": 0.0,
+			"name": "Super Namek 2 (Porunga Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 0.0,
+			"description": "The dragon's fire deepens. Attacks carry weight the ground can feel, and the ki bill comes faster.",
+			"icon": "assets/img/wiki/supershenron2.png",
+			"id": "super_shenron_2",
+			"ki_cost": 0.0,
+			"name": "Super Namek 2 (Shenron Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 0.0,
+			"description": "Porunga's full protection. Something has to give, and it will not be you.",
+			"icon": "assets/img/wiki/superporunga3.png",
+			"id": "super_porunga_3",
+			"ki_cost": 0.0,
+			"name": "Super Namek 3 (Porunga Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "legendary",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"cooldown": 0.0,
+			"description": "The full majesty of Super Shenron, all of it pointed forward. Nothing about this form is defensive.",
+			"icon": "assets/img/wiki/supershenron3.png",
+			"id": "super_shenron_3",
+			"ki_cost": 0.0,
+			"name": "Super Namek 3 (Shenron Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "legendary",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
 		},
 		{
 			"cast_time": 2.4,
