@@ -1,6 +1,6 @@
 {
-	"generated_for_version": "0.20.54",
-	"hidden_spell_count": 6,
+	"generated_for_version": "0.20.55",
+	"hidden_spell_count": 10,
 	"npcs": [
 		{
 			"boss": false,
@@ -649,74 +649,6 @@
 			"passive": false,
 			"range": 500.0,
 			"rarity": "epic",
-			"tags": [
-				"transform",
-				"namek"
-			],
-			"type": "transform"
-		},
-		{
-			"cast_time": 2.4,
-			"cooldown": 0.0,
-			"description": "The dragon's guard closes. Blows that should stagger you barely move you.",
-			"icon": "assets/img/wiki/superporunga2.png",
-			"id": "super_porunga_2",
-			"ki_cost": 0.0,
-			"name": "Super Namek 2 (Porunga Form)",
-			"passive": false,
-			"range": 500.0,
-			"rarity": "epic",
-			"tags": [
-				"transform",
-				"namek"
-			],
-			"type": "transform"
-		},
-		{
-			"cast_time": 2.4,
-			"cooldown": 0.0,
-			"description": "The dragon's fire deepens. Attacks carry weight the ground can feel, and the ki bill comes faster.",
-			"icon": "assets/img/wiki/supershenron2.png",
-			"id": "super_shenron_2",
-			"ki_cost": 0.0,
-			"name": "Super Namek 2 (Shenron Form)",
-			"passive": false,
-			"range": 500.0,
-			"rarity": "epic",
-			"tags": [
-				"transform",
-				"namek"
-			],
-			"type": "transform"
-		},
-		{
-			"cast_time": 2.4,
-			"cooldown": 0.0,
-			"description": "Porunga's full protection. Something has to give, and it will not be you.",
-			"icon": "assets/img/wiki/superporunga3.png",
-			"id": "super_porunga_3",
-			"ki_cost": 0.0,
-			"name": "Super Namek 3 (Porunga Form)",
-			"passive": false,
-			"range": 500.0,
-			"rarity": "legendary",
-			"tags": [
-				"transform",
-				"namek"
-			],
-			"type": "transform"
-		},
-		{
-			"cast_time": 2.4,
-			"cooldown": 0.0,
-			"description": "The full majesty of Super Shenron, all of it pointed forward. Nothing about this form is defensive.",
-			"icon": "assets/img/wiki/supershenron3.png",
-			"id": "super_shenron_3",
-			"ki_cost": 0.0,
-			"name": "Super Namek 3 (Shenron Form)",
-			"passive": false,
-			"range": 500.0,
-			"rarity": "legendary",
 			"tags": [
 				"transform",
 				"namek"
