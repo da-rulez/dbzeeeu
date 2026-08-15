@@ -60,6 +60,7 @@
           <button class="wiki-tab" data-section="loci">Loci &amp; objectives</button>
           <button class="wiki-tab" data-section="crafting">Crafting</button>
           <button class="wiki-tab" data-section="infusion">Infusion</button>
+          <button class="wiki-tab" data-section="luck">Luck &amp; modifiers</button>
           <button class="wiki-tab" data-section="weather">Weather</button>
           <button class="wiki-tab" data-section="homes">Your home</button>
         </div>
@@ -284,15 +285,31 @@
           <strong>???</strong> &mdash; you can see that something exists at that table but not what it
           is, until you find the recipe. And some are not listed at all until you learn them.</p>
 
+          <h3>What you get</h3>
+          <p>An output is not always a flat one-of-a-thing. A recipe can name a
+          <strong>range</strong> &mdash; "2&ndash;5 Sporeite" &mdash; and the exact number inside it is
+          rolled when the craft lands. Some recipes also carry a <strong>bonus</strong>: a second
+          item with a chance printed next to it, along the lines of "10% chance: 1&ndash;2 Thornite".
+          The chance shown is <em>your</em> chance, with your Luck already counted in.</p>
+
           <h3>When a craft fails</h3>
           <p>A failed craft does not eat everything. Each recipe names which of its ingredients
           are consumed on failure &mdash; the rest are handed straight back. Buffs that raise your
           craft chance apply on top of the recipe's own number.</p>
 
+          <h3>Breaking gear down</h3>
+          <p>Gear you have outgrown is not dead weight. Any piece worth salvaging has a
+          <strong>Break Down</strong> recipe: hand over the piece plus a Zeni fee for the tools,
+          and it comes apart into infusion materials. Better gear breaks into better materials,
+          and the good pieces carry a chance of something from the tier above on top.</p>
+          <p>Breaking down never fails. What varies is how much you get, which is where
+          <a href="#luck">Luck</a> earns its keep.</p>
+
           <div class="wiki-note">
             <strong>Keep a slot free.</strong> A craft needs somewhere to put the result, and
             pickups are paused while the window is open so nothing can fill your last slot
-            mid-craft.
+            mid-craft. If a recipe can also roll a bonus, the bench wants room for that too &mdash;
+            it will not start a craft it cannot hand over in full.
           </div>
         </article>
 
@@ -313,10 +330,96 @@
             <li>Each tier is one more permanent line on that copy. Higher tiers wear a brighter frame so you can see at a glance what a piece has been through.</li>
           </ul>
 
+          <h3>Where the materials come from</h3>
+          <p>Infusion materials are not bought. They come out of gear you already have: take a
+          piece to a crafting table and use its <strong>Break Down</strong> recipe, pay the Zeni
+          fee, and it comes apart into materials. The better the piece, the better the material,
+          and strong pieces have a chance of dropping something from the tier above as well.</p>
+          <p>Raw materials also turn up out in the world &mdash; loci, bosses, the occasional
+          drop &mdash; and recipes let you work the lesser ones together into what a higher tier
+          actually asks for. So the loop is: play, salvage what you have replaced, and spend the
+          result on the piece you intend to keep. Your <a href="#luck">Luck</a> is rolled on both
+          ends of that loop, on what a break-down yields and on the value an infusion rolls.</p>
+
           <div class="wiki-note">
             <strong>Nothing is taken before everything is checked.</strong> The bench validates
             ownership, the tier and the materials before it consumes anything, so there is no way
             to pay and get nothing.
+          </div>
+        </article>
+
+        <!-- Luck & modifiers -->
+        <article class="wiki-section" id="sec-luck">
+          <h2>Luck &amp; modifiers</h2>
+          <p class="wiki-lede">The quiet stats. None of them hit anything; all of them change what
+          you walk away with.</p>
+
+          <p>Alongside the seven combat stats there is a second set of numbers, carried by gear,
+          infusions, techniques, food, weather and the auras in your home or guild hall. They never
+          appear as damage. They decide how often a chance lands, how long a blessing lasts, and how
+          much of a curse sticks to you.</p>
+
+          <h3>Luck</h3>
+          <p>Luck is a percentage, and it does exactly two things.</p>
+          <ul>
+            <li><strong>It improves a chance.</strong> A chance is raised by your Luck as a share of
+            itself: at 10% Luck a 10% chance becomes 11%. At 100% Luck it becomes 20%. The number
+            printed in a window is always the improved one, so what you read is what you are
+            actually rolling.</li>
+            <li><strong>It buys extra rolls, and keeps the best one.</strong> Where something is
+            rolled from a range, Luck rolls it more than once. Every whole 100% is one guaranteed
+            extra roll; the leftover is the chance of one more on top.</li>
+          </ul>
+
+          <div class="wiki-table-wrap">
+            <table class="wiki-table">
+              <thead><tr><th>Your Luck</th><th>Rolls on a range</th></tr></thead>
+              <tbody>
+                <tr><td>0%</td><td>One roll.</td></tr>
+                <tr><td>10%</td><td>One roll, and a 10% chance of a second.</td></tr>
+                <tr><td>100%</td><td>Two rolls, always.</td></tr>
+                <tr><td>150%</td><td>Two rolls, and a 50% chance of a third.</td></tr>
+                <tr><td>240%</td><td>Three rolls, and a 40% chance of a fourth.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Extra rolls are invisible: you are shown the one that was kept, never the ones that
+          lost. A range of 2&ndash;5 stays a range of 2&ndash;5 &mdash; Luck cannot push a result past
+          what the recipe authorises, it just makes the top of the range the normal outcome.</p>
+
+          <p>Where it applies: how much a <a href="#crafting">break-down or craft</a> yields, whether
+          a recipe's bonus item lands, the value an <a href="#infusion">infusion</a> rolls inside its
+          option, and how often rare drop tables are picked when something dies.</p>
+
+          <h3>The other modifiers</h3>
+          <div class="wiki-table-wrap">
+            <table class="wiki-table">
+              <thead><tr><th>Modifier</th><th>What it does</th></tr></thead>
+              <tbody>
+                <tr><td>Attunement</td><td>Everything positive you cast lands harder &mdash; your heals, shields and buffs are scaled up by it.</td></tr>
+                <tr><td>Control</td><td>Everything positive you cast lasts longer. Attunement is strength, Control is duration.</td></tr>
+                <tr><td>Tenacity</td><td>Cuts the duration of negative effects put on <em>you</em>. Enough of it and a short debuff never lands at all.</td></tr>
+                <tr><td>Craft chance</td><td>Added on top of a recipe's own success chance.</td></tr>
+                <tr><td>XP gain</td><td>More experience out of the same kill.</td></tr>
+                <tr><td>Prices</td><td>Shifts what shops charge you.</td></tr>
+                <tr><td>Cooldown reduction</td><td>Techniques come back sooner.</td></tr>
+                <tr><td>Ki cost</td><td>Raises or discounts what your techniques cost to cast.</td></tr>
+                <tr><td>Damage reduction</td><td>A flat percentage off incoming damage, after defences.</td></tr>
+                <tr><td>Absorption</td><td>Turns a share of a specific damage school into something you gain instead of lose.</td></tr>
+                <tr><td>Deflect</td><td>A per-attack chance to turn a hit aside outright.</td></tr>
+                <tr><td>Shield</td><td>A pool that eats damage before your health does.</td></tr>
+                <tr><td>Vital steal</td><td>Returns part of what you deal as health, ki or stamina.</td></tr>
+                <tr><td>Knockback resistance</td><td>You get shoved around less.</td></tr>
+                <tr><td>Regeneration</td><td>Health, ki and stamina come back faster &mdash; or, from the wrong effect, not at all.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="wiki-note">
+            <strong>Everything is on your character sheet.</strong> Press <strong>C</strong> and read
+            the active effects grid: every buff, debuff and weather effect currently on you, with what
+            it is doing spelled out when you hover it.
           </div>
         </article>
 
