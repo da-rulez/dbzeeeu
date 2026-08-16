@@ -274,11 +274,29 @@
         <!-- Crafting -->
         <article class="wiki-section" id="sec-crafting">
           <h2>Crafting</h2>
-          <p class="wiki-lede">Find a crafting table, spend the ingredients, take the chance.</p>
+          <p class="wiki-lede">Put things on the bench, take the chance.</p>
 
-          <p>Crafting happens at a table you interact with in the world. The window lists the
-          recipes <em>you</em> know: up to four ingredients each, an output, and a success chance
-          printed on the recipe. Ingredients you are short of are marked in red.</p>
+          <p>Crafting happens at a table you interact with in the world, and each table has its
+          own work: a salvage bench lists break-downs, and another table lists whatever it is for.
+          The list shows the recipes <em>you</em> know at that bench, with anything you are short
+          of the ingredients for greyed out.</p>
+
+          <h3>The four slots</h3>
+          <p>The middle of the window is four slots, and they are the craft. Drag items out of
+          your bag into them and the bench works out what you are making &mdash; <strong>the order
+          never matters</strong>. Right-click a slot to take an item back, or drag something else
+          in to replace it. Picking a recipe from the list does the same job from the other end: it
+          loads your own copies into the slots for you.</p>
+          <ul>
+            <li>The slot shows the <strong>real item</strong>, tier frame and colours included, and
+            that exact copy is the one consumed. No wondering which of your three gi is about to go.</li>
+            <li>Under each slot is what you put in over what the craft takes &mdash; "5,000/100"
+            &mdash; green when it covers the craft, red when it does not.</li>
+            <li>Dropping a stack in stages the <strong>whole stack</strong>, so one drop can cover
+            a run of crafts. Max counts what is in the slots.</li>
+            <li>A recipe you cannot afford still shows what it wants: the missing ingredient sits
+            faint in its slot reading 0 over what it needs.</li>
+          </ul>
 
           <h3>Discovery</h3>
           <p>Recipes have three states. Some you know from the start. Some show as
@@ -303,7 +321,10 @@
           and it comes apart into infusion materials. Better gear breaks into better materials,
           and the good pieces carry a chance of something from the tier above on top.</p>
           <p>Breaking down never fails. What varies is how much you get, which is where
-          <a href="#luck">Luck</a> earns its keep.</p>
+          <a href="#luck">Luck</a> earns its keep. A piece you have infused or recoloured breaks
+          down like any other, for exactly what a plain one gives &mdash; and with a plain copy and
+          an infused one in the bag, the bench takes the plain one unless you put the other in
+          yourself.</p>
 
           <div class="wiki-note">
             <strong>Keep a slot free.</strong> A craft needs somewhere to put the result, and
@@ -322,12 +343,21 @@
           identical swords can end up completely different: the tier and every choice made along
           the way live on that one copy and travel with it if you trade it.</p>
 
+          <h3>At the bench</h3>
+          <p>The left of the bench lists every infusable piece you own. A piece whose next tier you
+          cannot pay for is <strong>greyed out</strong> &mdash; it still lists, so you can look at
+          what that tier wants, but it reads as unavailable until the materials are in your bag.
+          Pieces already at their last tier grey out too; there is nothing left to buy.</p>
+          <p>Click a piece and it goes in the slot at the top, with its own icon and tier, so the
+          copy you are working on is never in doubt.</p>
+
           <h3>How a tier works</h3>
           <ul>
             <li>Bring the item to a bench and open it. Browsing costs nothing and rolls nothing.</li>
             <li>The bench shows the item's current tier, the materials the next tier costs, and the options that tier offers.</li>
             <li>Pick an option and pay. The exact value inside that option's range is rolled for you.</li>
             <li>Each tier is one more permanent line on that copy. Higher tiers wear a brighter frame so you can see at a glance what a piece has been through.</li>
+            <li>The same option can be taken at more than one tier, and the rolls <strong>add up</strong>. Three tiers of speed on one pair of boots is three rolls of speed on those boots.</li>
           </ul>
 
           <h3>Where the materials come from</h3>
