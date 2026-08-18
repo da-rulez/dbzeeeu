@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.20.73",
+	"generated_for_version": "0.20.96",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -36,6 +36,34 @@
 			"id": "general_white",
 			"lore": "General White holds the Icy Plateau in the high north. Commands the ground he's standing on with rifle support from the ridges. Three escalations, no surrender. Drop him and the chain of command breaks.",
 			"name": "General White"
+		},
+		{
+			"boss": false,
+			"category": "Kanassans",
+			"id": "kanassan_bloodfin",
+			"lore": "A bloodfin does not circle. It arrives, and the fight is already at arm's length.",
+			"name": "Kanassan Bloodfin"
+		},
+		{
+			"boss": false,
+			"category": "Kanassans",
+			"id": "kanassan_diviner",
+			"lore": "Kanassan sight is not a rumour. A diviner leads its shots because it has already seen them land.",
+			"name": "Kanassan Diviner"
+		},
+		{
+			"boss": false,
+			"category": "Kanassans",
+			"id": "kanassan_tidespeaker",
+			"lore": "The eldest of the four, and the reason the shallows freeze out of season.",
+			"name": "Kanassan Tidespeaker"
+		},
+		{
+			"boss": false,
+			"category": "Kanassans",
+			"id": "kanassan_wader",
+			"lore": "Kanassans came out of the water long before anyone asked them to. The waders are the ones still going back and forth.",
+			"name": "Kanassan Wader"
 		},
 		{
 			"boss": false,
