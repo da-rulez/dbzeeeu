@@ -43,6 +43,26 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.2</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Smoother Netcode, Smarter Filler Fighters</h2>
+          <p>Everyone you see now moves with noticeably less delay. Player positions go out on every server tick instead of every third one, which shortens the smoothing buffer other players are drawn through. Tested at 250ms ping through tight corners, slalom runs and erratic sprint combat: no new rubber banding, no snapping, and cleaner prediction than before.</p>
+          <p>The server also stopped hitching. It was pausing briefly every two seconds, even with nobody online, because it re-scanned every content file in one go. That scan is now spread out, so nothing waits behind it.</p>
+          <p>Minigame filler fighters got a serious pass:</p>
+          <ul>
+            <li>They can actually fight. In any game mode without a fixed loadout they were spawning with no techniques at all and just ran around unarmed.</li>
+            <li>No two of them are alike any more. Fighting styles are dealt out across the roster, and each fighter varies its own reactions, aim, preferred range and willingness to commit to a charge.</li>
+            <li>They stop hugging walls. Movement checks for room ahead and steps around obstacles instead of grinding along them, and they sprint both to close a gap and to break one.</li>
+            <li>They dodge. Telegraphed ground attacks were invisible to them, so a dodge never once fired.</li>
+            <li>They hold fire until the bell instead of casting at nothing while the lobby fills.</li>
+          </ul>
+          <p>Knocked out fighters now stay in the stands. Before this you could walk straight back out into the live arena and stand among the survivors.</p>
+          <p>Fixed a charged shot orb that could stick to a fighter for the rest of the match, drifting along beside them while they walked.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.1</span>
             <span class="news-tag blue">Patch</span>
           </div>
