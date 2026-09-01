@@ -43,6 +43,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.3</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Lower Ping, Twice the Position Updates</h2>
+          <p>Two netcode fixes that shave real milliseconds off what you feel, plus honest server load numbers.</p>
+          <p>Your ping reading drops a few ms and your inputs land sooner. The server only looks at the network between its own loop iterations, and that loop now runs up to 300 times a second when the server is quiet (it was 90), stepping down as more players arrive so it never crowds the simulation. It also reads the network once more right before every simulation tick, so a keypress that arrived a moment ago is applied this tick instead of the next one. On a loopback test the server's own share of the round trip fell from about 10 ms to about 6 ms.</p>
+          <p>Other players are drawn about 40 ms closer to where they really are. Their positions were meant to go out on every server tick, but a leftover timer from when the server ticked twice as fast quietly sent them on every second tick only (15 times a second). They now go out every tick (30 times a second), which shrinks the smoothing buffer they are drawn through from ~98 ms to ~57 ms. Your own movement corrections also arrive twice as often, in smaller steps. Tested at 250 ms simulated ping through tight corners, erratic sprint combat and open ground: no new rubber banding, no snapping.</p>
+          <p>Server load reporting was overstating itself by 2 to 4 times (it multiplied the worst frame of each second as if every frame were that slow). It now reports real CPU use, and keeps a once-a-minute load line so a busy evening can be looked at afterwards. A 40-bot swarm costs exactly the same CPU per player as before this patch, with shorter worst-case stalls.</p>
+          <p>About 35 ms of the typical ping from the Netherlands is the route your provider takes to any datacenter (Amsterdam measures the same as Nuremberg), so that part is not the game.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.2</span>
             <span class="news-tag blue">Patch</span>
           </div>
