@@ -43,6 +43,27 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.6</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Hardening Round</h2>
+          <p>Behind-the-scenes release: no new content, a lot less that can go wrong.</p>
+          <ul>
+            <li>Logging in after a crash works at once. The auth server used to refuse you as "already logged in" until the game server noticed the dead connection, minutes at worst. It now asks the game server whether you are really online and clears the stale session if not.</li>
+            <li>Chat and the shop, bank, guild, trade, crafting, bestiary and dimension windows travel on their own network channels. A lost packet in one of them no longer holds up player spawns, hits or spell effects behind it while it is resent.</li>
+            <li>Position updates are packed: one enemy row went from about 100 bytes to 17, one player row from about 48 to 22, so one packet carries three to six times the rows and dense enemy packs no longer split across several packets that can be lost independently. Outbound traffic at 40 players is down accordingly.</li>
+            <li>Enemies with no player within a screen tick their wander AI ten times a second instead of thirty.</li>
+            <li>Nine leaks fixed where the server kept per-player bookkeeping forever after a logout.</li>
+            <li>Six timers that could fire after the screen they belonged to was closed no longer do (the "lambda capture was freed" errors in the digest).</li>
+            <li>If the client exits without a logout or a window close, the next start reports it, so crashes show up in the error telemetry.</li>
+            <li>Minigame map scenes load on a worker thread while the lobby is open.</li>
+          </ul>
+          <p>Releases now refuse to ship if any of the 445 scripts fails to compile or any of the eight headless self-tests fails. The self-tests themselves were brought back in line with the current content (salvage recipes, MOBA camp loot, one cast overlay).</p>
+          <p>Measured on a 40-bot swarm: server CPU 56.7% of a core (was 60.7%), enemy replication 38 ms/s (was 95), 0 errors, 0 drops.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.5</span>
             <span class="news-tag blue">Patch</span>
           </div>
