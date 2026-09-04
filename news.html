@@ -43,6 +43,18 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.9</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Walking Again</h2>
+          <ul>
+            <li>NPCs walk again instead of jumping to their next position. Since v0.22.6 the packed position rows were built but never sent (a copy of the batch was filled and the original stayed empty), so enemies only moved when a health or ki change carried a state packet along. The same fault starved other players' movement; both flow again at the full rate.</li>
+            <li>Warping by an event no longer strips your transformation aura. The spawn effect that plays on arrival took over the aura's shader slot and, when it faded, left nothing behind. The aura underneath is remembered and comes back when the effect ends. Fire flashes over a transformation behave the same way.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.8</span>
             <span class="news-tag blue">Patch</span>
           </div>
