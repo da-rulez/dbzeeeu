@@ -43,6 +43,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.16</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Overnight Round 1</h2>
+          <ul>
+            <li>Chat and system messages sent to a player who is in a different map than the sender's world no longer error on their client. They are routed through a path every client has, and party chat across instances uses it too.</li>
+            <li>Tooltips can attach to any control without the "script inherits from Panel" error.</li>
+            <li>Delayed multi-shot volleys no longer log freed-reference errors on the server when the caster's world is torn down mid-sequence (dimension exits).</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.15</span>
             <span class="news-tag red">Hotfix</span>
           </div>
