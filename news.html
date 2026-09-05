@@ -43,6 +43,21 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.21</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Overnight Round 6</h2>
+          <ul>
+            <li>Tournaments with server-side bots now actually run: every bout was skipped as a bye and bot losers were never knocked out, because the bracket code read a bot's negative id as "nobody here". Bot bouts, knockouts and advancement all work.</li>
+            <li>Ring-out detection measured a bot's position in the wrong map frame, so the second fighter of every bout was ruled out of the ring the moment the bell rang. It now uses the fighter's real map.</li>
+            <li>Tournament bots respect the ring: their footwork stays inside the arena boundary instead of backing out of it to break line of sight.</li>
+            <li>The server log now records each tournament bout (who, where) and how it was decided (knockout, ring-out, time), so a disputed result can be checked afterwards.</li>
+          </ul>
+          <p>Verified: a four-bot tournament ran semi-finals and final, all three bouts decided by knockout with real damage, zero ring exits, zero errors.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.20</span>
             <span class="news-tag blue">Patch</span>
           </div>
