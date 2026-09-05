@@ -43,6 +43,18 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.25</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Upkeep from bank + guild upkeep</h2>
+          <ul>
+            <li>House/base upkeep now counts Zeni in your bank, not just your pockets. It charges your inventory first and tops up any shortfall from the bank, so if you have enough between the two you keep your property without logging in. Works for the offline sweep and for online/at-login charging.</li>
+            <li>Guild upkeep added: a guild can be charged a flat weekly Zeni fee from its treasury, on the same weekly clock and 72-hour grace as houses. If it goes unpaid past the grace period the guild dissolves (bases returned to unclaimed, members removed, treasury lost) and online members are told why. The fee is a single configurable amount and ships set to 0 (off) until you choose a value, so nothing changes for existing guilds yet.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.24</span>
             <span class="news-tag blue">Patch</span>
           </div>
