@@ -43,6 +43,18 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.23</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Overnight Round 8</h2>
+          <ul>
+            <li>The game client no longer opens a local admin control port on the player's machine. During the connect handshake a client briefly looks like the server to the engine, and the admin listener (meant for the dedicated server only) was binding 127.0.0.1:9001 on every client. It is now gated on an explicit server-only flag, so only the real game server ever opens it.</li>
+          </ul>
+          <p>Verified: the dedicated server still opens the admin port; a freshly connected client opens nothing. A ten-minute eight-bot combat soak ran with zero server script errors and steady frame times.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.21</span>
             <span class="news-tag blue">Patch</span>
           </div>
