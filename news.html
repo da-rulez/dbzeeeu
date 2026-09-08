@@ -43,6 +43,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.32</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Server groundwork + login and upkeep fixes</h2>
+          <ul>
+            <li>Groundwork for running loci (dimensions) on a second server process, so heavy NPC fights inside them no longer compete with the overworld for the same CPU core. The hand-off between processes is built and tested but not switched on for players yet; nothing changes in how you enter or leave a locus in this version.</li>
+            <li>Login: the "already logged in" check now accounts for every server process, so a stale session can never be cleared while your character is actually still in play.</li>
+            <li>Weekly upkeep, the official tournament schedule and the Dragon Ball tracking each run exactly once server-side (they could have run twice once the second process is enabled).</li>
+            <li>Release tooling: server updates and rollbacks now move every game process together.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.31</span>
             <span class="news-tag blue">Patch</span>
           </div>
