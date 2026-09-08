@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.21.4",
+	"generated_for_version": "0.22.46",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -168,7 +168,7 @@
 		{
 			"cast_time": 0.0,
 			"cooldown": 1.0,
-			"description": "Every fight you have been in leaves something behind. A flat, permanent edge in all four combat stats, no conditions attached.",
+			"description": "Every fight you have been in leaves something behind, no conditions attached.",
 			"icon": "assets/img/wiki/combatinstinct.png",
 			"id": "combat_instinct",
 			"ki_cost": 0.0,
@@ -184,7 +184,7 @@
 		{
 			"cast_time": 0.0,
 			"cooldown": 1.0,
-			"description": "Years of basic training pay off. Small permanent boost to attack, defense, and max HP, plus steady out-of-combat HP and Ki regen.",
+			"description": "Years of basic training pay off, quietly and for good.",
 			"icon": "assets/img/wiki/conditioning.png",
 			"id": "conditioning",
 			"ki_cost": 0.0,
@@ -308,7 +308,7 @@
 		{
 			"cast_time": 0.6,
 			"cooldown": 12.0,
-			"description": "Calm the mind and harden the body. Raises ki and physical defense for a short time.",
+			"description": "Calm the mind and harden the body, for a short while.",
 			"icon": "assets/img/wiki/meditate2.png",
 			"id": "inner_focus",
 			"ki_cost": 6.0,
@@ -392,7 +392,7 @@
 		{
 			"cast_time": 0.0,
 			"cooldown": 1.0,
-			"description": "You learn from every fight. Small permanent boost to XP gained from all sources.",
+			"description": "You learn from every fight, and it adds up.",
 			"icon": "assets/img/wiki/focus.png",
 			"id": "keen_mind",
 			"ki_cost": 0.0,
@@ -617,7 +617,7 @@
 		{
 			"cast_time": 0.6,
 			"cooldown": 45.0,
-			"description": "Set your skin like rock. Both defences rise and everything that lands hurts a little less, for half a minute.",
+			"description": "Set your skin like rock for half a minute.",
 			"icon": "assets/img/wiki/stoneskin.png",
 			"id": "stone_skin",
 			"ki_cost": 22.0,
@@ -703,7 +703,7 @@
 		{
 			"cast_time": 2.4,
 			"cooldown": 0.0,
-			"description": "Ignite the legendary transformation. Golden ki erupts around you, raising every combat stat.",
+			"description": "Ignite the legendary transformation. Golden ki erupts around you.",
 			"icon": "assets/img/wiki/supersaiyan.png",
 			"id": "super_saiyan",
 			"ki_cost": 0.0,
@@ -720,7 +720,7 @@
 		{
 			"cast_time": 1.2,
 			"cooldown": 0.0,
-			"description": "A simple white aura ignites around you. All stats rise modestly for a short window.",
+			"description": "A simple white aura ignites around you for a short window.",
 			"icon": "assets/img/wiki/surge.png",
 			"id": "surge",
 			"ki_cost": 0.0,
