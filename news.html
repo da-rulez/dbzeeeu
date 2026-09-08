@@ -43,6 +43,17 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.33</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Warp kick fix</h2>
+          <ul>
+            <li>Fixed a bug where warping to another map more than about 45 seconds after you last spawned could instantly show "The map did not finish loading in time" and log you out. The loading-screen watchdog kept an old timestamp from your previous spawn; it now resets properly, so warps, locus entries and admin warps complete normally.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.32</span>
             <span class="news-tag blue">Patch</span>
           </div>
