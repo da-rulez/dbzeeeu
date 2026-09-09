@@ -43,6 +43,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.57</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Clearer multi-hit authoring</h2>
+          <p><strong>Under the hood</strong></p>
+          <ul>
+            <li>A technique can never touch more targets than it has hits, so setting its pierce above its hit budget does nothing. The projectile editor now spells out what any pair of those two settings actually produces, and flags the combination that has no effect.</li>
+            <li>Added a guard so editor fields that are built but never saved cannot ship again.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.56</span>
             <span class="news-tag blue">Patch</span>
           </div>
