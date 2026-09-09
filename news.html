@@ -43,6 +43,23 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.58</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>One hit budget, and Death Ball grinds</h2>
+          <p><strong>Death Ball</strong></p>
+          <ul>
+            <li>Now a slow, heavy shove rather than a fast pass. It stays on what it hits, driving the target ahead of it and landing its hits into the same victim one after another until the budget is spent, spilling onto whatever else it reaches.</li>
+          </ul>
+          <p><strong>Under the hood</strong></p>
+          <ul>
+            <li>A charged technique now has ONE hit budget plus a switch for whether those hits may land on the same target twice. Off, the budget is simply how many different things it travels through; on, it can grind. Previously these were two settings that produced identical results, because a hit only fired when a shot ENTERED something and a shot flying straight never re-enters anything.</li>
+            <li>Ordinary (non-charged) pierce is untouched: beams and projectiles still travel through as many targets as their spell authors.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.57</span>
             <span class="news-tag blue">Patch</span>
           </div>
