@@ -43,6 +43,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.49</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Your name in a Locus</h2>
+          <p><strong>Fixes</strong></p>
+          <ul>
+            <li>Inside a Locus your nameplate showed your account name instead of your character's. Loci run on their own server process, and the character name was only ever picked up on the login path, never on the hop across. Chat and every panel in there were reading the same wrong name.</li>
+            <li>Reconnecting straight back into a fight (the short window where your character stays in the world) also fell back to the account name, and dropped your guild tag, name colour and title with it.</li>
+            <li>The Z-Shop is closed inside a Locus and during a minigame match, but the refusal was written into the window it was refusing to open, so nothing happened at all. It now says so in chat.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.48</span>
             <span class="news-tag blue">Patch</span>
           </div>
