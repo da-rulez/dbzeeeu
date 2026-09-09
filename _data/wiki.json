@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.22.46",
+	"generated_for_version": "0.22.65",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -197,6 +197,22 @@
 				"passive"
 			],
 			"type": "passive"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 3.0,
+			"description": "Spin a razor of ki above your hand and hold it there. It cuts through whatever it meets, and the longer you let it build the wider it gets.",
+			"icon": "assets/img/wiki/destructodisc.png",
+			"id": "destructo_disc",
+			"ki_cost": 8.0,
+			"name": "Destructo Disc",
+			"passive": false,
+			"range": 750.0,
+			"rarity": "rare",
+			"tags": [
+				"charge"
+			],
+			"type": "projectile"
 		},
 		{
 			"cast_time": 0.0,
