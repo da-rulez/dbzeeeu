@@ -43,6 +43,20 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.50</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Titles show up, shops stay in their frame</h2>
+          <p><strong>Fixes</strong></p>
+          <ul>
+            <li>Your title did not appear above your character in the overworld. The name is sent the moment you spawn, but whether it carries a title is decided by a separate lookup that lands a moment later, and nothing re-sent the name once it did. The title only ever showed when that lookup happened to win the race, which it did on a Locus arrival and did not on a normal login.</li>
+            <li>Long item names stretched a shop wider than its own window: rows ran off the right-hand side and the Close button sat half outside the frame. Names now trim with an ellipsis and carry the full name on the hover tooltip, and the shop window is wider so the longest technique scrolls fit outright.</li>
+            <li>Same overflow fixed in the Z-Shop, where a long outfit name or a purchase confirmation could push the Close button out through the side.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.49</span>
             <span class="news-tag red">Hotfix</span>
           </div>
