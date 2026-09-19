@@ -43,6 +43,22 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.22.71</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>You were never offline</h2>
+          <p><strong>Fixes</strong></p>
+          <ul>
+            <li>Stepping into a Locus no longer tells your guild you logged off. Entering one hands you to the second server process, which looked exactly like a disconnect from the outside: your guild got "has gone offline" on the way in and "has come online" on the way back, every single time.</li>
+            <li>Guildmates inside a Locus now show as Online in the guild panel. The roster only ever looked at one of the two server processes, so anyone in a Locus read as offline for as long as they were in there.</li>
+            <li>Entering a Locus as a party works again. In some cases the party was dissolved and nobody warped anywhere, with nothing said to either player.</li>
+            <li>Coming back out of a Locus no longer drops the party update on the way in, so the party panel is right the moment you land.</li>
+            <li>A pile of errors your client used to log on every Locus entry and exit is gone. They were harmless in themselves, but your game reported every one of them back to the server.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.70</span>
             <span class="news-tag red">Hotfix</span>
           </div>
