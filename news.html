@@ -43,6 +43,26 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.23.0</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>The client keeps only the picture</h2>
+          <p><strong>Under the hood</strong></p>
+          <ul>
+            <li>The game client now carries only what it needs to draw and to talk to the server: art, sounds, maps as you see them, the interface. Spell numbers, item stats, enemy stats and drop tables, recipes, shop stock, loot rules and the server's own logic no longer ship inside the client at all.</li>
+            <li>What your screen needs at any moment (the cost and cooldown of a technique you know, the stats of an item in your bag, the bestiary page you have unlocked) is sent to you by the server as you play. Nothing changes in what you see; the difference is where it comes from.</li>
+            <li>Presentation data (names, descriptions, icons, animations) is delivered at login as a single signed and encrypted package. A client that cannot verify it will not start.</li>
+            <li>Enemies and ground items now appear on your screen because the server tells your client about them, not because the map already knew where they would be.</li>
+          </ul>
+          <p><strong>Fixes</strong></p>
+          <ul>
+            <li>The encrypted client build is checked before every release: any server code or game content that slips in fails the release.</li>
+            <li>Every client-to-server request is now exercised with hostile inputs before a release ships.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.22.72</span>
             <span class="news-tag red">Hotfix</span>
           </div>
