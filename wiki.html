@@ -109,9 +109,16 @@
                 <tr><td>P / G / H</td><td>Party, guild, house</td></tr>
                 <tr><td>Ctrl + direction</td><td>Aim without walking</td></tr>
                 <tr><td>Shift</td><td>Sprint (burns stamina)</td></tr>
+                <tr><td>E</td><td>Interact: talk, open, pick up, use</td></tr>
               </tbody>
             </table>
           </div>
+
+          <h3>Doors</h3>
+          <p>Some doors open as you walk up to them and close again behind you. Others wait for
+          your interact key, and light up when you are close enough to use them. A locked one
+          wants a key in your bag, and it will tell you so. While a door is closing nothing can
+          be caught in it, and a door that is shut stops feet and shots alike.</p>
 
           <div class="wiki-note">
             <strong>There is no basic attack.</strong> Everything you do in a fight comes off the
@@ -170,6 +177,19 @@
             <li>Lobbed techniques land where the target is, and re-aim between volleys.</li>
           </ul>
 
+          <h3>Ricochets</h3>
+          <p>Some techniques come back. A shot with bounces left rebounds off whatever it meets,
+          wall or body, and keeps flying on its new heading until the bounces run out or it burns
+          through its flight time. A technique either passes through what it hits or comes off it,
+          never both, so a piercing shot never ricochets. <strong>Charged Ki Blast</strong> is the
+          one to learn it on: three bounces, and long enough in the air to use them. Corridors and
+          small rooms are where it pays.</p>
+
+          <h3>Screen shake</h3>
+          <p>A form powering up rumbles the ground around it, harder the higher the form, and a
+          heavy attack kicks the screen where it lands. Both fade with distance, and both can be
+          turned down or off in Escape, Graphics.</p>
+
           <h3>Status effects</h3>
           <p>Buffs and debuffs stack as components: speed, shields, damage over time, roots,
           silences, deflect chances, and more. Your active ones show beside your health bars and
@@ -192,11 +212,52 @@
         <!-- Settings & controls -->
         <article class="wiki-section" id="sec-settings">
           <h2>Settings &amp; controls</h2>
-          <p class="wiki-lede">Escape opens the options. Four tabs, and every key can be moved.</p>
+          <p class="wiki-lede">Escape opens the options. Six tabs, one row per setting, and every key can be moved.</p>
 
-          <h3>Key bindings</h3>
-          <p>Under <strong>Controls</strong>, every action below can be rebound to a key or a
-          mouse button. Click the binding, press what you want, and it is saved.</p>
+          <h3>How the options read</h3>
+          <p>Every setting is one row: its name on the left, its control on the right. A switch
+          reads ON or OFF, a choice is a dropdown, an amount is a slider. Hover any row for a
+          sentence on what it does.</p>
+
+          <h3>Game</h3>
+          <ul>
+            <li><strong>Account.</strong> Switch character or log out, both blocked while you are in combat.</li>
+            <li><strong>Invites.</strong> Party invites, trade requests and guild invites, each refusable before it reaches you.</li>
+            <li><strong>Diagnostics.</strong> Ping, frame counter, server load, and a simulated latency for testing how the game feels on a worse line.</li>
+          </ul>
+
+          <h3>Interface</h3>
+          <ul>
+            <li><strong>Vitals.</strong> Show them as a percentage, keep the bars up out of combat, and turn damage numbers on or off.</li>
+            <li><strong>World.</strong> Always show NPC names, and how loudly a PvP zone announces itself (the popup and the screen edge glow are separate).</li>
+            <li><strong>Messages.</strong> Warning popups and battle messages over your character. Chat keeps every line either way.</li>
+            <li><strong>Chat.</strong> Pop the chat box open on a new message, with per tab control over which channels may interrupt you.</li>
+          </ul>
+
+          <h3>Graphics</h3>
+          <ul>
+            <li><strong>Detail.</strong> How much is drawn for players far away, plus shadows, shader effects and dynamic lighting. The big levers if the game runs hot.</li>
+            <li><strong>Effects.</strong> Sprint afterimages, orb glow lights and orb pickup trails, each separately switchable, and the day and night cycle.</li>
+            <li><strong>Through walls.</strong> How a character behind solid wall is marked: outline, silhouette, outline with a faint body, or off. A second row decides whether players and friendly NPCs are marked in blue or hidden entirely.</li>
+            <li><strong>Screen shake.</strong> A master switch, then one switch each for a spell winding up, a heavy attack landing, and thunder. On top of those, a strength slider and a range setting for how far away something can be and still move your screen. Even at maximum the game keeps the shake readable.</li>
+          </ul>
+
+          <h3>Weather</h3>
+          <p>Weather has its own tab, because it is the heaviest thing on screen and the most
+          personal. There is a master switch, and then:</p>
+          <ul>
+            <li><strong>Layer types:</strong> particles, fullscreen shaders, lighting tint, post-process, ambient audio and one-shot audio, each on its own.</li>
+            <li><strong>Default quality:</strong> how dense every weather type is drawn.</li>
+            <li><strong>Accessibility:</strong> lightning brightness, down to a storm with no flash at all.</li>
+          </ul>
+
+          <h3>Audio</h3>
+          <p>Separate <strong>Music</strong> and <strong>Effects</strong> volumes. Drag either to
+          0% to mute that bus. Both save with the rest of your settings.</p>
+
+          <h3>Controls</h3>
+          <p>Every action below can be rebound to a key or a mouse button. Click the binding,
+          press what you want, and it is saved. Right-click a binding to reset that one.</p>
           <div class="wiki-table-wrap">
             <table class="wiki-table">
               <thead><tr><th>Group</th><th>Actions</th></tr></thead>
@@ -209,39 +270,12 @@
               </tbody>
             </table>
           </div>
-
-          <h3>Game</h3>
           <ul>
-            <li><strong>Toggle Sprint</strong> &mdash; press once to run instead of holding the key down.</li>
-            <li><strong>Auto Target Nearest</strong> &mdash; keep the closest enemy selected without tabbing to it.</li>
-            <li><strong>Right-Click Equip/Use</strong> and <strong>Shift+Click Drop Stack</strong> &mdash; inventory shortcuts, either of which can be turned off. Right-clicking a worn piece on the Equipment tab takes it off, as long as the bag has a free slot.</li>
-            <li><strong>Show Vitals as %</strong>, <strong>Show Bars Out of Combat</strong>, <strong>Always Show NPC Names</strong> &mdash; how much the world tells you at a glance.</li>
-            <li><strong>Damage Numbers</strong>, <strong>Battle Messages</strong>, <strong>Overhead Warning Popups</strong> &mdash; the combat readout, on or off.</li>
-            <li><strong>Chat Popup on New Message</strong>, with per-tab control over which channels are allowed to interrupt you.</li>
-            <li><strong>PvP Zone Popup</strong> and <strong>PvP Zone Edge Glow</strong> &mdash; how loudly the game tells you that you can be hit here.</li>
+            <li><strong>Sprint is a toggle</strong> so you press once to run instead of holding the key.</li>
+            <li><strong>Auto-target nearest</strong> keeps the closest enemy selected without cycling to it.</li>
+            <li><strong>Right-click to use</strong> and <strong>Shift-click drops a stack</strong> are the inventory shortcuts, either of which can be turned off.</li>
+            <li>The mouse wheel zooms the camera and cannot be rebound.</li>
           </ul>
-
-          <h3>Video</h3>
-          <ul>
-            <li><strong>Zoom</strong> &mdash; how close the camera sits.</li>
-            <li><strong>Graphics quality</strong>, <strong>Shadows</strong>, <strong>Dynamic Lighting</strong>, <strong>Shader Effects</strong> &mdash; the big levers if the game is running hot.</li>
-            <li><strong>Day/night cycle</strong> &mdash; keep the world lit if you would rather not fight in the dark.</li>
-            <li><strong>Orb Glow Lights</strong>, <strong>Orb Pickup Trails</strong>, <strong>Sprint Afterimages</strong> &mdash; the small flourishes, each separately switchable.</li>
-            <li><strong>Screen Shake</strong> &mdash; off disables every camera shake, including the one from a critical hit landing on you.</li>
-          </ul>
-
-          <h3>Weather</h3>
-          <p>Weather has its own block, because it is the heaviest thing on screen and the most
-          personal. There is a master switch, and then:</p>
-          <ul>
-            <li><strong>Per layer:</strong> particles, fullscreen shaders, lighting tint, post-process, ambient audio and one-shot audio, each on its own.</li>
-            <li><strong>Per weather type:</strong> a quality level for rain, snow, lightning, sun rays, fog, dust, hail, ash, embers, sandstorm, aurora, lava, fire, smoke and wind.</li>
-            <li><strong>Accessibility:</strong> lightning flash intensity, and screen shake on thunder (off by default).</li>
-          </ul>
-
-          <h3>Audio</h3>
-          <p>Separate <strong>Music</strong> and <strong>Effects</strong> volumes. Both save with
-          the rest of your settings and follow you between sessions.</p>
 
           <div class="wiki-note">
             <strong>Settings are per machine, not per character.</strong> They live in your local
