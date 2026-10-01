@@ -43,6 +43,21 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.8</span>
+            <span class="news-tag">Release</span>
+          </div>
+          <h2>Smoother frames, cleaner wall edges</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>Off-screen scenery no longer ticks.</strong> Every tree, rock and prop on a map was running its shadow update every frame wherever you were, up to 1800 of them on the big arenas. Now only the ones on screen do. On the MOBA arena the client's frame cost dropped from 4.4 ms to 1.5 ms, on the overworld from 0.9 ms to 0.6 ms.</li>
+            <li><strong>The see-through pass idles for anyone off screen</strong>, and sleeps entirely on maps with no walls to see through.</li>
+            <li><strong>Flickering lamps pause while culled.</strong></li>
+            <li><strong>You no longer draw over a wall while standing right at its bottom edge.</strong> Walking into the dark below a room's rim until the wall stops you left your feet exactly on the wall's last pixel, and the game drew you in front of it. That edge now counts as inside the wall: feet on or above it are covered, one step further south you are in front.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.6</span>
             <span class="news-tag red">Hotfix</span>
           </div>
