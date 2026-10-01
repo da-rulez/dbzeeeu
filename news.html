@@ -43,6 +43,23 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.4</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>The view stops at the map</h2>
+          <h3>Changed</h3>
+          <ul>
+            <li><strong>The camera stops at the edge of the map.</strong> Walk into a corner and the view holds at the boundary while your character keeps walking, instead of panning off into the void beside the map. It works at every zoom level, and a map smaller than your screen sits centred.</li>
+          </ul>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>Backgrounds stay inside the map.</strong> A parallax sky or starfield no longer spills past the edge of the map, where no tile can ever be painted over it.</li>
+            <li><strong>Decoration hung on a wall sorts with that wall.</strong> A poster or a sign on a wall is now part of it: you pass in front of it exactly as you pass in front of the wall it hangs on.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.3</span>
             <span class="news-tag red">Hotfix</span>
           </div>
