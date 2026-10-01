@@ -43,6 +43,18 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.6</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Standing on a wall's edge</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>You no longer draw over a wall while standing right at its bottom edge.</strong> Walking into the dark below a room's rim until the wall stops you left your feet exactly on the wall's last pixel, and the game then chose to draw you in front of it. That edge now counts as inside the wall: feet on or above it are covered, one step further south you are in front. Every map is rebuilt with the new rule, so the same spots elsewhere are fixed too.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.5</span>
             <span class="news-tag blue">Patch</span>
           </div>
