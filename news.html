@@ -43,6 +43,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.12</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Faster launcher downloads</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>Updates download about 13 times faster.</strong> The launcher was reading one small chunk per frame while capping itself at 30 frames a second, so a download could never go faster than about 2 MB/s whatever your connection. It now transfers on its own thread: the 36 MB game pack went from 18.5 s to 1.4 s on the same link. The launcher only ever fetches the files whose checksum changed, so a game update is the game pack alone; the larger program file is only fetched when it actually changes.</li>
+          </ul>
+          <p>Get the new launcher from the website; a launcher you already have keeps working, it just downloads at the old speed.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.11</span>
             <span class="news-tag blue">Patch</span>
           </div>
