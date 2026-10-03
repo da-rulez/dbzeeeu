@@ -43,6 +43,21 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.16</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Exploit audit, second wave</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>Match results stick to the account that played.</strong> A fighter who disconnected before a match resolved used to vanish from the results and the rating; a winner who dropped during the result screen lost the prize. Results, ratings and payouts now use the account recorded at signup.</li>
+            <li><strong>Premium prizes need a real match.</strong> Scheduled games pay their premium reward only when at least two different accounts fought; one player plus an alt that forfeits, or plus bot fill, pays nothing.</li>
+            <li><strong>A reconnect cannot create a second copy of you.</strong> If your body was still standing in a locus after a force-quit mid-fight, logging back in finishes that body first and loads your saved state after it, instead of spawning a second one in the overworld.</li>
+            <li>A lobby or countdown disconnect no longer leaves a save block behind.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.15</span>
             <span class="news-tag red">Hotfix</span>
           </div>
