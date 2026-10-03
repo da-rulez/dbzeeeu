@@ -43,6 +43,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.13</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Signed, HTTPS-only updates</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>The launcher now trusts only signed updates over HTTPS.</strong> Game files and the update manifest come from the official release feed over TLS with certificate validation and no plain-HTTP path. The manifest is signed with a release key that never leaves the build machine; the launcher carries only the public half and refuses any manifest, file or redirect that does not check out, keeping your previous version playable instead.</li>
+          </ul>
+          <p>Get the new launcher from the website: an older launcher cannot safely update itself to this one.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.12</span>
             <span class="news-tag blue">Patch</span>
           </div>
