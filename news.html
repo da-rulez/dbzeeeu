@@ -43,6 +43,30 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.26</span>
+            <span class="news-tag">Release</span>
+          </div>
+          <h2>Props, polished</h2>
+          <h3>Changed</h3>
+          <ul>
+            <li><strong>Props sort and sit right.</strong> Lockers, crates, boxes and chests stand with their feet on their map point, sort against players like any placed piece, and keep their footprint when the open art differs (the open locker's door now hangs below its body as drawn).</li>
+            <li><strong>Loot comes out where you can see it.</strong> Coins and items out of a prop land in front of it, never behind it or above the wall it stands against, spread out instead of in a line, and stop at walls and blockers instead of flying through.</li>
+            <li><strong>Orbs sort properly.</strong> An XP orb or coin resting in front of a container draws in front of it; a long-standing sort quirk hid them behind.</li>
+            <li><strong>Containers are not targets.</strong> Lockers, crates and chests no longer take a Tab lock or a homing shot; a prop has to be authored as a target.</li>
+            <li>The hover and in-reach outline on a prop draws above neighbouring furniture and players, all the way round the art.</li>
+            <li>Coins shine with a random pause between sweeps, fly at the usual speed, and pop out of the lid of a chest or crate.</li>
+          </ul>
+          <h3>Editor</h3>
+          <ul>
+            <li>Props are built from furniture pieces: closed piece, optional hurt stages, open piece; collision follows the pieces. Animated preview of hits, opening and loot.</li>
+            <li>Furniture pieces carry an art offset for art whose feet are not its bottom edge.</li>
+            <li>MapKit: the Node tool places nodes; furniture can "stack on top"; vents and fog move on the top-bar snap (half and quarter tiles).</li>
+            <li>Events can grant titles ("Grant Title").</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.25</span>
             <span class="news-tag blue">Patch</span>
           </div>
