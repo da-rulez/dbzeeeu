@@ -43,6 +43,18 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.18</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>The client knows its own version</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>A leftover file could make an up-to-date client report an old version</strong> and get turned away as outdated. An older launcher left a version stamp beside the game executable, and the client read that instead of its own build. The client now uses the version it was built with, and the launcher clears files it does not own from the game folder.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.17</span>
             <span class="news-tag blue">Patch</span>
           </div>
