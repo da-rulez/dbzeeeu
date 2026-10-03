@@ -43,6 +43,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.14</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Login over HTTPS</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li><strong>Login, registration and every account call now go over HTTPS</strong> to api.dbzee.eu with certificate validation. The client has no plain-HTTP path to the account server any more, and the server refuses credentials sent in the clear instead of redirecting them.</li>
+          </ul>
+          <p>All sessions are being signed out once as part of this change, so you will log in again. If you have used your DBZee password anywhere else, this is a good moment to change it.</p>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.13</span>
             <span class="news-tag blue">Patch</span>
           </div>
