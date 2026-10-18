@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.24.1",
+	"generated_for_version": "0.25.27",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -88,6 +88,10 @@
 		}
 	],
 	"races": [
+		{
+			"description": "A cold, armoured race born to rule. Frost Demons hold back most of their power, and most of their patience.",
+			"name": "Frost Demon"
+		},
 		{
 			"description": "A wise and resilient race from Planet Namek. Known for their regenerative abilities, spiritual connection, and mastery of Ki-based techniques.",
 			"name": "Namekian"
