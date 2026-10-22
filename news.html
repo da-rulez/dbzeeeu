@@ -43,6 +43,23 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.25.33</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Boss Bar Pacing</h2>
+          <h3>Changed</h3>
+          <ul>
+            <li><strong>Boss bar drains at a readable pace.</strong> The fill edge never moves faster than 1.2 layers per second, whether a hit chips the bar, breaks a layer, or the boss falls, and small hits still take at least 0.4 seconds to play. A hit that tears through more than one layer plays out within a second and a half, so the bar never trails the real value by more than that.</li>
+          </ul>
+          <h3>Fixed</h3>
+          <ul>
+            <li>A hit landing while skipped layers were still flashing past no longer cuts the flash short or hides a layer.</li>
+            <li>The kill no longer snaps the last of the bar away in one frame; it drains, holds, then fades.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.32</span>
             <span class="news-tag red">Hotfix</span>
           </div>
