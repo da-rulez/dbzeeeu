@@ -46,26 +46,29 @@
             <span class="news-tag">v0.25.31</span>
             <span class="news-tag blue">Patch</span>
           </div>
-          <h2>Tighter, Lighter, Safer</h2>
+          <h2>Boss Bars, Tighter, Lighter, Safer</h2>
+          <h3>Added</h3>
+          <ul>
+            <li><strong>Boss HP bar.</strong> Fighting a boss puts a plate at the top of the screen: portrait, name, power level, the boss's active effects and a layered HP bar. Big bosses carry several layers in different colours, drained one after the other with the next showing through underneath; the chips under the bar count what is left and shatter as layers go, and a hit through several layers flashes each of them past. It fills up when the fight starts, shows for you, your party and your guild mates nearby, fades when you walk away or warp out, and empties when the boss falls. Options > Interface > Boss bar turns it off.</li>
+          </ul>
           <h3>Changed</h3>
           <ul>
-            <li><strong>Movement answers faster.</strong> The server no longer lets a backlog of your inputs pile up behind a jittery connection (every queued step was 33 ms of extra delay that the ping number never showed), and every other player and NPC you see is now one tick fresher.</li>
-            <li><strong>Less data on the wire.</strong> NPC health rides the regular position packet, other players' vitals go out as a small packed packet only when their bar changes, a technique's look is sent once per fight instead of once per shot, and orb pulls are batched. In an eight-player test the server sent about a quarter less data.</li>
-            <li><strong>A lighter server tick.</strong> NPC crowd handling, the save sweep and several scans were rewritten. In the same test the physics peak dropped from 6 to 13 ms to 3 to 5 ms and NPC work fell by about 70%.</li>
-            <li><strong>A lighter client frame.</strong> Characters without an aura no longer render a hidden silhouette every frame, off-screen NPCs do less, and technique lights are capped.</li>
-            <li><strong>Passwords.</strong> New and reset passwords need at least 8 characters. Remember-me no longer keeps your password readable on disk.</li>
+            <li><strong>Movement answers faster.</strong> The server no longer lets a backlog of your inputs pile up behind a jittery connection, and everyone you see is a tick fresher.</li>
+            <li><strong>Less data on the wire</strong> and <strong>a lighter server tick</strong>: about a quarter less traffic, NPC work down 70%, physics peaks halved in an eight-player test.</li>
+            <li><strong>A lighter client frame.</strong> Hidden silhouettes, off-screen NPCs and technique lights all cost less.</li>
+            <li><strong>Passwords</strong> need at least 8 characters; remember-me no longer keeps your password readable on disk.</li>
           </ul>
           <h3>Fixed</h3>
           <ul>
             <li>Bouncing techniques bounce off walls on every map again.</li>
-            <li>Bots now count on the hill and can damage MOBA bases.</li>
-            <li>Pressing Escape to close a window no longer also opens the options menu or clears your target.</li>
+            <li>Bots count on the hill and can damage MOBA bases.</li>
+            <li>Escape no longer also opens the options menu or clears your target.</li>
             <li>The shield bar no longer disappears when you take a hit.</li>
-            <li>Teleports and respawns no longer smear or glide across the screen, for you or for the people watching.</li>
+            <li>Teleports and respawns no longer smear across the screen.</li>
             <li>A countdown that falls back to the lobby lets everyone move again.</li>
             <li>The chat window no longer grows without limit while open.</li>
-            <li>Several ways to end up locked out with "already logged in" after a bad connection are closed.</li>
-            <li>Closed several ways to duplicate Zeni or items. Saves can no longer be overwritten by an older copy.</li>
+            <li>Several "already logged in" lockouts after a bad connection are closed.</li>
+            <li>Closed several ways to duplicate Zeni or items; saves can no longer be overwritten by an older copy.</li>
           </ul>
         </article>
 
