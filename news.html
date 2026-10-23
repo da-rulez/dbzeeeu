@@ -43,6 +43,27 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.26.0</span>
+            <span class="news-tag">Release</span>
+          </div>
+          <h2>Auras and Disables</h2>
+          <h3>Added</h3>
+          <ul>
+            <li><strong>Auras.</strong> An effect can now reach past the one carrying it: it re-applies a chosen effect to enemies, allies or everyone within a radius for as long as they stay inside. A ring on the floor shows the true range: red against you, blue for an ally's, gold for one that touches everyone, bright for your own and the ones you stand in, dimmed for the rest. Stepping in lands the effect with a burst at your feet; stepping out ends it a moment later. Toggle the rings under Options, Interface.</li>
+            <li><strong>Disables.</strong> A new effect component holds capabilities down on its target instead of removing anything: damage reduction, immunities, regeneration, shields, deflect, or every passive at once. Held effects keep their timers and return untouched when the disable ends. The badge of anything held down turns grey with a red cross, and a line floats up when it happens and when it comes back.</li>
+            <li><strong>Immunity as an effect.</strong> Immunities can now live on a status effect like any other component, so they show as a badge, combine with other components, and can themselves be disabled.</li>
+            <li><strong>Passive category</strong> for effects that are part of what a character is: no duration, never cleansed, gold badge.</li>
+            <li><strong>Saiyan Rage</strong>, a passive: below a quarter health you hit harder and every enemy near you fights with its damage reduction switched off. General White now owns the ground around him the same way.</li>
+          </ul>
+          <h3>Changed</h3>
+          <ul>
+            <li>Status badges moved next to the item hotbar, under the health bars, with a tighter frame and a glow in the effect's colour. Triggered passives show there while they hold.</li>
+            <li>NPC regeneration now counts the effects on the NPC, in combat too.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.25.33</span>
             <span class="news-tag red">Hotfix</span>
           </div>
