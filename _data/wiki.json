@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.25.33",
+	"generated_for_version": "0.26.0",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -580,6 +580,22 @@
 				"area"
 			],
 			"type": "heal_area"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 1.0,
+			"description": "Below a quarter of your health the Saiyan in you takes over: your strikes land a fifth harder, and every enemy within reach fights with its damage reduction switched off for as long as it stays close.",
+			"icon": "assets/img/wiki/saiyanroar.png",
+			"id": "saiyan_rage",
+			"ki_cost": 0.0,
+			"name": "Saiyan Rage",
+			"passive": true,
+			"range": 500.0,
+			"rarity": "rare",
+			"tags": [
+				"passive"
+			],
+			"type": "passive"
 		},
 		{
 			"cast_time": 0.0,
