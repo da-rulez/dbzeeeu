@@ -43,6 +43,19 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.26.4</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>Saving Restored</h2>
+          <h3>Fixed</h3>
+          <ul>
+            <li>Character progress was not being saved since the 22 October release: the save system wrote a new field the live database did not have, and every save was refused. Saving works again. Anyone who stayed online kept their progress in memory and it is now written; anyone who logged out in that window may have lost progress made since 22 October. If that is you, tell us what you lost.</li>
+            <li>Bestiary drop records, recipe discoveries and a few other one-time records had been failing silently on the live database since September. They record again.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.26.3</span>
             <span class="news-tag red">Hotfix</span>
           </div>
