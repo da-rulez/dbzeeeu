@@ -43,6 +43,22 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.26.6</span>
+            <span class="news-tag red">Hotfix</span>
+          </div>
+          <h2>One Database</h2>
+          <h3>Changed</h3>
+          <ul>
+            <li>The account server now runs on one database system only, the one the live game uses. Until now its tables were defined twice, once for a development database and once for the live one, and three releases shipped changes that reached only the development side, including the save failure fixed in 0.26.5. There is now a single schema file that is applied on every start, and the release checks refuse a change that does not fit it.</li>
+          </ul>
+          <h3>Fixed</h3>
+          <ul>
+            <li>Bestiary kill counts, objective points, pending Zeni from matches and ranked game counts had been failing to record on the live database since September. They record again.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.26.5</span>
             <span class="news-tag red">Hotfix</span>
           </div>
