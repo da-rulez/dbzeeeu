@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.27.2",
+	"generated_for_version": "0.28.0",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -475,6 +475,23 @@
 				"passive"
 			],
 			"type": "passive"
+		},
+		{
+			"cast_time": 0.0,
+			"cooldown": 6.0,
+			"description": "Drop out of the air like a falling star. The faster you come down, the harder the ground hits back: a stomp from standing bruises, a plunge off a cliff flattens.",
+			"icon": "assets/img/wiki/charged_strike.png",
+			"id": "meteor_stomp",
+			"ki_cost": 14.0,
+			"name": "Meteor Stomp",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"physical",
+				"ground_pound"
+			],
+			"type": "aoe"
 		},
 		{
 			"cast_time": 0.6,
