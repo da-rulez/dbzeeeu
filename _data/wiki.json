@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.28.0",
+	"generated_for_version": "0.28.2",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -305,6 +305,23 @@
 				"projectile",
 				"melee",
 				"homing"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 1.2,
+			"cooldown": 9.0,
+			"description": "Both palms turned out, a crackle of violet ki, then a beam that tears forward like it means it. Fierce damage and a hard shove.",
+			"icon": "assets/img/wiki/galickgun.png",
+			"id": "galick_gun",
+			"ki_cost": 18.0,
+			"name": "Galick Gun",
+			"passive": false,
+			"range": 800.0,
+			"rarity": "rare",
+			"tags": [
+				"beam",
+				"signature"
 			],
 			"type": "projectile"
 		},
@@ -648,6 +665,23 @@
 				"starter",
 				"projectile",
 				"homing"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 1.8,
+			"cooldown": 9.0,
+			"description": "Two fingers to the forehead, a long charge, then a drilling beam wrapped in a spiral of ki. It goes straight through everything in its path.",
+			"icon": "assets/img/wiki/specialbeamcannon.png",
+			"id": "special_beam_cannon",
+			"ki_cost": 12.0,
+			"name": "Special Beam Cannon",
+			"passive": false,
+			"range": 900.0,
+			"rarity": "epic",
+			"tags": [
+				"beam",
+				"piercing"
 			],
 			"type": "projectile"
 		},
