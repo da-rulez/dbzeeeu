@@ -69,6 +69,7 @@
     if (s.ki_cost) bits.push('<span>' + esc(Math.round(s.ki_cost)) + ' Ki</span>');
     if (s.cooldown) bits.push('<span>' + esc(secs(s.cooldown)) + ' cd</span>');
     if (s.cast_time) bits.push('<span>' + esc(secs(s.cast_time)) + ' cast</span>');
+    if (s.clash_tier) bits.push('<span>Clash Tier ' + esc(s.clash_tier) + '</span>');
     var icon = s.icon
       ? '<img class="wiki-card-icon r-' + esc(s.rarity) + '" src="' + esc(s.icon) +
         '" alt="" loading="lazy" width="40" height="40">'

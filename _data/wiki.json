@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.28.2",
+	"generated_for_version": "0.28.18",
 	"hidden_spell_count": 10,
 	"npcs": [
 		{
@@ -104,6 +104,7 @@
 	"spells": [
 		{
 			"cast_time": 0.0,
+			"clash_tier": 3,
 			"cooldown": 16.0,
 			"description": "Palm out, elbow locked. Force is compressed into a single blue-white sphere and released in one punch of pressure.",
 			"icon": "assets/img/wiki/bigbangattack.png",
@@ -120,6 +121,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 14.0,
 			"description": "A shout that dares everything nearby to come at you. Enemies in range drop whoever they were chasing and turn on you, and stay angry at you for a while after.",
 			"icon": "assets/img/wiki/challengingroar.png",
@@ -137,6 +139,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Draw in ambient ki to replenish your reserves. Leaves you stationary and vulnerable while channeling.",
 			"icon": "assets/img/wiki/powerup.png",
@@ -154,6 +157,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 2,
 			"cooldown": 1.6,
 			"description": "Gather ki in your palm and let it build. Release early for a quick pellet, or hold to full for a blast that detonates on impact.",
 			"icon": "assets/img/wiki/charged_ki_blast.png",
@@ -171,6 +175,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Every fight you have been in leaves something behind, no conditions attached.",
 			"icon": "assets/img/wiki/combatinstinct.png",
@@ -187,6 +192,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Years of basic training pay off, quietly and for good.",
 			"icon": "assets/img/wiki/conditioning.png",
@@ -204,6 +210,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 3,
 			"cooldown": 3.0,
 			"description": "Spin a razor of ki above your hand and hold it there. It cuts through whatever it meets, and the longer you let it build the wider it gets.",
 			"icon": "assets/img/wiki/destructodisc.png",
@@ -220,6 +227,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "The old Namekian discipline: mend rather than break. Everything good you put on yourself or on an ally lands harder and holds far longer, and your own body knits quietly on its own.",
 			"icon": "assets/img/wiki/dragonclanrites.png",
@@ -238,6 +246,7 @@
 		},
 		{
 			"cast_time": 2.4,
+			"clash_tier": 0,
 			"cooldown": 24.0,
 			"description": "Pull every scrap of ki inward until it has nowhere left to go, then let go. The wave flattens everything standing near you and leaves you wide open in the crater.",
 			"icon": "assets/img/wiki/explosion_wave.png",
@@ -256,6 +265,7 @@
 		},
 		{
 			"cast_time": 1.2,
+			"clash_tier": 0,
 			"cooldown": 8.0,
 			"description": "Split the ground and let it run. A seam tears away from your feet and erupts along its length, each burst throwing up the one ahead of it until the line spends itself.",
 			"icon": "assets/img/wiki/fissurewave.png",
@@ -274,6 +284,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 1,
 			"cooldown": 6.0,
 			"description": "A single compressed wall of air shoved forward off the palm. It does little more than bruise, but whatever it lands on leaves the ground.",
 			"icon": "assets/img/wiki/forcepush3.png",
@@ -292,6 +303,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 1,
 			"cooldown": 2.5,
 			"description": "More arms than you have, and all of them swinging. The punches leave wide and wrong-footed, then turn in and land together. Any one of them is nothing much. They do not arrive one at a time.",
 			"icon": "assets/img/wiki/fourarmavalanche.png",
@@ -310,6 +322,7 @@
 		},
 		{
 			"cast_time": 1.2,
+			"clash_tier": 3,
 			"cooldown": 9.0,
 			"description": "Both palms turned out, a crackle of violet ki, then a beam that tears forward like it means it. Fierce damage and a hard shove.",
 			"icon": "assets/img/wiki/galickgun.png",
@@ -326,7 +339,26 @@
 			"type": "projectile"
 		},
 		{
+			"cast_time": 1.8,
+			"clash_tier": 0,
+			"cooldown": 20.0,
+			"description": "Everything goes into one punch. The ki leaves your fist as a golden dragon, coils once around you, climbs, and comes down on your target.",
+			"icon": "assets/img/wiki/goldendragonfist.png",
+			"id": "golden_dragon_fist",
+			"ki_cost": 38.0,
+			"name": "Golden Dragon Fist",
+			"passive": false,
+			"range": 600.0,
+			"rarity": "legendary",
+			"tags": [
+				"lob",
+				"ultimate"
+			],
+			"type": "bomb"
+		},
+		{
 			"cast_time": 1.2,
+			"clash_tier": 0,
 			"cooldown": 14.0,
 			"description": "Push your own ki across the gap and into someone who needs it more. Lands on a chosen ally, and keeps working on them after it lands. It has nothing to give an enemy.",
 			"icon": "assets/img/wiki/healaoe.png",
@@ -344,6 +376,7 @@
 		},
 		{
 			"cast_time": 0.6,
+			"clash_tier": 0,
 			"cooldown": 12.0,
 			"description": "Calm the mind and harden the body, for a short while.",
 			"icon": "assets/img/wiki/meditate2.png",
@@ -361,6 +394,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 3.0,
 			"description": "Warp instantly behind a targeted enemy, even up or down a cliff, arriving on their level.",
 			"icon": "assets/img/wiki/instanttransmission.png",
@@ -378,6 +412,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Take four hits inside five seconds and you stop giving ground. Damage lands softer and knockback barely moves you, for as long as they keep coming.",
 			"icon": "assets/img/wiki/ironwill.png",
@@ -394,6 +429,7 @@
 		},
 		{
 			"cast_time": 1.2,
+			"clash_tier": 0,
 			"cooldown": 5.0,
 			"description": "Multiply your ki past what the body can hold. Strength and speed spike behind a crimson aura, but the strain burns Ki and slowly bleeds stamina — hold it too long and the technique drops on its own.",
 			"icon": "assets/img/wiki/kaioken.png",
@@ -411,6 +447,7 @@
 		},
 		{
 			"cast_time": 1.2,
+			"clash_tier": 3,
 			"cooldown": 9.0,
 			"description": "Cupped hands, a long breath, and every scrap of ki you can gather goes down one line. Hits far harder than a plain beam and empties you at twice the rate holding it.",
 			"icon": "assets/img/wiki/kamehameha.png",
@@ -428,6 +465,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "You learn from every fight, and it adds up.",
 			"icon": "assets/img/wiki/focus.png",
@@ -445,6 +483,7 @@
 		},
 		{
 			"cast_time": 0.6,
+			"clash_tier": 2,
 			"cooldown": 3.0,
 			"description": "A sustained lance of raw ki. No homing, just heavier impact than scattered bolts.",
 			"icon": "assets/img/wiki/ki_beam.png",
@@ -462,6 +501,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 1,
 			"cooldown": 0.2,
 			"description": "A quick burst of focused ki hurled in a straight line. Cheap, fast, and reliable.",
 			"icon": "assets/img/wiki/kiblast1.png",
@@ -479,6 +519,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Hold at a quarter health for three full seconds and something in you digs in. Heavy damage reduction and real regeneration, for as long as you stay there.",
 			"icon": "assets/img/wiki/laststand.png",
@@ -495,6 +536,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 6.0,
 			"description": "Drop out of the air like a falling star. The faster you come down, the harder the ground hits back: a stomp from standing bruises, a plunge off a cliff flattens.",
 			"icon": "assets/img/wiki/charged_strike.png",
@@ -512,6 +554,7 @@
 		},
 		{
 			"cast_time": 0.6,
+			"clash_tier": 0,
 			"cooldown": 9.0,
 			"description": "Drive both fists into the ground and let the shock do the rest. Dust erupts outward in a flat ring, throwing everything nearby off its feet, and the churned earth often catches a leg on the way past.",
 			"icon": "assets/img/wiki/might_impact.png",
@@ -531,6 +574,7 @@
 		},
 		{
 			"cast_time": 0.6,
+			"clash_tier": 0,
 			"cooldown": 9.0,
 			"description": "Ki gathers around you and takes the shape of the beast. The heads launch skyward and come down in waves, each one hitting like something with weight behind it rather than light.",
 			"icon": "assets/img/wiki/primalbarrage.png",
@@ -548,6 +592,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 5.0,
 			"description": "Throw up a shell of ki. For the first instant it is wound tight enough to throw projectiles straight back off it, and it holds as a softer guard for a moment after. Read the shot and it costs you nothing. Read it late and it still takes half.",
 			"icon": "assets/img/wiki/barrier.png",
@@ -566,6 +611,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Three down inside ten seconds and you stop slowing between them. Keep the streak alive and it keeps paying.",
 			"icon": "assets/img/wiki/relentless.png",
@@ -582,6 +628,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Drop any active transformation cleanly without burning what's left in your reserves.",
 			"icon": "assets/img/wiki/recoversenses.png",
@@ -599,6 +646,7 @@
 		},
 		{
 			"cast_time": 1.8,
+			"clash_tier": 0,
 			"cooldown": 30.0,
 			"description": "Water drawn up out of nothing, hanging around you in droplets before it breaks over the ground in rings. Everyone standing with you is mended where they stand, and keeps mending after. Nothing hostile takes a drop of it.",
 			"icon": "assets/img/wiki/sacredwater.png",
@@ -617,6 +665,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 1,
 			"cooldown": 2.5,
 			"description": "Five bolts thrown wide in one motion. They leave your hand scattered across the arc, then bend back in and converge on whoever you were aiming at. Each one lands lighter than a clean shot, but five of them add up.",
 			"icon": "assets/img/wiki/scatteringbullet.png",
@@ -635,6 +684,7 @@
 		},
 		{
 			"cast_time": 1.2,
+			"clash_tier": 0,
 			"cooldown": 18.0,
 			"description": "Hands to the sky, and the ki you were saving for a fight goes into closing your own wounds instead. Mends a wound at once and keeps knitting for a while after.",
 			"icon": "assets/img/wiki/heal.png",
@@ -652,6 +702,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 1,
 			"cooldown": 1.5,
 			"description": "A denser sphere of compressed ki that subtly bends toward its target. Costs more, but rarely misses.",
 			"icon": "assets/img/wiki/ki_blast_2.png",
@@ -669,7 +720,26 @@
 			"type": "projectile"
 		},
 		{
+			"cast_time": 0.0,
+			"clash_tier": 2,
+			"cooldown": 6.0,
+			"description": "A teal serpent of ki that winds after your selected target like the Snake Way. It bends only so fast: a quick target can still slip it.",
+			"icon": "assets/img/wiki/kithrust.png",
+			"id": "serpent_beam",
+			"ki_cost": 10.0,
+			"name": "Serpent Beam",
+			"passive": false,
+			"range": 800.0,
+			"rarity": "rare",
+			"tags": [
+				"beam",
+				"homing"
+			],
+			"type": "projectile"
+		},
+		{
 			"cast_time": 1.8,
+			"clash_tier": 4,
 			"cooldown": 9.0,
 			"description": "Two fingers to the forehead, a long charge, then a drilling beam wrapped in a spiral of ki. It goes straight through everything in its path.",
 			"icon": "assets/img/wiki/specialbeamcannon.png",
@@ -687,6 +757,7 @@
 		},
 		{
 			"cast_time": 0.6,
+			"clash_tier": 0,
 			"cooldown": 45.0,
 			"description": "Set your skin like rock for half a minute.",
 			"icon": "assets/img/wiki/stoneskin.png",
@@ -704,6 +775,7 @@
 		},
 		{
 			"cast_time": 0.6,
+			"clash_tier": 0,
 			"cooldown": 14.0,
 			"description": "A finger raised, and the ki broken into a dozen small suns. They arc out wide and come down over everything you pointed at. Nowhere near the storm the technique it was copied from puts out, which is the point.",
 			"icon": "assets/img/wiki/fingerbarrage.png",
@@ -721,6 +793,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 1,
 			"cooldown": 0.35,
 			"description": "Wind up and throw the punch anyway, from wherever you are standing. The blow leaves the fist and keeps going, and whatever it reaches gets moved. It runs out of road well short of a ki blast, so the trick is being close enough to mean it.",
 			"icon": "assets/img/wiki/superchargingfist.png",
@@ -739,6 +812,7 @@
 		},
 		{
 			"cast_time": 2.4,
+			"clash_tier": 0,
 			"cooldown": 0.0,
 			"description": "The Dragon of Dreams' blessing turned inward. Namekian ki spent on standing your ground: far harder to put down, and slower to put anything else down.",
 			"icon": "assets/img/wiki/superporunga.png",
@@ -756,6 +830,7 @@
 		},
 		{
 			"cast_time": 2.4,
+			"clash_tier": 0,
 			"cooldown": 0.0,
 			"description": "The Eternal Dragon's power worn outright. Namekian ki turned outward: everything you throw lands harder, at the cost of the guard the other form keeps.",
 			"icon": "assets/img/wiki/supershenron.png",
@@ -773,6 +848,7 @@
 		},
 		{
 			"cast_time": 2.4,
+			"clash_tier": 0,
 			"cooldown": 0.0,
 			"description": "Ignite the legendary transformation. Golden ki erupts around you.",
 			"icon": "assets/img/wiki/supersaiyan.png",
@@ -790,6 +866,7 @@
 		},
 		{
 			"cast_time": 1.2,
+			"clash_tier": 0,
 			"cooldown": 0.0,
 			"description": "A simple white aura ignites around you for a short window.",
 			"icon": "assets/img/wiki/surge.png",
@@ -807,6 +884,7 @@
 		},
 		{
 			"cast_time": 0.6,
+			"clash_tier": 0,
 			"cooldown": 6.0,
 			"description": "A short, brutal sweep of the arm with the current still on it. Everything standing in the arc in front of you catches it at once, and whatever it does to bone it also leaves behind a charge that will not sit still.",
 			"icon": "assets/img/wiki/electricfist.png",
@@ -826,6 +904,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Go six seconds without being touched and it shows. Faster on your feet and sharper with ki, right up until something lands.",
 			"icon": "assets/img/wiki/untouchable.png",
@@ -842,6 +921,7 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 0,
 			"cooldown": 1.0,
 			"description": "Saiyan recovery, running while the wound is fresh. Drop below a third of your health and your attack climbs hard until you are out of danger.",
 			"icon": "assets/img/wiki/zenkaiboost.png",
