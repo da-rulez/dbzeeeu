@@ -43,6 +43,50 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.28.20</span>
+            <span class="news-tag blue">Patch</span>
+          </div>
+          <h2>Under the Hood</h2>
+          <p>A big stability, fairness and anti-cheat pass across the whole server.</p>
+          <p><strong>Changes</strong></p>
+          <ul>
+            <li>Conditional passives (Iron Will, Last Stand, Relentless, Untouchable, Zenkai Boost) have a 30s cooldown, shown on the passive slots and in tooltips.</li>
+            <li>Silence also interrupts a technique still winding up or charging. Techniques already firing keep going.</li>
+            <li>Support techniques always cost Ki and go on cooldown, even when nobody needed healing.</li>
+            <li>Other players show only their health bar.</li>
+            <li>Minigames can't be joined once the countdown starts, and someone leaving no longer reopens signups.</li>
+            <li>After an invite expires or is declined, the same player waits 30s before inviting you again.</li>
+            <li>House sale money always goes to your bank, even when you are in a Locus or a match. Bank stacks hold up to 2,147,483,647.</li>
+          </ul>
+          <p><strong>Fixes</strong></p>
+          <ul>
+            <li>The Infusion Bench works again.</li>
+            <li>You keep your guild after warping into a house or Locus, and a muted player stays muted.</li>
+            <li>Disconnecting while changing maps no longer leaves your party without a leader.</li>
+            <li>Dragon Balls on the ground no longer vanish after a minute.</li>
+            <li>Monsters no longer go missing, stand around dead, or turn invisible after you warp back.</li>
+            <li>Fixed a loading screen that never ended after two quick map changes.</li>
+            <li>Leaving a minigame no longer drags you back to the stands.</li>
+            <li>Death Ball and Destructo Disc Blade hit repeatedly again.</li>
+            <li>Removing one source of an effect no longer removes another source's copy.</li>
+            <li>Long sessions no longer slow down from beams and shots.</li>
+          </ul>
+          <p><strong>Fair play</strong></p>
+          <ul>
+            <li>A missed area attack costs Ki and goes on cooldown.</li>
+            <li>Shots no longer pass through thin walls, and out-of-range or hidden targets can't be locked.</li>
+            <li>Leaving a match and logging off counts as a loss.</li>
+            <li>Closed several ways to get an item or reward twice.</li>
+          </ul>
+          <p><strong>Saving</strong></p>
+          <ul>
+            <li>One bad save can no longer stop everyone else's progress from saving.</li>
+            <li>A quick relog waits for your last save.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.28.19</span>
             <span class="news-tag blue">Patch</span>
           </div>
