@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.28.19",
+	"generated_for_version": "0.28.20",
 	"hidden_spell_count": 0,
 	"npcs": [
 		{
@@ -176,7 +176,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 0.0,
 			"description": "Every fight you have been in leaves something behind, no conditions attached.",
 			"icon": "assets/img/wiki/combatinstinct.png",
 			"id": "combat_instinct",
@@ -193,7 +193,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 0.0,
 			"description": "Years of basic training pay off, quietly and for good.",
 			"icon": "assets/img/wiki/conditioning.png",
 			"id": "conditioning",
@@ -246,7 +246,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 0.0,
 			"description": "The old Namekian discipline: mend rather than break. Everything good you put on yourself or on an ally lands harder and holds far longer, and your own body knits quietly on its own.",
 			"icon": "assets/img/wiki/dragonclanrites.png",
 			"id": "namekian_grace",
@@ -467,7 +467,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 30.0,
 			"description": "Take four hits inside five seconds and you stop giving ground. Damage lands softer and knockback barely moves you, for as long as they keep coming.",
 			"icon": "assets/img/wiki/ironwill.png",
 			"id": "iron_will",
@@ -520,7 +520,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 0.0,
 			"description": "You learn from every fight, and it adds up.",
 			"icon": "assets/img/wiki/focus.png",
 			"id": "keen_mind",
@@ -574,7 +574,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 30.0,
 			"description": "Hold at a quarter health for three full seconds and something in you digs in. Heavy damage reduction and real regeneration, for as long as you stay there.",
 			"icon": "assets/img/wiki/laststand.png",
 			"id": "last_stand",
@@ -666,7 +666,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 30.0,
 			"description": "Three down inside ten seconds and you stop slowing between them. Keep the streak alive and it keeps paying.",
 			"icon": "assets/img/wiki/relentless.png",
 			"id": "relentless",
@@ -1141,7 +1141,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 30.0,
 			"description": "Go six seconds without being touched and it shows. Faster on your feet and sharper with ki, right up until something lands.",
 			"icon": "assets/img/wiki/untouchable.png",
 			"id": "untouchable",
@@ -1158,7 +1158,7 @@
 		{
 			"cast_time": 0.0,
 			"clash_tier": 0,
-			"cooldown": 1.0,
+			"cooldown": 30.0,
 			"description": "Saiyan recovery, running while the wound is fresh. Drop below a third of your health and your attack climbs hard until you are out of danger.",
 			"icon": "assets/img/wiki/zenkaiboost.png",
 			"id": "zenkai_boost",
