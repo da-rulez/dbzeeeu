@@ -1,6 +1,6 @@
 {
-	"generated_for_version": "0.28.18",
-	"hidden_spell_count": 10,
+	"generated_for_version": "0.28.19",
+	"hidden_spell_count": 0,
 	"npcs": [
 		{
 			"boss": false,
@@ -210,6 +210,24 @@
 		},
 		{
 			"cast_time": 0.0,
+			"clash_tier": 4,
+			"cooldown": 20.0,
+			"description": "One finger raised. A dense sphere of violet ki condenses above it, straining against itself until you let it fall.",
+			"icon": "assets/img/wiki/deathball.png",
+			"id": "death_ball",
+			"ki_cost": 36.0,
+			"name": "Death Ball",
+			"passive": false,
+			"range": 700.0,
+			"rarity": "legendary",
+			"tags": [
+				"charge",
+				"ultimate"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
 			"clash_tier": 3,
 			"cooldown": 3.0,
 			"description": "Spin a razor of ki above your hand and hold it there. It cuts through whatever it meets, and the longer you let it build the wider it gets.",
@@ -357,6 +375,24 @@
 			"type": "bomb"
 		},
 		{
+			"cast_time": 0.6,
+			"clash_tier": 0,
+			"cooldown": 20.0,
+			"description": "Orbs bloom in a ring around the target and hang there, unstable, before every one of them drops at once. Wave after wave, with no gap to breathe.",
+			"icon": "assets/img/wiki/hellzone_grenade.png",
+			"id": "hellzone_grenade",
+			"ki_cost": 38.0,
+			"name": "Hellzone Grenade",
+			"passive": false,
+			"range": 640.0,
+			"rarity": "rare",
+			"tags": [
+				"lob",
+				"barrage"
+			],
+			"type": "bomb"
+		},
+		{
 			"cast_time": 1.2,
 			"clash_tier": 0,
 			"cooldown": 14.0,
@@ -373,6 +409,24 @@
 				"heal"
 			],
 			"type": "heal_ally"
+		},
+		{
+			"cast_time": 0.6,
+			"clash_tier": 0,
+			"cooldown": 24.0,
+			"description": "A finger levelled at the world. Ki splits into a storm of small bolts that scatter outward, indiscriminate and impossible to track.",
+			"icon": "assets/img/wiki/humanextinction.png",
+			"id": "human_extinction_attack",
+			"ki_cost": 44.0,
+			"name": "Human Extinction Attack",
+			"passive": false,
+			"range": 680.0,
+			"rarity": "z",
+			"tags": [
+				"charge",
+				"spread"
+			],
+			"type": "bomb"
 		},
 		{
 			"cast_time": 0.6,
@@ -756,6 +810,44 @@
 			"type": "projectile"
 		},
 		{
+			"cast_time": 0.0,
+			"clash_tier": 5,
+			"cooldown": 22.0,
+			"description": "Both hands to the sky. Energy is borrowed from everything around you, gathering into a sphere far overhead that grows for as long as you can hold it.",
+			"icon": "assets/img/wiki/spiritbomb.png",
+			"id": "spirit_bomb",
+			"ki_cost": 40.0,
+			"name": "Spirit Bomb",
+			"passive": false,
+			"range": 700.0,
+			"rarity": "legendary",
+			"tags": [
+				"charge",
+				"ultimate"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 0.0,
+			"clash_tier": 0,
+			"cooldown": 8.0,
+			"description": "A blade of ki drawn straight out of the fist. One cut down through everything in front of you, then one back up: two strikes, and each one has to be dodged on its own.",
+			"icon": "assets/img/wiki/spiritsword.png",
+			"id": "spirit_sword",
+			"ki_cost": 24.0,
+			"name": "Spirit Sword",
+			"passive": false,
+			"range": 140.0,
+			"rarity": "rare",
+			"tags": [
+				"line",
+				"cone",
+				"melee",
+				"ki"
+			],
+			"type": "line"
+		},
+		{
 			"cast_time": 0.6,
 			"clash_tier": 0,
 			"cooldown": 45.0,
@@ -814,6 +906,24 @@
 			"cast_time": 2.4,
 			"clash_tier": 0,
 			"cooldown": 0.0,
+			"description": "Channel the spiritual mastery of the Nameless. Verdant ki erupts around you.",
+			"icon": "assets/img/wiki/namekian_might.png",
+			"id": "super_namek",
+			"ki_cost": 0.0,
+			"name": "Super Namek",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "common",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
 			"description": "The Dragon of Dreams' blessing turned inward. Namekian ki spent on standing your ground: far harder to put down, and slower to put anything else down.",
 			"icon": "assets/img/wiki/superporunga.png",
 			"id": "super_porunga",
@@ -850,6 +960,78 @@
 			"cast_time": 2.4,
 			"clash_tier": 0,
 			"cooldown": 0.0,
+			"description": "The dragon's guard closes. Blows that should stagger you barely move you.",
+			"icon": "assets/img/wiki/superporunga2.png",
+			"id": "super_porunga_2",
+			"ki_cost": 0.0,
+			"name": "Super Namek 2 (Porunga Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
+			"description": "The dragon's fire deepens. Attacks carry weight the ground can feel, and the ki bill comes faster.",
+			"icon": "assets/img/wiki/supershenron2.png",
+			"id": "super_shenron_2",
+			"ki_cost": 0.0,
+			"name": "Super Namek 2 (Shenron Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
+			"description": "Porunga's full protection. Something has to give, and it will not be you.",
+			"icon": "assets/img/wiki/superporunga3.png",
+			"id": "super_porunga_3",
+			"ki_cost": 0.0,
+			"name": "Super Namek 3 (Porunga Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "legendary",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
+			"description": "The full majesty of Super Shenron, all of it pointed forward. Nothing about this form is defensive.",
+			"icon": "assets/img/wiki/supershenron3.png",
+			"id": "super_shenron_3",
+			"ki_cost": 0.0,
+			"name": "Super Namek 3 (Shenron Form)",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "legendary",
+			"tags": [
+				"transform",
+				"namek"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
 			"description": "Ignite the legendary transformation. Golden ki erupts around you.",
 			"icon": "assets/img/wiki/supersaiyan.png",
 			"id": "super_saiyan",
@@ -858,6 +1040,42 @@
 			"passive": false,
 			"range": 500.0,
 			"rarity": "epic",
+			"tags": [
+				"transform",
+				"saiyan"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
+			"description": "Push the legendary transformation further. Bio-electric lightning crackles around a brighter golden aura.",
+			"icon": "assets/img/wiki/supersaiyan2.png",
+			"id": "super_saiyan_2",
+			"ki_cost": 0.0,
+			"name": "Super Saiyan 2",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "epic",
+			"tags": [
+				"transform",
+				"saiyan"
+			],
+			"type": "transform"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
+			"description": "Unleash the apex of Saiyan power. Towering aura, dense lightning, and brutal ki drain.",
+			"icon": "assets/img/wiki/supersaiyan3.png",
+			"id": "super_saiyan_3",
+			"ki_cost": 0.0,
+			"name": "Super Saiyan 3",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "legendary",
 			"tags": [
 				"transform",
 				"saiyan"
@@ -901,6 +1119,24 @@
 				"lightning"
 			],
 			"type": "line"
+		},
+		{
+			"cast_time": 2.4,
+			"clash_tier": 0,
+			"cooldown": 0.0,
+			"description": "Quiet the mind, still the spirit. A silver shimmer settles around you and every motion answers without thought.",
+			"icon": "assets/img/wiki/ultimatepower.png",
+			"id": "ultimate_power",
+			"ki_cost": 0.0,
+			"name": "Ultimate Power",
+			"passive": false,
+			"range": 500.0,
+			"rarity": "z",
+			"tags": [
+				"transform",
+				"ultimate"
+			],
+			"type": "transform"
 		},
 		{
 			"cast_time": 0.0,
