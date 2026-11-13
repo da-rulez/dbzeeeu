@@ -43,6 +43,47 @@
       <div class="news-list">
         <article class="news-entry">
           <div class="news-meta">
+            <span class="news-tag">v0.29.0</span>
+            <span class="news-tag">Release</span>
+          </div>
+          <h2>Combat Overhaul</h2>
+          <p>A big pass on how fights play, read and look.</p>
+          <p><strong>Combat and balance</strong></p>
+          <ul>
+            <li>New damage formula: a hit scales with your attack against the target's defence, so a stat gap matters most at low levels.</li>
+            <li>Bigger pools: HP 500 + 60 per level, Ki 300 + 20 per level, base Ki regen 2 per second. Monster hits scale with your HP pool.</li>
+            <li>An interrupted technique costs nothing. Top tier techniques cannot be interrupted.</li>
+            <li>Beams deal less per hit, Serpent Beam homes less tightly, and finishers take a share of max HP when they land.</li>
+            <li>Bleeds are a flat percent of max HP per tick. Sanctuary Ward clears and blocks them.</li>
+          </ul>
+          <p><strong>Telegraphs</strong></p>
+          <ul>
+            <li>A telegraph now shows exactly where a technique can hit, also on cliffs and plateaus.</li>
+            <li>Lanes and cones stop at a wall or cliff edge. Bombs warn and hit on every floor they reach, and a volley shows a ring per shard.</li>
+            <li>Round areas are ovals everywhere, in the warning and in the hit.</li>
+          </ul>
+          <p><strong>Monsters and bots</strong></p>
+          <ul>
+            <li>Monsters attack one thing at a time, with wind-ups that match the attack and their own sounds.</li>
+            <li>MOBA camps attack on sight. Bots farm camps, use items, and fight with their own styles.</li>
+            <li>Monsters and bots move with more weight: less jitter, no sliding, no walking on the spot.</li>
+          </ul>
+          <p><strong>Look and feel</strong></p>
+          <ul>
+            <li>Cliffs cast shadows from their outline, and day and night have warmer colours with a darker night.</li>
+            <li>Loot, Zeni and orbs fall down a cliff instead of snapping to the ground, and lie clear of the rock.</li>
+            <li>Beams leave from the palms. Your own shots stop on the monster they hit, and it flashes right away.</li>
+            <li>Lobbed blasts start at the caster's height, fly smoothly and land where the ring says.</li>
+          </ul>
+          <p><strong>Fixes</strong></p>
+          <ul>
+            <li>Bodies are no longer drawn inside a plateau, and team mates no longer spawn on one spot.</li>
+            <li>Effects are in the right place from their first frame.</li>
+          </ul>
+        </article>
+
+        <article class="news-entry">
+          <div class="news-meta">
             <span class="news-tag">v0.28.20</span>
             <span class="news-tag blue">Patch</span>
           </div>
