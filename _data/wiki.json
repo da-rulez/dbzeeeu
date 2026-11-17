@@ -1,5 +1,5 @@
 {
-	"generated_for_version": "0.31.0",
+	"generated_for_version": "0.35.1",
 	"hidden_spell_count": 0,
 	"npcs": [
 		{
@@ -116,6 +116,24 @@
 			"rarity": "rare",
 			"tags": [
 				"charge"
+			],
+			"type": "projectile"
+		},
+		{
+			"cast_time": 1.8,
+			"clash_tier": 4,
+			"cooldown": 12.0,
+			"description": "Palms locked together, a sphere of pressure forming between them while the ground gives way underfoot. When it breaks, it breaks in one direction, and nothing in that line stays standing.",
+			"icon": "assets/img/wiki/bigbangkamehameha.png",
+			"id": "big_bang_kamehameha",
+			"ki_cost": 26.0,
+			"name": "Big Bang Kamehameha",
+			"passive": false,
+			"range": 800.0,
+			"rarity": "legendary",
+			"tags": [
+				"beam",
+				"signature"
 			],
 			"type": "projectile"
 		},
@@ -282,6 +300,24 @@
 			"type": "aoe"
 		},
 		{
+			"cast_time": 1.8,
+			"clash_tier": 4,
+			"cooldown": 12.0,
+			"description": "Both palms forward and every bit of ki forced into the space between them until it crackles and spits. When it goes, it goes as one blinding golden line.",
+			"icon": "assets/img/wiki/finalflash.png",
+			"id": "final_flash",
+			"ki_cost": 26.0,
+			"name": "Final Flash",
+			"passive": false,
+			"range": 800.0,
+			"rarity": "legendary",
+			"tags": [
+				"beam",
+				"signature"
+			],
+			"type": "projectile"
+		},
+		{
 			"cast_time": 1.2,
 			"clash_tier": 0,
 			"cooldown": 8.0,
@@ -302,22 +338,22 @@
 		},
 		{
 			"cast_time": 0.0,
-			"clash_tier": 1,
+			"clash_tier": 0,
 			"cooldown": 6.0,
-			"description": "A single compressed wall of air shoved forward off the palm. It does little more than bruise, but whatever it lands on leaves the ground. The shove leaves legs slow for a moment after.",
+			"description": "A compressed wall of air shoved forward off the palm, spreading as it goes. It does little more than bruise, but whatever it catches leaves the ground and comes down dazed, its technique lost for a moment. The shove can leave legs slow a little longer.",
 			"icon": "assets/img/wiki/forcepush3.png",
 			"id": "force_push",
 			"ki_cost": 18.0,
 			"name": "Force Push",
 			"passive": false,
-			"range": 240.0,
+			"range": 220.0,
 			"rarity": "common",
 			"tags": [
-				"projectile",
+				"cone",
 				"physical",
 				"knockback"
 			],
-			"type": "projectile"
+			"type": "line"
 		},
 		{
 			"cast_time": 0.0,
@@ -554,6 +590,25 @@
 			"type": "projectile"
 		},
 		{
+			"cast_time": 0.3,
+			"clash_tier": 2,
+			"cooldown": 8.0,
+			"description": "Hands working like pistons, left then right, a bolt out of each as fast as you can throw them. They leave wide and curl back in, so whatever you are aiming at gets hit from both sides at once. Lasts as long as you hold it and your ki holds out.",
+			"icon": "assets/img/wiki/kiblastbarrage.png",
+			"id": "ki_blast_barrage",
+			"ki_cost": 10.0,
+			"name": "Ki Blast Barrage",
+			"passive": false,
+			"range": 600.0,
+			"rarity": "rare",
+			"tags": [
+				"projectile",
+				"homing",
+				"channel"
+			],
+			"type": "projectile"
+		},
+		{
 			"cast_time": 0.0,
 			"clash_tier": 1,
 			"cooldown": 0.4,
@@ -724,7 +779,7 @@
 			"description": "Five bolts thrown wide in one motion. They leave your hand scattered across the arc, then bend back in and converge on whoever you were aiming at. Each one lands lighter than a clean shot, but five of them add up.",
 			"icon": "assets/img/wiki/scatteringbullet.png",
 			"id": "scattering_bullet",
-			"ki_cost": 5.0,
+			"ki_cost": 6.0,
 			"name": "Scattering Bullet",
 			"passive": false,
 			"range": 600.0,
@@ -1186,6 +1241,16 @@
 		}
 	],
 	"weathers": [
+		{
+			"description": "",
+			"id": "gale",
+			"name": "Gale"
+		},
+		{
+			"description": "",
+			"id": "heavy_fog",
+			"name": "Heavy Fog"
+		},
 		{
 			"description": "",
 			"id": "snow_storm_heavy",
