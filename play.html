@@ -91,6 +91,25 @@
         <li>Phones and tablets are not supported yet: the game needs a keyboard.</li>
       </ul>
 
+      <h3>Smoother play in the browser</h3>
+      <ul>
+        <li><strong>Use Chrome or Edge if you can.</strong> They start the quickest, because they keep the prepared graphics between visits. Firefox works too, it just prepares them again every time you open the game.</li>
+        <li><strong>Turn on graphics acceleration.</strong> Without it the browser draws the game on your processor and it will stutter.
+          Chrome: Settings &rarr; System &rarr; <em>Use graphics acceleration when available</em>.
+          Edge: Settings &rarr; System and performance &rarr; <em>Use graphics acceleration when available</em>.
+          Firefox: Settings &rarr; General &rarr; Performance, untick <em>Use recommended performance settings</em> and tick <em>Use hardware acceleration when available</em>.
+          Restart the browser afterwards.</li>
+        <li><strong>Switch off battery savers for the game.</strong> Chrome's <em>Energy saver</em> (Settings &rarr; Performance) and Edge's <em>Efficiency mode</em> (Settings &rarr; System and performance) lower the frame rate.</li>
+        <li><strong>Laptop with two graphics chips</strong> (an Intel or AMD chip in the processor plus an NVIDIA or AMD card): make sure the browser runs on the card.
+          Windows 11: Settings &rarr; System &rarr; Display &rarr; Graphics, pick your browser (or add it with <em>Browse</em>) and set it to <em>High performance</em>.
+          Windows 10: Settings &rarr; System &rarr; Display &rarr; Graphics settings, add the browser, Options, <em>High performance</em>.
+          With an NVIDIA card you can also open the NVIDIA Control Panel &rarr; Manage 3D settings &rarr; Program Settings, choose the browser and pick <em>High-performance NVIDIA processor</em>.
+          Close the browser fully and open it again.</li>
+        <li><strong>Check which chip is used.</strong> Type <code>chrome://gpu</code> (or <code>edge://gpu</code>) in the address bar: <em>WebGL2</em> should say <em>Hardware accelerated</em>, and the <em>GL_RENDERER</em> line names the chip. In Firefox, <code>about:support</code> lists it under Graphics.</li>
+        <li><strong>On a laptop,</strong> plug it in and set Windows to <em>Best performance</em> (Settings &rarr; System &rarr; Power). On battery many laptops slow the graphics down.</li>
+        <li>Close other heavy tabs (video, other games), and press <strong>F11</strong> for full screen.</li>
+      </ul>
+
       <h2>Getting started</h2>
       <ul>
         <li>Play in the browser, or run the launcher. It will fetch the current client build and update itself when new versions ship.</li>
